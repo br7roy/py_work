@@ -45,5 +45,17 @@ def get_photo_2():
 
 
 if __name__ == '__main__':
-    get_photo()
+    # get_photo()
     # print(get_html("https://www.baidu.com"))
+    kv = {"ip": "114.95.208.57"}
+    r = requests.post(
+        "http://ip.tool.chinaz.com/ajaxsync.aspx?at=ip&callback=jQuery111309266396038417759_1555853111342", data=kv,
+        headers={"User-Agent": "Mozilla/5.0"})
+    ctx = r.text
+    import json
+
+    jStr = json.dumps(ctx, ensure_ascii=False)
+    print(jStr)
+    start = jStr.index('location:\'') + len('location:\'')
+    jStr.find(jStr, start, __end=jStr.rindex("'}])"))
+    print(jStr)
