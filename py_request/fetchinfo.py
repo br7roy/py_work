@@ -44,6 +44,23 @@ def get_photo_2():
         print(e)
 
 
+# 使用beautifulsoup4
+def bs4():
+    import requests
+    r = requests.get("https://python123.io/ws/demo.html")
+
+    demo = r.text
+    from bs4 import BeautifulSoup
+
+    soup = BeautifulSoup(demo, "html.parser")
+    # print(soup.prettify())
+    print(soup.p.string)
+    print(soup.p.name)
+    print(soup.p.attrs)
+    print(soup.p.attrs['class'])
+
+
+
 if __name__ == '__main__':
     # get_photo()
     # print(get_html("https://www.baidu.com"))
@@ -54,8 +71,9 @@ if __name__ == '__main__':
     ctx = r.text
     import json
 
-    jStr = json.dumps(ctx, ensure_ascii=False)
-    print(jStr)
-    start = jStr.index('location:\'') + len('location:\'')
-    jStr.find(jStr, start, __end=jStr.rindex("'}])"))
-    print(jStr)
+    # jStr = json.dumps(ctx, ensure_ascii=False)
+    # print(jStr)
+    # start = jStr.index('location:\'') + len('location:\'')
+    # jStr.find(jStr, start, __end=jStr.rindex("'}])"))
+    # print(jStr)
+    bs4()
