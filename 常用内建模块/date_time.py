@@ -124,3 +124,20 @@ from datetime import datetime, timedelta
 now = datetime.now()
 # datetime.datetime(2015, 5, 18, 16, 57, 3, 540997)
 print(now.strftime('%Y%m%d'))
+
+if __name__=='__main__':
+    import time
+    # 记录起始时间
+    start_time = time.time()
+
+    # 所需计算耗时的主程序
+    time.sleep(2)
+
+    # 计算时间差值
+    seconds, minutes, hours = int(time.time() - start_time), 0, 0
+
+    # 可视化打印
+    hours = seconds // 3600
+    minutes = (seconds - hours * 3600) // 60
+    seconds = seconds - hours * 3600 - minutes * 60
+    print("\n  Complete time cost {:>02d}:{:>02d}:{:>02d}".format(hours, minutes, seconds))
