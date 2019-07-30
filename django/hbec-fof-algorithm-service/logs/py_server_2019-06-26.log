@@ -1,0 +1,240 @@
+INFO 2019-06-26 10:14:19,870 8720 Dummy-1 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-26 10:14:20,056 8720 Dummy-1 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-26 10:14:20,056 8720 Dummy-1 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-26 10:14:20,056 8720 Dummy-1 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-26 10:14:20,262 8720 Dummy-1 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-26 10:14:20,376 8720 Dummy-1 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-26 10:14:20,376 8720 Dummy-1 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-26 10:16:27,958 2248 Thread-2 application_aware.py process_request 49: requestInfo: method:[POST],url:[/offline/value/sharpeRatio],param:[]
+INFO 2019-06-26 10:16:27,962 2248 Thread-2 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "jobId": "679cb75c97b811e9a9a6e6f6cde40b92"} cost:00:00:00
+INFO 2019-06-26 10:16:27,998 17552 async_thread_pool_0 logic_processor.py doLogic 52: taskType:0,taskName:夏普比率,开始 查询流水号:679cb75c97b811e9a9a6e6f6cde40b92
+ERROR 2019-06-26 11:01:20,192 17552 async_thread_pool_0 logic_processor.py doLogic 56: 未知异常:
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\pandas\core\indexes\base.py", line 2657, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 132, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1601, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1608, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'FUND_INVESTTYPE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\logic_processor.py", line 54, in doLogic
+    func(model)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\offline_value_service.py", line 144, in sharpe_ratio
+    fundType = getData_fundInformation(symbol)['FUND_INVESTTYPE'][0]
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\pandas\core\frame.py", line 2927, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\pandas\core\indexes\base.py", line 2659, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 132, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1601, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1608, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'FUND_INVESTTYPE'
+ERROR 2019-06-26 11:01:20,357 17552 async_thread_pool_0 logic_processor.py doLogic 64: taskType:0,taskName:夏普比率,出错 'FUND_INVESTTYPE',查询流水号:679cb75c97b811e9a9a6e6f6cde40b92,耗时: 00:44:52
+INFO 2019-06-26 11:16:27,605 19100 Dummy-1 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-26 11:16:27,890 19100 Dummy-1 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-26 11:16:27,891 19100 Dummy-1 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-26 11:16:27,891 19100 Dummy-1 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-26 11:16:28,023 19100 Dummy-1 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-26 11:16:28,140 19100 Dummy-1 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-26 11:16:28,140 19100 Dummy-1 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-26 13:06:02,479 12088 Dummy-1 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-26 13:06:02,639 12088 Dummy-1 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-26 13:06:02,639 12088 Dummy-1 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-26 13:06:02,639 12088 Dummy-1 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-26 13:06:02,818 12088 Dummy-1 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-26 13:06:02,925 12088 Dummy-1 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-26 13:06:02,925 12088 Dummy-1 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-26 13:07:02,763 8832 Thread-2 application_aware.py process_request 49: requestInfo: method:[POST],url:[/offline/value/sharpeRatio],param:[{   "indicatorId": "1" }]
+INFO 2019-06-26 13:07:02,767 8832 Thread-2 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "jobId": "3c084a9a97d011e9aad9e6f6cde40b92"} cost:00:00:00
+INFO 2019-06-26 13:07:02,781 1040 async_thread_pool_0 logic_processor.py doLogic 52: taskType:0,taskName:夏普比率,开始 查询流水号:3c084a9a97d011e9aad9e6f6cde40b92
+INFO 2019-06-26 13:23:44,159 19148 Dummy-1 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-26 13:23:44,336 19148 Dummy-1 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-26 13:23:44,337 19148 Dummy-1 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-26 13:23:44,337 19148 Dummy-1 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-26 13:23:44,493 19148 Dummy-1 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-26 13:23:44,655 19148 Dummy-1 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-26 13:23:44,655 19148 Dummy-1 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-26 13:23:58,904 21100 Thread-2 application_aware.py process_request 49: requestInfo: method:[POST],url:[/offline/value/sharpeRatio],param:[{   "indicatorId": "1" }]
+INFO 2019-06-26 13:23:58,908 21100 Thread-2 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "jobId": "99b3004297d211e9b5c7e6f6cde40b92"} cost:00:00:00
+INFO 2019-06-26 13:23:58,944 16980 async_thread_pool_0 logic_processor.py doLogic 52: taskType:0,taskName:夏普比率,开始 查询流水号:99b3004297d211e9b5c7e6f6cde40b92
+ERROR 2019-06-26 14:01:16,862 16980 async_thread_pool_0 logic_processor.py doLogic 56: 未知异常:
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\pandas\core\indexes\base.py", line 2657, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 132, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1601, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1608, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'FUND_INVESTTYPE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\logic_processor.py", line 54, in doLogic
+    func(model)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\offline_value_service.py", line 148, in sharpe_ratio
+    fundType = getData_fundInformation(symbol)['FUND_INVESTTYPE'][0]
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\pandas\core\frame.py", line 2927, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\pandas\core\indexes\base.py", line 2659, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 132, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1601, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1608, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'FUND_INVESTTYPE'
+ERROR 2019-06-26 14:01:17,023 16980 async_thread_pool_0 logic_processor.py doLogic 64: taskType:0,taskName:夏普比率,出错 'FUND_INVESTTYPE',查询流水号:99b3004297d211e9b5c7e6f6cde40b92,耗时: 00:37:18
+INFO 2019-06-26 14:01:34,119 17320 Dummy-1 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-26 14:01:34,236 17320 Dummy-1 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-26 14:01:34,237 17320 Dummy-1 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-26 14:01:34,237 17320 Dummy-1 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-26 14:01:34,362 17320 Dummy-1 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-26 14:01:34,485 17320 Dummy-1 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-26 14:01:34,486 17320 Dummy-1 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-26 14:04:02,977 6944 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-26 14:04:03,083 6944 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-26 14:04:03,084 6944 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-26 14:04:03,084 6944 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-26 14:04:03,192 6944 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-26 14:04:03,348 6944 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-26 14:04:03,349 6944 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-26 14:04:12,169 10116 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/offline/value/sharpeRatio],param:[{   "indicatorId": "1" }]
+INFO 2019-06-26 14:04:12,180 10116 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "jobId": "381ed1e697d811e9bfbbe6f6cde40b92"} cost:00:00:00
+INFO 2019-06-26 14:04:12,220 14308 async_thread_pool_0 logic_processor.py doLogic 52: taskType:0,taskName:夏普比率,开始 查询流水号:381ed1e697d811e9bfbbe6f6cde40b92
+ERROR 2019-06-26 14:41:06,151 14308 async_thread_pool_0 logic_processor.py doLogic 56: 未知异常:
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\pandas\core\indexes\base.py", line 2657, in get_loc
+    return self._engine.get_loc(key)
+  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 132, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1601, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1608, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'FUND_INVESTTYPE'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\logic_processor.py", line 54, in doLogic
+    func(model)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\offline_value_service.py", line 148, in sharpe_ratio
+    fundType = getData_fundInformation(symbol)['FUND_INVESTTYPE'][0]
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\pandas\core\frame.py", line 2927, in __getitem__
+    indexer = self.columns.get_loc(key)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\pandas\core\indexes\base.py", line 2659, in get_loc
+    return self._engine.get_loc(self._maybe_cast_indexer(key))
+  File "pandas/_libs/index.pyx", line 108, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/index.pyx", line 132, in pandas._libs.index.IndexEngine.get_loc
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1601, in pandas._libs.hashtable.PyObjectHashTable.get_item
+  File "pandas/_libs/hashtable_class_helper.pxi", line 1608, in pandas._libs.hashtable.PyObjectHashTable.get_item
+KeyError: 'FUND_INVESTTYPE'
+ERROR 2019-06-26 14:41:06,425 14308 async_thread_pool_0 logic_processor.py doLogic 64: taskType:0,taskName:夏普比率,出错 'FUND_INVESTTYPE',查询流水号:381ed1e697d811e9bfbbe6f6cde40b92,耗时: 00:36:54
+INFO 2019-06-26 14:49:13,023 4316 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-26 14:49:13,191 4316 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-26 14:49:13,191 4316 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-26 14:49:13,191 4316 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-26 14:49:13,273 4316 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-26 14:49:13,422 4316 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-26 14:49:13,423 4316 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-26 14:50:22,251 5800 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-26 14:50:22,319 5800 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-26 14:50:22,319 5800 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-26 14:50:22,319 5800 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-26 14:50:22,405 5800 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-26 14:50:22,567 5800 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-26 14:50:22,568 5800 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-26 14:51:44,979 1012 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/offline/value/sharpeRatio],param:[{   "indicatorId": "1" }]
+INFO 2019-06-26 14:51:45,004 1012 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "jobId": "dc87d11c97de11e9944ce6f6cde40b92"} cost:00:00:00
+INFO 2019-06-26 14:51:45,014 9480 async_thread_pool_0 logic_processor.py doLogic 52: taskType:0,taskName:夏普比率,开始 查询流水号:dc87d11c97de11e9944ce6f6cde40b92
+INFO 2019-06-26 14:54:51,935 9248 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-26 14:54:52,227 9248 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-26 14:54:52,228 9248 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-26 14:54:52,228 9248 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-26 14:54:52,489 9248 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-26 14:54:52,789 9248 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-26 14:54:52,789 9248 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-26 14:55:17,377 5460 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/offline/value/sharpeRatio],param:[{   "indicatorId": "1" }]
+INFO 2019-06-26 14:55:17,388 5460 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "jobId": "5b20565897df11e9a162e6f6cde40b92"} cost:00:00:00
+INFO 2019-06-26 14:55:17,404 1076 async_thread_pool_0 logic_processor.py doLogic 52: taskType:0,taskName:夏普比率,开始 查询流水号:5b20565897df11e9a162e6f6cde40b92
+ERROR 2019-06-26 15:03:13,788 1076 async_thread_pool_0 logic_processor.py doLogic 56: 未知异常:
+Traceback (most recent call last):
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\logic_processor.py", line 54, in doLogic
+    func(model)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\offline_value_service.py", line 143, in sharpe_ratio
+    fundClass_1[set(fundSymbols) - set(fundClass_1.index)] = '混合型基金'
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\pandas\core\series.py", line 1039, in __setitem__
+    setitem(key, value)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\pandas\core\series.py", line 1035, in setitem
+    self._set_with(key, value)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\pandas\core\series.py", line 1085, in _set_with
+    self._set_labels(key, value)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\pandas\core\series.py", line 1095, in _set_labels
+    raise ValueError('%s not contained in the index' % str(key[mask]))
+ValueError: ['007387.OF' '007328.OF' '007448.OF' '002344.OF' '007397.OF' '007435.OF'] not contained in the index
+ERROR 2019-06-26 15:03:14,360 1076 async_thread_pool_0 logic_processor.py doLogic 64: taskType:0,taskName:夏普比率,出错 ['007387.OF' '007328.OF' '007448.OF' '002344.OF' '007397.OF' '007435.OF'] not contained in the index,查询流水号:5b20565897df11e9a162e6f6cde40b92,耗时: 00:07:56
+INFO 2019-06-26 15:26:18,219 1760 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-26 15:26:18,269 1760 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-26 15:26:18,269 1760 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-26 15:26:18,269 1760 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-26 15:26:18,382 1760 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-26 15:26:18,612 1760 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-26 15:26:18,612 1760 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-26 16:39:20,858 21376 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-26 16:39:21,258 21376 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-26 16:39:21,259 21376 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-26 16:39:21,259 21376 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-26 16:39:21,384 21376 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-26 16:39:21,552 21376 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-26 16:39:21,552 21376 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-26 16:39:36,603 14196 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/offline/value/sharpeRatio],param:[{   "indicatorId": "1" }]
+INFO 2019-06-26 16:39:36,631 14196 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "jobId": "edecf8ae97ed11e9abb2e6f6cde40b92"} cost:00:00:00
+INFO 2019-06-26 16:39:36,641 22524 async_thread_pool_0 logic_processor.py doLogic 52: taskType:0,taskName:夏普比率,开始 查询流水号:edecf8ae97ed11e9abb2e6f6cde40b92
+INFO 2019-06-26 17:04:05,855 22524 async_thread_pool_0 logic_processor.py doLogic 72: taskType:0,taskName:夏普比率,成功,查询流水号:edecf8ae97ed11e9abb2e6f6cde40b92,耗时: 00:24:29

@@ -1,0 +1,79 @@
+INFO 2019-06-18 10:04:51,520 7776 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-18 10:04:52,000 7776 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-18 10:04:52,001 7776 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-18 10:04:52,002 7776 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-18 10:04:52,098 7776 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-18 10:04:52,691 7776 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-18 10:04:52,693 7776 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-18 10:07:39,379 2780 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-18 10:07:39,549 2780 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-18 10:07:39,549 2780 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-18 10:07:39,550 2780 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-18 10:07:39,628 2780 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-18 10:07:39,783 2780 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-18 10:07:39,784 2780 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-18 10:14:52,938 5812 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/offline/score/indicatorScoreRank],param:[{
+    "indicatorId": "1"
+}]
+INFO 2019-06-18 10:14:52,966 5812 Thread-7 offline_score_view.py indicator_score_rank 30: req:
+INFO 2019-06-18 10:14:53,026 5812 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "jobId": "dbb1d4d0916e11e99c83e6f6cde40b92"} cost:00:00:00
+INFO 2019-06-18 10:14:53,087 10816 async_thread_pool_0 logic_processor.py doLogic 52: taskType:1,taskName:区间收益率,开始 查询流水号:dbb1d4d0916e11e99c83e6f6cde40b92
+INFO 2019-06-18 11:29:52,347 8020 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-18 11:29:52,538 8020 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-18 11:29:52,539 8020 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-18 11:29:52,539 8020 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-18 11:29:52,613 8020 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-18 11:29:52,785 8020 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-18 11:29:52,785 8020 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-18 11:30:27,324 9500 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/offline/score/indicatorScoreRank],param:[{
+    "indicatorId": "6"
+}]
+INFO 2019-06-18 11:30:27,327 9500 Thread-7 offline_score_view.py indicator_score_rank 30: req:
+INFO 2019-06-18 11:30:27,334 9500 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "jobId": "6a60fddc917911e98a55e6f6cde40b92"} cost:00:00:00
+INFO 2019-06-18 11:30:27,394 11568 async_thread_pool_0 logic_processor.py doLogic 52: taskType:1,taskName:信息比率,开始 查询流水号:6a60fddc917911e98a55e6f6cde40b92
+INFO 2019-06-18 12:17:40,565 2536 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-18 12:17:40,778 2536 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-18 12:17:40,778 2536 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-18 12:17:40,779 2536 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-18 12:17:40,893 2536 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-18 12:17:41,038 2536 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-18 12:17:41,038 2536 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-18 12:18:27,760 7828 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/offline/score/indicatorScoreRank],param:[{
+    "indicatorId": "6"
+}]
+INFO 2019-06-18 12:18:27,807 7828 Thread-7 offline_score_view.py indicator_score_rank 30: req:
+INFO 2019-06-18 12:18:27,814 7828 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "jobId": "1f4752a6918011e99456e6f6cde40b92"} cost:00:00:00
+INFO 2019-06-18 12:18:27,864 4124 async_thread_pool_0 logic_processor.py doLogic 52: taskType:1,taskName:信息比率,开始 查询流水号:1f4752a6918011e99456e6f6cde40b92
+INFO 2019-06-18 14:00:17,487 9464 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-18 14:00:18,146 9464 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-18 14:00:18,146 9464 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-18 14:00:18,146 9464 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-18 14:00:18,322 9464 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-18 14:00:18,531 9464 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-18 14:00:18,532 9464 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-18 14:01:07,106 8364 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/offline/score/indicatorScoreRank],param:[{
+    "indicatorId": "7"
+}]
+INFO 2019-06-18 14:01:07,110 8364 Thread-7 offline_score_view.py indicator_score_rank 30: req:
+INFO 2019-06-18 14:01:07,118 8364 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "jobId": "76827622918e11e9bdb8e6f6cde40b92"} cost:00:00:00
+INFO 2019-06-18 14:01:07,141 14996 async_thread_pool_0 logic_processor.py doLogic 52: taskType:1,taskName:贝塔系数,开始 查询流水号:76827622918e11e9bdb8e6f6cde40b92

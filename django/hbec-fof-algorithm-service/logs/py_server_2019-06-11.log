@@ -1,0 +1,1786 @@
+INFO 2019-06-11 08:44:53,639 12144 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 08:44:53,745 12144 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 08:44:53,746 12144 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-11 08:44:53,746 12144 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 08:44:53,868 12144 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 08:44:54,167 12144 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 08:44:54,167 12144 Dummy-6 bus_const.py load_table_info 110: load data from mysql done
+INFO 2019-06-11 08:45:04,434 3400 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/offline/manager/industryConfigurationCapability/industry],param:[]
+INFO 2019-06-11 08:45:04,444 3400 Thread-7 application_aware.py process_response 52: responseInfo:{"code": "000", "msg": "ok", "jobId": "26fbbc528be211e9894064006a432069"}
+INFO 2019-06-11 08:45:04,508 9236 async_thread_pool_0 logic_processor.py doLogic 52: taskType:0,taskName:基金经理行业配置能力-fof_fund_stock_industry,开始 查询流水号:26fbbc528be211e9894064006a432069
+INFO 2019-06-11 09:23:11,005 11948 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 09:23:11,157 11948 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 09:23:11,158 11948 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-11 09:23:11,158 11948 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 09:23:11,243 11948 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 09:23:11,426 11948 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 09:23:11,426 11948 Dummy-6 bus_const.py load_table_info 110: load data from mysql done
+INFO 2019-06-11 09:24:09,988 8496 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/offline/value/intervalYield],param:[]
+INFO 2019-06-11 09:24:09,997 8496 Thread-7 application_aware.py process_response 52: responseInfo:{"code": "000", "msg": "ok", "jobId": "9d0afa228be711e9a8c464006a432069"}
+INFO 2019-06-11 09:24:10,029 1756 async_thread_pool_0 logic_processor.py doLogic 52: taskType:0,taskName:区间收益率,开始 查询流水号:9d0afa228be711e9a8c464006a432069
+INFO 2019-06-11 09:51:35,659 10584 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 09:51:35,738 10584 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 09:51:35,738 10584 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-11 09:51:35,738 10584 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 09:51:35,819 10584 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 09:51:36,133 10584 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 09:51:36,133 10584 Dummy-6 bus_const.py load_table_info 110: load data from mysql done
+INFO 2019-06-11 09:51:39,927 7088 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/offline/value/intervalYield],param:[]
+INFO 2019-06-11 09:51:39,936 7088 Thread-7 application_aware.py process_response 52: responseInfo:{"code": "000", "msg": "ok", "jobId": "747b993a8beb11e9b30464006a432069"}
+INFO 2019-06-11 09:51:39,941 4716 async_thread_pool_0 logic_processor.py doLogic 52: taskType:0,taskName:区间收益率,开始 查询流水号:747b993a8beb11e9b30464006a432069
+INFO 2019-06-11 10:04:10,514 9652 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 10:04:10,750 9652 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 10:04:10,750 9652 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-11 10:04:10,751 9652 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 10:04:10,839 9652 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 10:04:10,993 9652 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 10:04:10,993 9652 Dummy-6 bus_const.py load_table_info 110: load data from mysql done
+INFO 2019-06-11 10:49:49,784 5492 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/offline/value/intervalYield],param:[]
+INFO 2019-06-11 10:49:49,794 5492 Thread-7 application_aware.py process_response 52: responseInfo:{"code": "000", "msg": "ok", "jobId": "949994628bf311e9a62b64006a432069"}
+INFO 2019-06-11 10:49:49,810 9144 async_thread_pool_0 logic_processor.py doLogic 52: taskType:0,taskName:区间收益率,开始 查询流水号:949994628bf311e9a62b64006a432069
+INFO 2019-06-11 10:55:54,874 7072 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 10:55:55,124 7072 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 10:55:55,125 7072 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-11 10:55:55,125 7072 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 10:55:55,205 7072 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 10:55:55,370 7072 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 10:55:55,371 7072 Dummy-6 bus_const.py load_table_info 110: load data from mysql done
+INFO 2019-06-11 10:56:04,963 1052 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/offline/value/intervalYield],param:[]
+INFO 2019-06-11 10:56:04,972 1052 Thread-7 application_aware.py process_response 52: responseInfo:{"code": "000", "msg": "ok", "jobId": "743930be8bf411e9b02a64006a432069"}
+INFO 2019-06-11 10:56:04,987 7164 async_thread_pool_0 logic_processor.py doLogic 52: taskType:0,taskName:区间收益率,开始 查询流水号:743930be8bf411e9b02a64006a432069
+INFO 2019-06-11 11:07:10,982 3436 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 11:07:11,359 3436 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 11:07:11,359 3436 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-11 11:07:11,359 3436 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 11:07:11,584 3436 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 11:07:11,830 3436 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 11:07:11,830 3436 Dummy-6 bus_const.py load_table_info 110: load data from mysql done
+INFO 2019-06-11 11:11:05,084 3880 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 11:11:05,324 3880 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 11:11:05,324 3880 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-11 11:11:05,325 3880 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 11:11:05,421 3880 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 11:11:05,580 3880 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 11:11:05,581 3880 Dummy-6 bus_const.py load_table_info 110: load data from mysql done
+INFO 2019-06-11 11:12:34,349 9700 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/offline/value/intervalYield],param:[]
+INFO 2019-06-11 11:12:34,358 9700 Thread-7 application_aware.py process_response 52: responseInfo:{"code": "000", "msg": "ok", "jobId": "c1f18a5a8bf611e994b364006a432069"}
+INFO 2019-06-11 11:12:34,372 2812 async_thread_pool_0 logic_processor.py doLogic 52: taskType:0,taskName:区间收益率,开始 查询流水号:c1f18a5a8bf611e994b364006a432069
+ERROR 2019-06-11 11:26:18,304 2812 async_thread_pool_0 logic_processor.py doLogic 56: 未知异常:
+Traceback (most recent call last):
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\conf\mysqlops.py", line 40, in insert_one
+    cur.execute(sql, args)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\DBUtils\SteadyDB.py", line 686, in tough_method
+    raise error  # re-raise the original error again
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\DBUtils\SteadyDB.py", line 605, in tough_method
+    result = method(*args, **kwargs)  # try to execute
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\MySQLdb\cursors.py", line 255, in execute
+    self.errorhandler(self, exc, value)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\MySQLdb\connections.py", line 50, in defaulterrorhandler
+    raise errorvalue
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\MySQLdb\cursors.py", line 252, in execute
+    res = self._query(query)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\MySQLdb\cursors.py", line 378, in _query
+    db.query(q)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\MySQLdb\connections.py", line 280, in query
+    _mysql.connection.query(self, query)
+_mysql_exceptions.OperationalError: (1136, "Column count doesn't match value count at row 1")
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\logic_processor.py", line 54, in doLogic
+    func(model)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\offline_value_service.py", line 65, in interval_yield
+    mysqlops.insert_one(MysqlConf.DB.fof, sql, tp)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\conf\mysqlops.py", line 45, in insert_one
+    raise Error(m)
+util.exception.biz_error_handler.Error: (1136, "Column count doesn't match value count at row 1")
+ERROR 2019-06-11 11:26:18,409 2812 async_thread_pool_0 logic_processor.py doLogic 64: taskType:0,taskName:区间收益率,出错 (1136, "Column count doesn't match value count at row 1"),查询流水号:c1f18a5a8bf611e994b364006a432069,耗时: 00:13:44
+INFO 2019-06-11 11:26:30,761 5996 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 11:26:31,078 5996 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 11:26:31,078 5996 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-11 11:26:31,078 5996 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 11:26:31,159 5996 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 11:26:31,336 5996 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 11:26:31,337 5996 Dummy-6 bus_const.py load_table_info 110: load data from mysql done
+INFO 2019-06-11 14:12:41,600 9844 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 14:12:41,771 9844 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 14:12:41,771 9844 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-11 14:12:41,771 9844 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 14:12:41,865 9844 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 14:12:42,021 9844 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 14:12:42,021 9844 Dummy-6 bus_const.py load_table_info 110: load data from mysql done
+INFO 2019-06-11 14:13:25,620 4064 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/offline/value/indicatorScoreRank],param:[{"indicatorId":"1"}]
+INFO 2019-06-11 14:13:25,719 4064 Thread-7 application_aware.py process_response 52: responseInfo:<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Page not found at /offline/value/indicatorScoreRank</title>
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+  </style>
+</head>
+<body>
+  <div id="summary">
+    <h1>Page not found <span>(404)</span></h1>
+    <table class="meta">
+      <tr>
+        <th>Request Method:</th>
+        <td>POST</td>
+      </tr>
+      <tr>
+        <th>Request URL:</th>
+        <td>http://localhost:8000/offline/value/indicatorScoreRank</td>
+      </tr>
+      
+    </table>
+  </div>
+  <div id="info">
+    
+      <p>
+      Using the URLconf defined in <code>hbec_fof_algorithm_service.urls</code>,
+      Django tried these URL patterns, in this order:
+      </p>
+      <ol>
+        
+          <li>
+            
+                ^$
+                
+            
+          </li>
+        
+          <li>
+            
+                admin/
+                
+            
+          </li>
+        
+          <li>
+            
+                api-auth/
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/value/intervalYield
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/value/volatility
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/value/sharpeRatio
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/value/maximumDrawdown
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/value/calmarRatio
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/value/informationRatio
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/value/otherIndicator
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/score/indicatorScoreRank
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/equityTiming
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/industryConfigurationCapability/industry
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/industryConfigurationCapability/score
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/industryConfigurationCapability/avgscore
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/stockScreeningAbility/returnTotal
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/stockScreeningAbility/returnWeight
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/stockScreeningAbility/return
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/stockScreeningAbility/returnHis
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/styleAnalyze/NetValue
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/styleAnalyze/handTurnoverRate
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/styleAnalyze/holdingStyle
+                
+            
+          </li>
+        
+          <li>
+            
+                online/score/comprehensive
+                
+            
+          </li>
+        
+          <li>
+            
+                online/value/multipleFundIndicator
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/managerProduct
+                
+            
+          </li>
+        
+      </ol>
+      <p>
+        
+        The current path, <code>offline/value/indicatorScoreRank</code>, didn't match any of these.
+      </p>
+    
+  </div>
+
+  <div id="explanation">
+    <p>
+      You're seeing this error because you have <code>DEBUG = True</code> in
+      your Django settings file. Change that to <code>False</code>, and Django
+      will display a standard 404 page.
+    </p>
+  </div>
+</body>
+</html>
+
+INFO 2019-06-11 14:13:35,633 4068 Thread-8 application_aware.py process_request 45: requestInfo: method:[POST],url:[/offline/score/indicatorScoreRank],param:[{"indicatorId":"1"}]
+INFO 2019-06-11 14:13:35,638 4068 Thread-8 offline_score_view.py indicator_score_rank 30: req:
+INFO 2019-06-11 14:13:35,647 4068 Thread-8 application_aware.py process_response 52: responseInfo:{"code": "000", "msg": "ok", "jobId": "0bc6b2b68c1011e99b4164006a432069"}
+INFO 2019-06-11 14:13:35,681 9792 async_thread_pool_0 logic_processor.py doLogic 52: taskType:1,taskName:区间收益率,开始 查询流水号:0bc6b2b68c1011e99b4164006a432069
+INFO 2019-06-11 14:41:19,405 1976 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 14:41:19,833 1976 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 14:41:19,834 1976 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-11 14:41:19,834 1976 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 14:41:20,020 1976 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 14:41:20,315 1976 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 14:41:20,316 1976 Dummy-6 bus_const.py load_table_info 110: load data from mysql done
+INFO 2019-06-11 14:42:26,844 12168 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 14:42:27,256 12168 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 14:42:27,256 12168 Dummy-6 bus_const.py load_table_info 82: load data from mysql start
+INFO 2019-06-11 14:42:27,256 12168 Dummy-6 bus_const.py load_table_info 83: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 14:42:27,433 12168 Dummy-6 bus_const.py load_table_info 90: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 14:42:27,658 12168 Dummy-6 bus_const.py load_table_info 106: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 14:42:27,658 12168 Dummy-6 bus_const.py load_table_info 112: load data from mysql done
+INFO 2019-06-11 14:47:27,754 10064 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/offline/score/i],param:[{"indicatorId":"1"}]
+INFO 2019-06-11 14:47:27,783 10064 Thread-7 application_aware.py process_response 52: responseInfo:<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Page not found at /offline/score/i</title>
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+  </style>
+</head>
+<body>
+  <div id="summary">
+    <h1>Page not found <span>(404)</span></h1>
+    <table class="meta">
+      <tr>
+        <th>Request Method:</th>
+        <td>POST</td>
+      </tr>
+      <tr>
+        <th>Request URL:</th>
+        <td>http://localhost:8000/offline/score/i</td>
+      </tr>
+      
+    </table>
+  </div>
+  <div id="info">
+    
+      <p>
+      Using the URLconf defined in <code>hbec_fof_algorithm_service.urls</code>,
+      Django tried these URL patterns, in this order:
+      </p>
+      <ol>
+        
+          <li>
+            
+                ^$
+                
+            
+          </li>
+        
+          <li>
+            
+                admin/
+                
+            
+          </li>
+        
+          <li>
+            
+                api-auth/
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/value/intervalYield
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/value/volatility
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/value/sharpeRatio
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/value/maximumDrawdown
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/value/calmarRatio
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/value/informationRatio
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/value/otherIndicator
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/score/indicatorScoreRank
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/equityTiming
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/industryConfigurationCapability/industry
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/industryConfigurationCapability/score
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/industryConfigurationCapability/avgscore
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/stockScreeningAbility/returnTotal
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/stockScreeningAbility/returnWeight
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/stockScreeningAbility/return
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/stockScreeningAbility/returnHis
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/styleAnalyze/NetValue
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/styleAnalyze/handTurnoverRate
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/styleAnalyze/holdingStyle
+                
+            
+          </li>
+        
+          <li>
+            
+                online/score/comprehensive
+                
+            
+          </li>
+        
+          <li>
+            
+                online/value/multipleFundIndicator
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/managerProduct
+                
+            
+          </li>
+        
+      </ol>
+      <p>
+        
+        The current path, <code>offline/score/i</code>, didn't match any of these.
+      </p>
+    
+  </div>
+
+  <div id="explanation">
+    <p>
+      You're seeing this error because you have <code>DEBUG = True</code> in
+      your Django settings file. Change that to <code>False</code>, and Django
+      will display a standard 404 page.
+    </p>
+  </div>
+</body>
+</html>
+
+INFO 2019-06-11 14:48:05,696 10524 Thread-8 application_aware.py process_request 45: requestInfo: method:[POST],url:[/offline/score/i],param:[{"indicatorId":"1"}]
+INFO 2019-06-11 14:48:05,712 10524 Thread-8 application_aware.py process_response 52: responseInfo:<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8">
+  <title>Page not found at /offline/score/i</title>
+  <meta name="robots" content="NONE,NOARCHIVE">
+  <style type="text/css">
+    html * { padding:0; margin:0; }
+    body * { padding:10px 20px; }
+    body * * { padding:0; }
+    body { font:small sans-serif; background:#eee; color:#000; }
+    body>div { border-bottom:1px solid #ddd; }
+    h1 { font-weight:normal; margin-bottom:.4em; }
+    h1 span { font-size:60%; color:#666; font-weight:normal; }
+    table { border:none; border-collapse: collapse; width:100%; }
+    td, th { vertical-align:top; padding:2px 3px; }
+    th { width:12em; text-align:right; color:#666; padding-right:.5em; }
+    #info { background:#f6f6f6; }
+    #info ol { margin: 0.5em 4em; }
+    #info ol li { font-family: monospace; }
+    #summary { background: #ffc; }
+    #explanation { background:#eee; border-bottom: 0px none; }
+  </style>
+</head>
+<body>
+  <div id="summary">
+    <h1>Page not found <span>(404)</span></h1>
+    <table class="meta">
+      <tr>
+        <th>Request Method:</th>
+        <td>POST</td>
+      </tr>
+      <tr>
+        <th>Request URL:</th>
+        <td>http://localhost:8000/offline/score/i</td>
+      </tr>
+      
+    </table>
+  </div>
+  <div id="info">
+    
+      <p>
+      Using the URLconf defined in <code>hbec_fof_algorithm_service.urls</code>,
+      Django tried these URL patterns, in this order:
+      </p>
+      <ol>
+        
+          <li>
+            
+                ^$
+                
+            
+          </li>
+        
+          <li>
+            
+                admin/
+                
+            
+          </li>
+        
+          <li>
+            
+                api-auth/
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/value/intervalYield
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/value/volatility
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/value/sharpeRatio
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/value/maximumDrawdown
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/value/calmarRatio
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/value/informationRatio
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/value/otherIndicator
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/score/indicatorScoreRank
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/equityTiming
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/industryConfigurationCapability/industry
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/industryConfigurationCapability/score
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/industryConfigurationCapability/avgscore
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/stockScreeningAbility/returnTotal
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/stockScreeningAbility/returnWeight
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/stockScreeningAbility/return
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/stockScreeningAbility/returnHis
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/styleAnalyze/NetValue
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/styleAnalyze/handTurnoverRate
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/styleAnalyze/holdingStyle
+                
+            
+          </li>
+        
+          <li>
+            
+                online/score/comprehensive
+                
+            
+          </li>
+        
+          <li>
+            
+                online/value/multipleFundIndicator
+                
+            
+          </li>
+        
+          <li>
+            
+                offline/manager/managerProduct
+                
+            
+          </li>
+        
+      </ol>
+      <p>
+        
+        The current path, <code>offline/score/i</code>, didn't match any of these.
+      </p>
+    
+  </div>
+
+  <div id="explanation">
+    <p>
+      You're seeing this error because you have <code>DEBUG = True</code> in
+      your Django settings file. Change that to <code>False</code>, and Django
+      will display a standard 404 page.
+    </p>
+  </div>
+</body>
+</html>
+
+INFO 2019-06-11 14:48:17,382 4168 Thread-9 application_aware.py process_request 45: requestInfo: method:[POST],url:[/offline/score/indicatorScoreRank],param:[{"indicatorId":"1"}]
+INFO 2019-06-11 14:48:17,386 4168 Thread-9 offline_score_view.py indicator_score_rank 30: req:
+INFO 2019-06-11 14:48:17,393 4168 Thread-9 application_aware.py process_response 52: responseInfo:{"code": "000", "msg": "ok", "jobId": "e49818c28c1411e9986f64006a432069"}
+INFO 2019-06-11 14:48:17,416 4072 async_thread_pool_0 logic_processor.py doLogic 52: taskType:1,taskName:区间收益率,开始 查询流水号:e49818c28c1411e9986f64006a432069
+INFO 2019-06-11 15:12:40,200 8592 Dummy-1 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 15:12:40,323 8592 Dummy-1 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 15:12:40,324 8592 Dummy-1 bus_const.py load_table_info 82: load data from mysql start
+INFO 2019-06-11 15:12:40,324 8592 Dummy-1 bus_const.py load_table_info 83: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 15:12:40,398 8592 Dummy-1 bus_const.py load_table_info 90: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 15:12:40,507 8592 Dummy-1 bus_const.py load_table_info 106: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 15:12:40,507 8592 Dummy-1 bus_const.py load_table_info 112: load data from mysql done
+INFO 2019-06-11 15:29:33,906 5500 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 15:29:33,976 5500 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 15:29:33,976 5500 Dummy-6 bus_const.py load_table_info 82: load data from mysql start
+INFO 2019-06-11 15:29:33,976 5500 Dummy-6 bus_const.py load_table_info 83: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 15:29:34,063 5500 Dummy-6 bus_const.py load_table_info 90: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 15:29:34,208 5500 Dummy-6 bus_const.py load_table_info 106: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 15:29:34,209 5500 Dummy-6 bus_const.py load_table_info 112: load data from mysql done
+INFO 2019-06-11 15:29:45,049 4488 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/offline/value/informationRatio],param:[]
+INFO 2019-06-11 15:29:45,059 4488 Thread-7 application_aware.py process_response 52: responseInfo:{"code": "000", "msg": "ok", "jobId": "af5bc4768c1a11e9b40d64006a432069"}
+INFO 2019-06-11 15:29:45,065 6652 async_thread_pool_0 logic_processor.py doLogic 52: taskType:0,taskName:信息比率,开始 查询流水号:af5bc4768c1a11e9b40d64006a432069
+INFO 2019-06-11 15:47:55,577 6652 async_thread_pool_0 logic_processor.py doLogic 72: taskType:0,taskName:信息比率,成功,查询流水号:af5bc4768c1a11e9b40d64006a432069,耗时: 00:18:10
+INFO 2019-06-11 15:48:00,272 16700 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 15:48:00,338 16700 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 15:48:00,338 16700 Dummy-6 bus_const.py load_table_info 82: load data from mysql start
+INFO 2019-06-11 15:48:00,338 16700 Dummy-6 bus_const.py load_table_info 83: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 15:48:00,428 16700 Dummy-6 bus_const.py load_table_info 90: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 15:48:00,584 16700 Dummy-6 bus_const.py load_table_info 106: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 15:48:00,585 16700 Dummy-6 bus_const.py load_table_info 112: load data from mysql done
+INFO 2019-06-11 15:49:19,029 13564 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 15:49:19,147 13564 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 15:49:19,147 13564 Dummy-6 bus_const.py load_table_info 82: load data from mysql start
+INFO 2019-06-11 15:49:19,147 13564 Dummy-6 bus_const.py load_table_info 83: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 15:49:19,223 13564 Dummy-6 bus_const.py load_table_info 90: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 15:49:19,361 13564 Dummy-6 bus_const.py load_table_info 106: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 15:49:19,362 13564 Dummy-6 bus_const.py load_table_info 112: load data from mysql done
+INFO 2019-06-11 15:55:53,402 11864 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 15:55:53,503 11864 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 15:55:53,503 11864 Dummy-6 bus_const.py load_table_info 82: load data from mysql start
+INFO 2019-06-11 15:55:53,504 11864 Dummy-6 bus_const.py load_table_info 83: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 15:55:53,581 11864 Dummy-6 bus_const.py load_table_info 90: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 15:55:53,735 11864 Dummy-6 bus_const.py load_table_info 106: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 15:55:53,736 11864 Dummy-6 bus_const.py load_table_info 112: load data from mysql done
+INFO 2019-06-11 15:58:55,956 16404 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 15:58:56,024 16404 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 15:58:56,024 16404 Dummy-6 bus_const.py load_table_info 82: load data from mysql start
+INFO 2019-06-11 15:58:56,024 16404 Dummy-6 bus_const.py load_table_info 83: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 15:58:56,107 16404 Dummy-6 bus_const.py load_table_info 90: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 15:58:56,245 16404 Dummy-6 bus_const.py load_table_info 106: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 15:58:56,246 16404 Dummy-6 bus_const.py load_table_info 112: load data from mysql done
+INFO 2019-06-11 16:03:20,919 15944 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/offline/value/sharpeRatio],param:[]
+INFO 2019-06-11 16:03:20,928 15944 Thread-7 application_aware.py process_response 52: responseInfo:{"code": "000", "msg": "ok", "jobId": "60e8f7ca8c1f11e9b11b64006a432069"}
+INFO 2019-06-11 16:03:20,933 1252 async_thread_pool_0 logic_processor.py doLogic 52: taskType:0,taskName:夏普比率,开始 查询流水号:60e8f7ca8c1f11e9b11b64006a432069
+INFO 2019-06-11 16:24:09,799 14908 Thread-74 application_aware.py process_request 45: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[]
+ERROR 2019-06-11 16:24:17,512 14908 Thread-74 exception.py handle_uncaught_exception 118: Internal Server Error: /online/value/multipleFundIndicator
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\bunch\__init__.py", line 116, in __getattr__
+    return object.__getattribute__(self, k)
+AttributeError: 'Bunch' object has no attribute 'indicators'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\bunch\__init__.py", line 119, in __getattr__
+    return self[k]
+KeyError: 'indicators'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py", line 209, in multiple_value
+    indicators = m.indicators # 指标ID
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\bunch\__init__.py", line 121, in __getattr__
+    raise AttributeError(k)
+AttributeError: indicators
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\decorators.py", line 55, in handler
+    return func(*args, **kwargs)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py", line 214, in multiple_value
+    raise Error(e)
+util.exception.biz_error_handler.Error: indicators
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py", line 128, in _get_response
+    response = self.process_exception_by_middleware(e, request)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py", line 168, in process_exception_by_middleware
+    response = middleware_method(request, exception)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\aware\application_aware.py", line 61, in process_exception
+    return exc.get_response()
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\util\exception\biz_error_handler.py", line 25, in get_response
+    return make_error_response(self.code, self.message, self.exception)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\util\exception\biz_error_handler.py", line 31, in make_error_response
+    msg += message
+TypeError: can only concatenate str (not "AttributeError") to str
+INFO 2019-06-11 16:24:19,613 14908 Thread-74 application_aware.py process_response 52: responseInfo:TypeError at /online/value/multipleFundIndicator
+can only concatenate str (not "AttributeError") to str
+
+Request Method: POST
+Request URL: http://localhost:8000/online/value/multipleFundIndicator
+Django Version: 2.0.5
+Python Executable: F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\python.exe
+Python Version: 3.7.3
+Python Path: ['F:\\project\\py_projects\\hbec-fof-algorithm-service\\hbec_fof_algorithm_service', 'F:\\dev\\ide\\PyCharm\\helpers\\pydev', 'F:\\project\\py_projects\\hbec-fof-algorithm-service\\hbec_fof_algorithm_service', 'F:\\dev\\ide\\PyCharm\\helpers\\pycharm_display', 'F:\\dev\\ide\\PyCharm\\helpers\\third_party\\thriftpy', 'F:\\dev\\ide\\PyCharm\\helpers\\pydev', 'C:\\Users\\futanghang\\.PyCharm2019.1\\system\\cythonExtensions', 'F:\\dev\\lang\\python\\Anaconda3\\envs\\hbec_fof_algorithm_service\\python37.zip', 'F:\\dev\\lang\\python\\Anaconda3\\envs\\hbec_fof_algorithm_service\\DLLs', 'F:\\dev\\lang\\python\\Anaconda3\\envs\\hbec_fof_algorithm_service\\lib', 'F:\\dev\\lang\\python\\Anaconda3\\envs\\hbec_fof_algorithm_service', 'F:\\dev\\lang\\python\\Anaconda3\\envs\\hbec_fof_algorithm_service\\lib\\site-packages', 'F:\\dev\\ide\\PyCharm\\helpers\\pycharm_matplotlib_backend']
+Server time: Tue, 11 Jun 2019 16:24:18 +0800
+Installed Applications:
+['django.contrib.admin',
+ 'django.contrib.auth',
+ 'django.contrib.contenttypes',
+ 'django.contrib.sessions',
+ 'django.contrib.messages',
+ 'django.contrib.staticfiles',
+ 'rest_framework',
+ 'rest_framework_swagger']
+Installed Middleware:
+['django.middleware.security.SecurityMiddleware',
+ 'django.contrib.sessions.middleware.SessionMiddleware',
+ 'django.middleware.common.CommonMiddleware',
+ 'django.contrib.auth.middleware.AuthenticationMiddleware',
+ 'django.contrib.messages.middleware.MessageMiddleware',
+ 'django.middleware.clickjacking.XFrameOptionsMiddleware',
+ 'aware.application_aware.ServerEventAware']
+
+
+Traceback:
+
+File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\bunch\__init__.py" in __getattr__
+  116.             return object.__getattribute__(self, k)
+
+During handling of the above exception ('Bunch' object has no attribute 'indicators'), another exception occurred:
+
+File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\bunch\__init__.py" in __getattr__
+  119.                 return self[k]
+
+During handling of the above exception ('indicators'), another exception occurred:
+
+File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py" in multiple_value
+  209.         indicators = m.indicators # 指标ID
+
+File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\bunch\__init__.py" in __getattr__
+  121.                 raise AttributeError(k)
+
+During handling of the above exception (indicators), another exception occurred:
+
+File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py" in _get_response
+  126.                 response = wrapped_callback(request, *callback_args, **callback_kwargs)
+
+File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\decorators\csrf.py" in wrapped_view
+  54.         return view_func(*args, **kwargs)
+
+File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\generic\base.py" in view
+  69.             return self.dispatch(request, *args, **kwargs)
+
+File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py" in dispatch
+  495.             response = self.handle_exception(exc)
+
+File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py" in handle_exception
+  455.             self.raise_uncaught_exception(exc)
+
+File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py" in dispatch
+  492.             response = handler(request, *args, **kwargs)
+
+File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\decorators.py" in handler
+  55.             return func(*args, **kwargs)
+
+File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py" in multiple_value
+  214.         raise Error(e)
+
+During handling of the above exception (indicators), another exception occurred:
+
+File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\exception.py" in inner
+  35.             response = get_response(request)
+
+File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py" in _get_response
+  128.                 response = self.process_exception_by_middleware(e, request)
+
+File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py" in process_exception_by_middleware
+  168.             response = middleware_method(request, exception)
+
+File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\aware\application_aware.py" in process_exception
+  61.             return exc.get_response()
+
+File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\util\exception\biz_error_handler.py" in get_response
+  25.         return make_error_response(self.code, self.message, self.exception)
+
+File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\util\exception\biz_error_handler.py" in make_error_response
+  31.         msg += message
+
+Exception Type: TypeError at /online/value/multipleFundIndicator
+Exception Value: can only concatenate str (not "AttributeError") to str
+Request information:
+USER: AnonymousUser
+
+GET: No GET data
+
+POST: No POST data
+
+FILES: No FILES data
+
+COOKIES: No cookie data
+
+META:
+ALLUSERSPROFILE = 'C:\\ProgramData'
+ANACONDA_HOME = 'F:\\dev\\lang\\python\\Anaconda3'
+APPDATA = 'C:\\Users\\futanghang\\AppData\\Roaming'
+COMMONPROGRAMFILES = 'C:\\Program Files\\Common Files'
+COMMONPROGRAMFILES(X86) = 'C:\\Program Files (x86)\\Common Files'
+COMMONPROGRAMW6432 = 'C:\\Program Files\\Common Files'
+COMPUTERNAME = 'DESKTOP-B65KF2T'
+COMSPEC = 'C:\\WINDOWS\\system32\\cmd.exe'
+CONTENT_LENGTH = ''
+CONTENT_TYPE = 'text/plain'
+DJANGO_SETTINGS_MODULE = 'hbec_fof_algorithm_service.settings'
+DRIVERDATA = 'C:\\Windows\\System32\\Drivers\\DriverData'
+FPS_BROWSER_APP_PROFILE_STRING = 'Internet Explorer'
+FPS_BROWSER_USER_PROFILE_STRING = 'Default'
+GATEWAY_INTERFACE = 'CGI/1.1'
+GOPATH = 'F:\\project\\goProjects'
+GOROOT = 'F:\\dev\\lang\\Go'
+HOMEDRIVE = 'C:'
+HOMEPATH = '\\Users\\futanghang'
+HTTP_ACCEPT = '*/*'
+HTTP_HOST = 'localhost:8000'
+HTTP_USER_AGENT = 'curl/7.55.1'
+IDE_PROJECT_ROOTS = 'F:/project/py_projects/hbec-fof-algorithm-service/hbec_fof_algorithm_service'
+IPYTHONENABLE = 'True'
+JAVA_HOME = 'F:\\dev\\lang\\java\\java-1.8.0-openjdk-1.8.0.201-2.b09.redhat.windows.x86_64'
+LIBRARY_ROOTS = 'F:/dev/lang/python/Anaconda3/envs/hbec_fof_algorithm_service/DLLs;F:/dev/lang/python/Anaconda3/envs/hbec_fof_algorithm_service/Lib;F:/dev/lang/python/Anaconda3/envs/hbec_fof_algorithm_service/Lib/site-packages;C:/Users/futanghang/.PyCharm2019.1/system/python_stubs/2083016408;F:/dev/ide/PyCharm/helpers/python-skeletons;F:/dev/ide/PyCharm/helpers/typeshed/stdlib/3;F:/dev/ide/PyCharm/helpers/typeshed/stdlib/2and3;F:/dev/ide/PyCharm/helpers/typeshed/third_party/3;F:/dev/ide/PyCharm/helpers/typeshed/third_party/2and3'
+LOCALAPPDATA = 'C:\\Users\\futanghang\\AppData\\Local'
+LOGONSERVER = '\\\\DESKTOP-B65KF2T'
+MAVEN_HOME = 'F:\\openware\\maven\\apache-maven-3.6.0'
+NODEJS_HOME = 'F:\\dev\\lang\\nodejs\\node-v10.15.3-win-x64'
+NUMBER_OF_PROCESSORS = '4'
+ONEDRIVE = 'C:\\Users\\futanghang\\OneDrive'
+OS = 'Windows_NT'
+PATH = 'C:\\Windows\\System32;C:\\Users\\futanghang\\AppData\\Local\\Microsoft\\WindowsApps;C:\\Users\\futanghang\\AppData\\Local\\Programs\\Microsoft VS Code\\bin;C:\\WINDOWS;C:\\WINDOWS\\System32\\Wbem;C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\;C:\\WINDOWS\\System32\\OpenSSH\\;E:\\Program Files\\Git\\cmd;F:\\dev\\lang\\java\\java-1.8.0-openjdk-1.8.0.201-2.b09.redhat.windows.x86_64\\bin;F:\\openware\\maven\\apache-maven-3.6.0\\bin;E:\\Program Files\\MySQL\\MySQL Server 5.5\\bin;F:\\openware\\cmder;F:\\openware\\Redis\\;C:\\Program Files (x86)\\Windows Kits\\8.1\\Windows Performance Toolkit\\;F:\\dev\\lang\\python\\Anaconda3\\;F:\\dev\\lang\\python\\Anaconda3\\Library\\bin;F:\\dev\\lang\\python\\Anaconda3\\Scripts;F:\\dev\\lang\\nodejs\\node-v10.15.3-win-x64;F:\\dev\\lang\\Go\\bin;F:\\openware\\glid;F:\\project\\goProjects\\bin;F:\\dev\\lang\\Ruby26-x64\\bin;F:\\dev\\lang\\scala\\2.11.12\\bin;F:\\openware\\spark-2.4.3-bin-hadoop2.7\\bin;C:\\Users\\futanghang\\AppData\\Local\\atom\\bin'
+PATHEXT = '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC;.RB;.RBW'
+PATH_INFO = '/online/value/multipleFundIndicator'
+PROCESSOR_ARCHITECTURE = 'AMD64'
+PROCESSOR_IDENTIFIER = 'Intel64 Family 6 Model 60 Stepping 3, GenuineIntel'
+PROCESSOR_LEVEL = '6'
+PROCESSOR_REVISION = '3c03'
+PROGRAMDATA = 'C:\\ProgramData'
+PROGRAMFILES = 'C:\\Program Files'
+PROGRAMFILES(X86) = 'C:\\Program Files (x86)'
+PROGRAMW6432 = 'C:\\Program Files'
+PSMODULEPATH = 'C:\\Program Files\\WindowsPowerShell\\Modules;C:\\WINDOWS\\system32\\WindowsPowerShell\\v1.0\\Modules'
+PUBLIC = 'C:\\Users\\Public'
+PYCHARM_DISPLAY_PORT = '49931'
+PYCHARM_HOSTED = '1'
+PYDEVD_LOAD_VALUES_ASYNC = 'True'
+PYTHONDONTWRITEBYTECODE = '1'
+PYTHONIOENCODING = 'UTF-8'
+PYTHONPATH = 'F:\\project\\py_projects\\hbec-fof-algorithm-service\\hbec_fof_algorithm_service;F:\\dev\\ide\\PyCharm\\helpers\\pycharm_matplotlib_backend;F:\\dev\\ide\\PyCharm\\helpers\\pycharm_display;F:\\dev\\ide\\PyCharm\\helpers\\third_party\\thriftpy;F:\\dev\\ide\\PyCharm\\helpers\\pydev;C:\\Users\\futanghang\\.PyCharm2019.1\\system\\cythonExtensions;F:/project/py_projects/hbec-fof-algorithm-service/hbec_fof_algorithm_service'
+PYTHONUNBUFFERED = '1'
+QUERY_STRING = ''
+REMOTE_ADDR = '127.0.0.1'
+REMOTE_HOST = ''
+REQUEST_METHOD = 'POST'
+RUBYOPT = '-Eutf-8'
+RUN_MAIN = 'true'
+SCALA_HOME = 'F:\\dev\\lang\\scala\\2.11.12'
+SCRIPT_NAME = ''
+SERVER_NAME = 'activate.navicat.com'
+SERVER_PORT = '8000'
+SERVER_PROTOCOL = 'HTTP/1.1'
+SERVER_SOFTWARE = 'WSGIServer/0.2'
+SESSIONNAME = 'Console'
+SYSTEMDRIVE = 'C:'
+SYSTEMROOT = 'C:\\WINDOWS'
+TEMP = 'E:\\Temp'
+TMP = 'E:\\Temp'
+USERDOMAIN = 'DESKTOP-B65KF2T'
+USERDOMAIN_ROAMINGPROFILE = 'DESKTOP-B65KF2T'
+USERNAME = 'futanghang'
+USERPROFILE = 'C:\\Users\\futanghang'
+VS140COMNTOOLS = 'C:\\Program Files (x86)\\Microsoft Visual Studio 14.0\\Common7\\Tools\\'
+WINDIR = 'C:\\WINDOWS'
+wsgi.errors = <_io.TextIOWrapper name='<stderr>' mode='w' encoding='UTF-8'>
+wsgi.file_wrapper = ''
+wsgi.input = <_io.BufferedReader name=3304>
+wsgi.multiprocess = False
+wsgi.multithread = True
+wsgi.run_once = False
+wsgi.url_scheme = 'http'
+wsgi.version = '(1, 0)'
+
+Settings:
+Using settings module hbec_fof_algorithm_service.settings
+ABSOLUTE_URL_OVERRIDES = {}
+ADMINS = []
+ALLOWED_HOSTS = ['*']
+APPEND_SLASH = True
+AUTHENTICATION_BACKENDS = ['django.contrib.auth.backends.ModelBackend']
+AUTH_PASSWORD_VALIDATORS = '********************'
+AUTH_USER_MODEL = 'auth.User'
+BASE_DIR = 'F:\\project\\py_projects\\hbec-fof-algorithm-service\\hbec_fof_algorithm_service'
+CACHES = {'default': {'BACKEND': 'django_redis.cache.RedisCache', 'LOCATION': 'redis://127.0.0.1:6379', 'OPTIONS': {'CLIENT_CLASS': 'django_redis.client.DefaultClient', 'CONNECTION_POOL_KWARGS': {'max_connections': '100'}}}}
+CACHE_MIDDLEWARE_ALIAS = 'default'
+CACHE_MIDDLEWARE_KEY_PREFIX = '********************'
+CACHE_MIDDLEWARE_SECONDS = 600
+CONF_PATH = 'F:\\project\\py_projects\\hbec-fof-algorithm-service\\hbec_fof_algorithm_service/hbec-fof-conf.ini'
+CSRF_COOKIE_AGE = 31449600
+CSRF_COOKIE_DOMAIN = None
+CSRF_COOKIE_HTTPONLY = False
+CSRF_COOKIE_NAME = 'csrftoken'
+CSRF_COOKIE_PATH = '/'
+CSRF_COOKIE_SECURE = False
+CSRF_FAILURE_VIEW = 'django.views.csrf.csrf_failure'
+CSRF_HEADER_NAME = 'HTTP_X_CSRFTOKEN'
+CSRF_TRUSTED_ORIGINS = []
+CSRF_USE_SESSIONS = False
+DATABASES = {}
+DATABASE_ROUTERS = []
+DATA_UPLOAD_MAX_MEMORY_SIZE = 2621440
+DATA_UPLOAD_MAX_NUMBER_FIELDS = 1000
+DATETIME_FORMAT = 'N j, Y, P'
+DATETIME_INPUT_FORMATS = ['%Y-%m-%d %H:%M:%S', '%Y-%m-%d %H:%M:%S.%f', '%Y-%m-%d %H:%M', '%Y-%m-%d', '%m/%d/%Y %H:%M:%S', '%m/%d/%Y %H:%M:%S.%f', '%m/%d/%Y %H:%M', '%m/%d/%Y', '%m/%d/%y %H:%M:%S', '%m/%d/%y %H:%M:%S.%f', '%m/%d/%y %H:%M', '%m/%d/%y']
+DATE_FORMAT = 'N j, Y'
+DATE_INPUT_FORMATS = ['%Y-%m-%d', '%m/%d/%Y', '%m/%d/%y', '%b %d %Y', '%b %d, %Y', '%d %b %Y', '%d %b, %Y', '%B %d %Y', '%B %d, %Y', '%d %B %Y', '%d %B, %Y']
+DEBUG = True
+DEBUG_PROPAGATE_EXCEPTIONS = False
+DECIMAL_SEPARATOR = '.'
+DEFAULT_CHARSET = 'utf-8'
+DEFAULT_CONTENT_TYPE = 'text/html'
+DEFAULT_EXCEPTION_REPORTER_FILTER = 'django.views.debug.SafeExceptionReporterFilter'
+DEFAULT_FILE_STORAGE = 'django.core.files.storage.FileSystemStorage'
+DEFAULT_FROM_EMAIL = 'webmaster@localhost'
+DEFAULT_INDEX_TABLESPACE = ''
+DEFAULT_TABLESPACE = ''
+DISALLOWED_USER_AGENTS = []
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'localhost'
+EMAIL_HOST_PASSWORD = '********************'
+EMAIL_HOST_USER = ''
+EMAIL_PORT = 25
+EMAIL_SSL_CERTFILE = None
+EMAIL_SSL_KEYFILE = '********************'
+EMAIL_SUBJECT_PREFIX = '[Django] '
+EMAIL_TIMEOUT = None
+EMAIL_USE_LOCALTIME = False
+EMAIL_USE_SSL = False
+EMAIL_USE_TLS = False
+FILE_CHARSET = 'utf-8'
+FILE_UPLOAD_DIRECTORY_PERMISSIONS = None
+FILE_UPLOAD_HANDLERS = ['django.core.files.uploadhandler.MemoryFileUploadHandler', 'django.core.files.uploadhandler.TemporaryFileUploadHandler']
+FILE_UPLOAD_MAX_MEMORY_SIZE = 2621440
+FILE_UPLOAD_PERMISSIONS = None
+FILE_UPLOAD_TEMP_DIR = None
+FIRST_DAY_OF_WEEK = 0
+FIXTURE_DIRS = []
+FORCE_SCRIPT_NAME = None
+FORMAT_MODULE_PATH = None
+FORM_RENDERER = 'django.forms.renderers.DjangoTemplates'
+IGNORABLE_404_URLS = []
+INSTALLED_APPS = ['django.contrib.admin', 'django.contrib.auth', 'django.contrib.contenttypes', 'django.contrib.sessions', 'django.contrib.messages', 'django.contrib.staticfiles', 'rest_framework', 'rest_framework_swagger']
+INTERNAL_IPS = []
+LANGUAGES = [('af', 'Afrikaans'), ('ar', 'Arabic'), ('ast', 'Asturian'), ('az', 'Azerbaijani'), ('bg', 'Bulgarian'), ('be', 'Belarusian'), ('bn', 'Bengali'), ('br', 'Breton'), ('bs', 'Bosnian'), ('ca', 'Catalan'), ('cs', 'Czech'), ('cy', 'Welsh'), ('da', 'Danish'), ('de', 'German'), ('dsb', 'Lower Sorbian'), ('el', 'Greek'), ('en', 'English'), ('en-au', 'Australian English'), ('en-gb', 'British English'), ('eo', 'Esperanto'), ('es', 'Spanish'), ('es-ar', 'Argentinian Spanish'), ('es-co', 'Colombian Spanish'), ('es-mx', 'Mexican Spanish'), ('es-ni', 'Nicaraguan Spanish'), ('es-ve', 'Venezuelan Spanish'), ('et', 'Estonian'), ('eu', 'Basque'), ('fa', 'Persian'), ('fi', 'Finnish'), ('fr', 'French'), ('fy', 'Frisian'), ('ga', 'Irish'), ('gd', 'Scottish Gaelic'), ('gl', 'Galician'), ('he', 'Hebrew'), ('hi', 'Hindi'), ('hr', 'Croatian'), ('hsb', 'Upper Sorbian'), ('hu', 'Hungarian'), ('ia', 'Interlingua'), ('id', 'Indonesian'), ('io', 'Ido'), ('is', 'Icelandic'), ('it', 'Italian'), ('ja', 'Japanese'), ('ka', 'Georgian'), ('kab', 'Kabyle'), ('kk', 'Kazakh'), ('km', 'Khmer'), ('kn', 'Kannada'), ('ko', 'Korean'), ('lb', 'Luxembourgish'), ('lt', 'Lithuanian'), ('lv', 'Latvian'), ('mk', 'Macedonian'), ('ml', 'Malayalam'), ('mn', 'Mongolian'), ('mr', 'Marathi'), ('my', 'Burmese'), ('nb', 'Norwegian Bokmål'), ('ne', 'Nepali'), ('nl', 'Dutch'), ('nn', 'Norwegian Nynorsk'), ('os', 'Ossetic'), ('pa', 'Punjabi'), ('pl', 'Polish'), ('pt', 'Portuguese'), ('pt-br', 'Brazilian Portuguese'), ('ro', 'Romanian'), ('ru', 'Russian'), ('sk', 'Slovak'), ('sl', 'Slovenian'), ('sq', 'Albanian'), ('sr', 'Serbian'), ('sr-latn', 'Serbian Latin'), ('sv', 'Swedish'), ('sw', 'Swahili'), ('ta', 'Tamil'), ('te', 'Telugu'), ('th', 'Thai'), ('tr', 'Turkish'), ('tt', 'Tatar'), ('udm', 'Udmurt'), ('uk', 'Ukrainian'), ('ur', 'Urdu'), ('vi', 'Vietnamese'), ('zh-hans', 'Simplified Chinese'), ('zh-hant', 'Traditional Chinese')]
+LANGUAGES_BIDI = ['he', 'ar', 'fa', 'ur']
+LANGUAGE_CODE = 'en-us'
+LANGUAGE_COOKIE_AGE = None
+LANGUAGE_COOKIE_DOMAIN = None
+LANGUAGE_COOKIE_NAME = 'django_language'
+LANGUAGE_COOKIE_PATH = '/'
+LOCALE_PATHS = []
+LOGGER_NAME = 'py_server'
+LOGGING = {'version': 1, 'disable_existing_loggers': False, 'formatters': {'standard': {'format': '%(levelname)s %(asctime)s %(thread)d %(threadName)s %(filename)s %(funcName)s %(lineno)d: %(message)s'}}, 'handlers': {'file': {'level': 'DEBUG', 'class': 'logging.handlers.RotatingFileHandler', 'filename': 'F:\\project\\py_projects\\hbec-fof-algorithm-service\\hbec_fof_algorithm_service\\logs/py_server_2019-06-11.log', 'formatter': 'standard', 'encoding': 'UTF-8'}, 'console': {'class': 'logging.StreamHandler', 'formatter': 'standard'}, 'default': {'level': 'ERROR', 'class': 'logging.FileHandler', 'filename': 'F:\\project\\py_projects\\hbec-fof-algorithm-service\\hbec_fof_algorithm_service\\logs/py_server_2019-06-11.log', 'formatter': 'standard', 'encoding': 'UTF-8'}}, 'loggers': {'django': {'handlers': ['file', 'console'], 'level': 'ERROR', 'propagate': True}, 'py_server': {'handlers': ['file', 'console'], 'level': 'DEBUG', 'propagate': True}}}
+LOGGING_CONFIG = 'logging.config.dictConfig'
+LOGIN_REDIRECT_URL = '/accounts/profile/'
+LOGIN_URL = '/accounts/login/'
+LOGOUT_REDIRECT_URL = None
+LOG_PATH = 'F:\\project\\py_projects\\hbec-fof-algorithm-service\\hbec_fof_algorithm_service\\logs/'
+LOG_PATTERN = '%(levelname)s %(asctime)s %(thread)d %(threadName)s %(filename)s %(funcName)s %(lineno)d: %(message)s'
+LOG_PREFIX = 'py_server'
+LOG_SUFFIX = '_%s.log'
+MANAGERS = []
+MEDIA_ROOT = ''
+MEDIA_URL = ''
+MESSAGE_STORAGE = 'django.contrib.messages.storage.fallback.FallbackStorage'
+MIDDLEWARE = ['django.middleware.security.SecurityMiddleware', 'django.contrib.sessions.middleware.SessionMiddleware', 'django.middleware.common.CommonMiddleware', 'django.contrib.auth.middleware.AuthenticationMiddleware', 'django.contrib.messages.middleware.MessageMiddleware', 'django.middleware.clickjacking.XFrameOptionsMiddleware', 'aware.application_aware.ServerEventAware']
+MIGRATION_MODULES = {}
+MONTH_DAY_FORMAT = 'F j'
+NUMBER_GROUPING = 0
+OPEN_PREVENT_DUPLICATION = 'True'
+PASSWORD_HASHERS = '********************'
+PASSWORD_RESET_TIMEOUT_DAYS = '********************'
+PREPEND_WWW = False
+PROJECT_NAME = 'py_server'
+REST_FRAMEWORK = {'DEFAULT_PARSER_CLASSES': ('rest_framework.parsers.JSONParser',)}
+ROOT_URLCONF = 'hbec_fof_algorithm_service.urls'
+SECRET_KEY = '********************'
+SECURE_BROWSER_XSS_FILTER = False
+SECURE_CONTENT_TYPE_NOSNIFF = False
+SECURE_HSTS_INCLUDE_SUBDOMAINS = False
+SECURE_HSTS_PRELOAD = False
+SECURE_HSTS_SECONDS = 0
+SECURE_PROXY_SSL_HEADER = None
+SECURE_REDIRECT_EXEMPT = []
+SECURE_SSL_HOST = None
+SECURE_SSL_REDIRECT = False
+SERVER_EMAIL = 'root@localhost'
+SESSION_CACHE_ALIAS = 'default'
+SESSION_COOKIE_AGE = 1209600
+SESSION_COOKIE_DOMAIN = None
+SESSION_COOKIE_HTTPONLY = True
+SESSION_COOKIE_NAME = 'sessionid'
+SESSION_COOKIE_PATH = '/'
+SESSION_COOKIE_SECURE = False
+SESSION_ENGINE = 'django.contrib.sessions.backends.db'
+SESSION_EXPIRE_AT_BROWSER_CLOSE = False
+SESSION_FILE_PATH = None
+SESSION_SAVE_EVERY_REQUEST = False
+SESSION_SERIALIZER = 'django.contrib.sessions.serializers.JSONSerializer'
+SETTINGS_MODULE = 'hbec_fof_algorithm_service.settings'
+SHORT_DATETIME_FORMAT = 'm/d/Y P'
+SHORT_DATE_FORMAT = 'm/d/Y'
+SIGNING_BACKEND = 'django.core.signing.TimestampSigner'
+SILENCED_SYSTEM_CHECKS = []
+STATICFILES_DIRS = "('F:\\\\project\\\\py_projects\\\\hbec-fof-algorithm-service\\\\hbec_fof_algorithm_service\\\\static',)"
+STATICFILES_FINDERS = ['django.contrib.staticfiles.finders.FileSystemFinder', 'django.contrib.staticfiles.finders.AppDirectoriesFinder']
+STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
+STATIC_ROOT = 'F:\\project\\py_projects\\hbec-fof-algorithm-service\\hbec_fof_algorithm_service\\common_static'
+STATIC_URL = '/static/'
+SUCCESS_RESP = {'code': '000', 'message': 'ok'}
+SYSTEM_ERROR_CODE = '999'
+SYSTEM_ERROR_MSG = '系统异常'
+SYSTEM_SUCCESS_CODE = '000'
+SYSTEM_SUCCESS_MSG = 'ok'
+TEMPLATES = [{'BACKEND': 'django.template.backends.django.DjangoTemplates', 'DIRS': [], 'APP_DIRS': True, 'OPTIONS': {'context_processors': ['django.template.context_processors.debug', 'django.template.context_processors.request', 'django.contrib.auth.context_processors.auth', 'django.contrib.messages.context_processors.messages']}}]
+TEST_NON_SERIALIZED_APPS = []
+TEST_RUNNER = 'django.test.runner.DiscoverRunner'
+THOUSAND_SEPARATOR = ','
+TIME_FORMAT = 'P'
+TIME_FORMAT_PATTERN = '2019-06-11'
+TIME_INPUT_FORMATS = ['%H:%M:%S', '%H:%M:%S.%f', '%H:%M']
+TIME_ZONE = 'Asia/Shanghai'
+USE_ETAGS = False
+USE_I18N = True
+USE_L10N = True
+USE_THOUSAND_SEPARATOR = False
+USE_TZ = True
+USE_X_FORWARDED_HOST = False
+USE_X_FORWARDED_PORT = False
+WSGI_APPLICATION = 'hbec_fof_algorithm_service.wsgi.application'
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+YEAR_MONTH_FORMAT = 'F Y'
+
+
+You're seeing this error because you have DEBUG = True in your
+Django settings file. Change that to False, and Django will
+display a standard page generated by the handler for this status code.
+
+
+ERROR 2019-06-11 16:24:19,674 14908 Thread-74 basehttp.py log_message 124: "POST /online/value/multipleFundIndicator HTTP/1.1" 500 21255
+INFO 2019-06-11 16:25:37,572 12448 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 16:25:37,704 12448 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 16:25:37,704 12448 Dummy-6 bus_const.py load_table_info 82: load data from mysql start
+INFO 2019-06-11 16:25:37,704 12448 Dummy-6 bus_const.py load_table_info 83: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 16:25:37,830 12448 Dummy-6 bus_const.py load_table_info 90: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 16:25:37,964 12448 Dummy-6 bus_const.py load_table_info 106: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 16:25:37,965 12448 Dummy-6 bus_const.py load_table_info 112: load data from mysql done
+INFO 2019-06-11 16:25:41,783 3248 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[]
+INFO 2019-06-11 16:25:47,086 3248 Thread-7 application_aware.py process_response 52: responseInfo:{"code": "999", "message": "请求参数错误, 请查看接口文档"}
+INFO 2019-06-11 16:26:08,349 17424 Thread-20 application_aware.py process_request 45: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[]
+INFO 2019-06-11 16:27:00,574 17424 Thread-20 application_aware.py process_response 52: responseInfo:{"code": "999", "message": "请求参数错误, 请查看接口文档"}
+INFO 2019-06-11 16:27:08,014 8876 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 16:27:08,134 8876 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 16:27:08,135 8876 Dummy-6 bus_const.py load_table_info 82: load data from mysql start
+INFO 2019-06-11 16:27:08,135 8876 Dummy-6 bus_const.py load_table_info 83: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 16:27:08,273 8876 Dummy-6 bus_const.py load_table_info 90: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 16:27:08,493 8876 Dummy-6 bus_const.py load_table_info 106: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 16:27:08,493 8876 Dummy-6 bus_const.py load_table_info 112: load data from mysql done
+INFO 2019-06-11 16:27:10,753 12256 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[]
+INFO 2019-06-11 16:27:12,674 12256 Thread-7 application_aware.py process_response 52: responseInfo:{"code": "999", "message": "请求参数错误, 请查看接口文档,indicators"}
+INFO 2019-06-11 16:27:46,845 18380 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 16:27:46,918 18380 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 16:27:46,918 18380 Dummy-6 bus_const.py load_table_info 82: load data from mysql start
+INFO 2019-06-11 16:27:46,918 18380 Dummy-6 bus_const.py load_table_info 83: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 16:27:47,007 18380 Dummy-6 bus_const.py load_table_info 90: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 16:27:47,147 18380 Dummy-6 bus_const.py load_table_info 106: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 16:27:47,147 18380 Dummy-6 bus_const.py load_table_info 112: load data from mysql done
+INFO 2019-06-11 16:28:09,915 13260 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/offline/value/sharpeRatio],param:[]
+INFO 2019-06-11 16:28:09,924 13260 Thread-7 application_aware.py process_response 52: responseInfo:{"code": "000", "msg": "ok", "jobId": "d86bbeba8c2211e9b65464006a432069"}
+INFO 2019-06-11 16:28:09,961 15020 async_thread_pool_0 logic_processor.py doLogic 52: taskType:0,taskName:夏普比率,开始 查询流水号:d86bbeba8c2211e9b65464006a432069
+ERROR 2019-06-11 16:40:15,457 15020 async_thread_pool_0 offline_value_service.py sharpe_ratio 305: [<class 'decimal.InvalidOperation'>]
+Traceback (most recent call last):
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\offline_value_service.py", line 286, in sharpe_ratio
+    lst = [transformFloatIfAvaliable(l) for l in lst]
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\offline_value_service.py", line 286, in <listcomp>
+    lst = [transformFloatIfAvaliable(l) for l in lst]
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\util\num_util.py", line 8, in transformFloatIfAvaliable
+    return str(Decimal.from_float(arg).quantize(Decimal('0.000000')))
+decimal.InvalidOperation: [<class 'decimal.InvalidOperation'>]
+ERROR 2019-06-11 16:40:15,616 15020 async_thread_pool_0 logic_processor.py doLogic 56: 未知异常:
+Traceback (most recent call last):
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\offline_value_service.py", line 286, in sharpe_ratio
+    lst = [transformFloatIfAvaliable(l) for l in lst]
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\offline_value_service.py", line 286, in <listcomp>
+    lst = [transformFloatIfAvaliable(l) for l in lst]
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\util\num_util.py", line 8, in transformFloatIfAvaliable
+    return str(Decimal.from_float(arg).quantize(Decimal('0.000000')))
+decimal.InvalidOperation: [<class 'decimal.InvalidOperation'>]
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\logic_processor.py", line 54, in doLogic
+    func(model)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\offline_value_service.py", line 306, in sharpe_ratio
+    raise Error(e)
+util.exception.biz_error_handler.Error: [<class 'decimal.InvalidOperation'>]
+ERROR 2019-06-11 16:40:15,640 15020 async_thread_pool_0 logic_processor.py doLogic 64: taskType:0,taskName:夏普比率,出错 [<class 'decimal.InvalidOperation'>],查询流水号:d86bbeba8c2211e9b65464006a432069,耗时: 00:12:05
+INFO 2019-06-11 19:09:32,858 2144 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 19:09:32,982 2144 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 19:09:32,983 2144 Dummy-6 bus_const.py load_table_info 82: load data from mysql start
+INFO 2019-06-11 19:09:32,983 2144 Dummy-6 bus_const.py load_table_info 83: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 19:09:33,054 2144 Dummy-6 bus_const.py load_table_info 90: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 19:09:33,190 2144 Dummy-6 bus_const.py load_table_info 106: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 19:09:33,190 2144 Dummy-6 bus_const.py load_table_info 112: load data from mysql done
+INFO 2019-06-11 19:09:44,096 9152 Thread-7 application_aware.py process_request 45: requestInfo: method:[GET],url:[/],param:[{}]
+INFO 2019-06-11 19:09:44,379 9152 Thread-7 application_aware.py process_response 52: responseInfo:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swagger UI</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700" rel="stylesheet">
+  <link href="/static/rest_framework_swagger/bundles/vendors.bundle.css" rel="stylesheet" type="text/css">
+  <link href="/static/rest_framework_swagger/bundles/app.bundle.css" rel="stylesheet" type="text/css">
+  
+  
+  
+</head>
+
+<body>
+  <div class="swagger-ui">
+    <div class="topbar">
+      <div class="wrapper">
+        <div class="topbar-wrapper">
+          <a href="#" class="link">
+            <img src="/static/rest_framework_swagger/logo_small.png" alt="Swagger Logo">
+            <span>swagger</span>
+          </a>
+          <div class="download-url-wrapper">
+          
+            
+            <a class="download-url-button button" href="/accounts/login/?next=/">Session Login</a>
+            
+          
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="user-context wrapper">
+      
+        
+           Viewing as an anoymous user
+       
+      
+    </div>
+    
+  </div>
+
+  <div id="rest-swagger-ui"></div>
+  <input type='hidden' name='csrfmiddlewaretoken' value='MEuBZ9Vs6gwV50xfLX2qTMMLNsI8fwQEEaf0qACoDqTDIZ9V1Tk4gX00CaDQJfax' />
+
+  <footer class="swagger-ui">
+    <div class="wrapper">
+      Powered by <a href="https://github.com/marcgibbons/django-rest-swagger" target="_new">Django REST Swagger</a>
+    </div>
+  </footer>
+
+  <script>
+    window.drsSettings = {"apisSorter": null, "docExpansion": null, "jsonEditor": false, "operationsSorter": null, "showRequestHeaders": false, "supportedSubmitMethods": ["get", "post", "put", "delete", "patch"], "acceptHeaderVersion": null, "customHeaders": {}};
+    window.drsSpec = {"swagger": "2.0", "info": {"title": "\u7b97\u6cd5\u7cfb\u7edf\u63a5\u53e3\u6587\u6863", "description": "", "version": ""}, "host": "localhost:8000", "schemes": ["http"], "paths": {"/offline/manager/equityTiming": {"post": {"operationId": "manager_equityTiming_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u57fa\u91d1\u7ecf\u7406\u80a1\u7968\u62e9\u65f6\u80fd\u529b\u8bc4\u4ef7\u6a21\u578b\n\u8bf7\u4e8e\u6bcf\u5b63\u7ed3\u675f\u540e\u7684\u7b2c\u4e00\u4e2a\u6708\u768415\u65e5\u5f00\u59cb\u8fd0\u884c\u672c\u7a0b\u5e8f(\u5373\u57fa\u91d1\u5b63\u62a5\u53d1\u5e03)\uff0c\u6309\u65e5\u66f4\u65b0\uff0c\u8fd0\u884c\u81f3\u8be5\u6708\u672b\n\u59821\u5b63\u5ea6\u7ed3\u675f\u540e\uff0c\u4e8e4\u670815\u65e5~4\u670830\u65e5\u6bcf\u65e5\u66f4\u65b0\u8be5\u6570\u636e\n:param request:\n:return:", "summary": "\u57fa\u91d1\u7ecf\u7406\u80a1\u7968\u62e9\u65f6\u80fd\u529b\u8bc4\u4ef7\u6a21\u578b", "tags": ["offline"]}}, "/offline/manager/industryConfigurationCapability/avgscore": {"post": {"operationId": "manager_industryConfigurationCapability_avgscore_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u79bb\u7ebf\u8ba1\u7b97\u57fa\u91d1\u7ecf\u7406\u884c\u4e1a\u914d\u7f6e\u80fd\u529b\n:keyword \u8868 fof_fund_industry_avgscore\n\u8bf7\u4e8e\u6bcf\u5b63\u7ed3\u675f\u540e\u7684\u7b2c\u4e00\u4e2a\u6708\u768415\u65e5\u5f00\u59cb\u8fd0\u884c\u672c\u7a0b\u5e8f(\u5373\u57fa\u91d1\u5b63\u62a5\u53d1\u5e03)\uff0c\u6309\u65e5\u66f4\u65b0\uff0c\u8fd0\u884c\u81f3\u8be5\u6708\u672b\n\u59821\u5b63\u5ea6\u7ed3\u675f\u540e\uff0c\u4e8e4\u670815\u65e5~4\u670830\u65e5\u6bcf\u65e5\u66f4\u65b0\u8be5\u6570\u636e\n:param request:\n:return:", "summary": "\u79bb\u7ebf\u8ba1\u7b97\u57fa\u91d1\u7ecf\u7406\u884c\u4e1a\u914d\u7f6e\u80fd\u529b", "tags": ["offline"]}}, "/offline/manager/industryConfigurationCapability/industry": {"post": {"operationId": "manager_industryConfigurationCapability_industry_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u79bb\u7ebf\u8ba1\u7b97\u57fa\u91d1\u7ecf\u7406\u884c\u4e1a\u914d\u7f6e\u80fd\u529b\n:keyword \u8868 fof_fund_stock_industry\n\u8bf7\u4e8e\u6bcf\u5b63\u7ed3\u675f\u540e\u7684\u7b2c\u4e00\u4e2a\u6708\u768415\u65e5\u5f00\u59cb\u8fd0\u884c\u672c\u7a0b\u5e8f(\u5373\u57fa\u91d1\u5b63\u62a5\u53d1\u5e03)\uff0c\u6309\u65e5\u66f4\u65b0\uff0c\u8fd0\u884c\u81f3\u8be5\u6708\u672b\n\u59821\u5b63\u5ea6\u7ed3\u675f\u540e\uff0c\u4e8e4\u670815\u65e5~4\u670830\u65e5\u6bcf\u65e5\u66f4\u65b0\u8be5\u6570\u636e\n:param request:\n:return:", "summary": "\u79bb\u7ebf\u8ba1\u7b97\u57fa\u91d1\u7ecf\u7406\u884c\u4e1a\u914d\u7f6e\u80fd\u529b", "tags": ["offline"]}}, "/offline/manager/industryConfigurationCapability/score": {"post": {"operationId": "manager_industryConfigurationCapability_score_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u79bb\u7ebf\u8ba1\u7b97\u57fa\u91d1\u7ecf\u7406\u884c\u4e1a\u914d\u7f6e\u80fd\u529b\n:keyword \u8868 fof_fund_industry_score\n\u8bf7\u4e8e\u6bcf\u5b63\u7ed3\u675f\u540e\u7684\u7b2c\u4e00\u4e2a\u6708\u768415\u65e5\u5f00\u59cb\u8fd0\u884c\u672c\u7a0b\u5e8f(\u5373\u57fa\u91d1\u5b63\u62a5\u53d1\u5e03)\uff0c\u6309\u65e5\u66f4\u65b0\uff0c\u8fd0\u884c\u81f3\u8be5\u6708\u672b\n\u59821\u5b63\u5ea6\u7ed3\u675f\u540e\uff0c\u4e8e4\u670815\u65e5~4\u670830\u65e5\u6bcf\u65e5\u66f4\u65b0\u8be5\u6570\u636e\n:param request:\n:return:", "summary": "\u79bb\u7ebf\u8ba1\u7b97\u57fa\u91d1\u7ecf\u7406\u884c\u4e1a\u914d\u7f6e\u80fd\u529b", "tags": ["offline"]}}, "/offline/manager/managerProduct": {"post": {"operationId": "manager_managerProduct_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u8ba1\u7b97\u57fa\u91d1\u7ecf\u7406\u7ba1\u7406\u7684\u4ea7\u54c1\u4fe1\u606f\n:param request:\n:return:", "summary": "\u8ba1\u7b97\u57fa\u91d1\u7ecf\u7406\u7ba1\u7406\u7684\u4ea7\u54c1\u4fe1\u606f", "tags": ["offline"]}}, "/offline/manager/stockScreeningAbility/return": {"post": {"operationId": "manager_stockScreeningAbility_return_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u57fa\u91d1\u7ecf\u7406\u80a1\u7968\u7b5b\u9009\u80fd\u529b", "summary": "\u57fa\u91d1\u7ecf\u7406\u80a1\u7968\u7b5b\u9009\u80fd\u529b", "tags": ["offline"]}}, "/offline/manager/stockScreeningAbility/returnHis": {"post": {"operationId": "manager_stockScreeningAbility_returnHis_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u57fa\u91d1\u7ecf\u7406\u80a1\u7968\u7b5b\u9009\u80fd\u529b", "summary": "\u57fa\u91d1\u7ecf\u7406\u80a1\u7968\u7b5b\u9009\u80fd\u529b", "tags": ["offline"]}}, "/offline/manager/stockScreeningAbility/returnTotal": {"post": {"operationId": "manager_stockScreeningAbility_returnTotal_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u57fa\u91d1\u7ecf\u7406\u80a1\u7968\u7b5b\u9009\u80fd\u529b", "summary": "\u57fa\u91d1\u7ecf\u7406\u80a1\u7968\u7b5b\u9009\u80fd\u529b", "tags": ["offline"]}}, "/offline/manager/stockScreeningAbility/returnWeight": {"post": {"operationId": "manager_stockScreeningAbility_returnWeight_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u57fa\u91d1\u7ecf\u7406\u80a1\u7968\u7b5b\u9009\u80fd\u529b\nfof_fund_excess_return_weight\n:param request:\n:return:", "summary": "\u57fa\u91d1\u7ecf\u7406\u80a1\u7968\u7b5b\u9009\u80fd\u529b", "tags": ["offline"]}}, "/offline/manager/styleAnalyze/NetValue": {"post": {"operationId": "manager_styleAnalyze_NetValue_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u57fa\u91d1\u51c0\u503c\u98ce\u683c\u5212\u5206        fof_fundnav_style\n\u8003\u8651\u5230\u670d\u52a1\u5668\u7684\u627f\u8f7d\u80fd\u529b\uff0c\u8be5\u7a0b\u5e8f\u524d\u671f\u53ef\u6bcf\u5468\u66f4\u65b0\uff0c\u540e\u7eed\u670d\u52a1\u5668\u8fd0\u8f7d\u80fd\u529b\u52a0\u5927\uff0c\u53ef\u6539\u4e3a\u6bcf\u65e5\u66f4\u65b0\n:param request:\n:return:", "summary": "\u57fa\u91d1\u51c0\u503c\u98ce\u683c\u5212\u5206        fof_fundnav_style", "tags": ["offline"]}}, "/offline/manager/styleAnalyze/handTurnoverRate": {"post": {"operationId": "manager_styleAnalyze_handTurnoverRate_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u80fd\u529b\u5206\u6790-\u6301\u80a1\u96c6\u4e2d\u5ea6\u3001\u6362\u624b\u7387  fof_fund_stock_porfolio\n\n\n\u8be5\u7a0b\u5e8f\u4e8e\u6bcf\u534a\u5e74\u8fdb\u884c\u4e00\u6b21\u66f4\u65b0\n\u8bf7\u4e8e\u6bcf\u5e74\u76843\u670820\u65e5~3\u670831\u65e5\u4ee5\u53ca8\u670820\u65e5~8\u670831\u65e5\u66f4\u65b0\n\u7531\u4e8e\u7a0b\u5e8f\u8fd0\u884c\u91cf\u4e0d\u5927\uff0c\u82e5\u66f4\u65b0\u65f6\u95f4\u914d\u7f6e\u9ebb\u70e6\uff0c\u53ef\u8bbe\u5b9a\u4e3a\u6bcf\u65e5\u66f4\u65b0\n:param request:\n:return:", "summary": "\u80fd\u529b\u5206\u6790-\u6301\u80a1\u96c6\u4e2d\u5ea6\u3001\u6362\u624b\u7387  fof_fund_stock_porfolio", "tags": ["offline"]}}, "/offline/manager/styleAnalyze/holdingStyle": {"post": {"operationId": "manager_styleAnalyze_holdingStyle_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u98ce\u683c\u5206\u6790-\u6301\u4ed3\u98ce\u683c   fof_fund_stock_style fof_fund_tentop_stock_style\n\n\u91cd\u4ed3\u80a1\u6570\u98ce\u683c\u66b4\u9732\u6570\u636e\uff0c\u8bf7\u4e8e\u6bcf\u5b63\u7ed3\u675f\u540e\u7684\u7b2c\u4e00\u4e2a\u6708\u768415\u65e5\u5f00\u59cb\u8fd0\u884c\u672c\u7a0b\u5e8f\uff0c\u6309\u65e5\u66f4\u65b0\uff0c\u8fd0\u884c\u81f3\u8be5\u6708\u672b\n\u5168\u90e8\u6301\u4ed3\u6570\u636e\uff0c\u8bf7\u4e8e\u6bcf\u5e74\u76848\u670821\u65e5~8\u670831\u65e5\uff0c\u4ee5\u53ca3\u670821\u65e5~3\u670831\u65e5\u8fd0\u884c\n:param request:\n:return:", "summary": "\u98ce\u683c\u5206\u6790-\u6301\u4ed3\u98ce\u683c   fof_fund_stock_style fof_fund_tentop_stock_style", "tags": ["offline"]}}, "/offline/score/indicatorScoreRank": {"post": {"operationId": "score_indicatorScoreRank_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u6307\u6807\u6253\u5206\n:param request:\n       indicatorId    \uff1a \u6307\u6807id\n       {\"indicatorId\": \"1\"}\n:return:", "summary": "\u6307\u6807\u6253\u5206", "tags": ["offline"]}}, "/offline/value/calmarRatio": {"post": {"operationId": "value_calmarRatio_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u79bb\u7ebf\u8ba1\u7b97\u5361\u739b\u6bd4\u7387\n:param request:\n:return:", "summary": "\u79bb\u7ebf\u8ba1\u7b97\u5361\u739b\u6bd4\u7387", "tags": ["offline"]}}, "/offline/value/informationRatio": {"post": {"operationId": "value_informationRatio_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u79bb\u7ebf\u8ba1\u7b97\u4fe1\u606f\u6bd4\u7387\n:param request:\n:return:", "summary": "\u79bb\u7ebf\u8ba1\u7b97\u4fe1\u606f\u6bd4\u7387", "tags": ["offline"]}}, "/offline/value/intervalYield": {"post": {"operationId": "value_intervalYield_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u79bb\u7ebf\u8ba1\u7b97\u533a\u95f4\u6536\u76ca\u7387\n\n:return:", "summary": "\u79bb\u7ebf\u8ba1\u7b97\u533a\u95f4\u6536\u76ca\u7387", "tags": ["offline"]}}, "/offline/value/maximumDrawdown": {"post": {"operationId": "value_maximumDrawdown_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u79bb\u7ebf\u8ba1\u7b97\u6700\u5927\u56de\u64a4\n:param request:\n:return:", "summary": "\u79bb\u7ebf\u8ba1\u7b97\u6700\u5927\u56de\u64a4", "tags": ["offline"]}}, "/offline/value/otherIndicator": {"post": {"operationId": "value_otherIndicator_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u79bb\u7ebf\u8ba1\u7b97\u5176\u4ed6\u6307\u6807\n:param request:\n    : indicatorId: \u6307\u6807Id\n:return:", "summary": "\u79bb\u7ebf\u8ba1\u7b97\u5176\u4ed6\u6307\u6807", "tags": ["offline"]}}, "/offline/value/sharpeRatio": {"post": {"operationId": "value_sharpeRatio_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u79bb\u7ebf\u8ba1\u7b97\u590f\u666e\u6bd4\u7387\n:param request:\n:return:", "summary": "\u79bb\u7ebf\u8ba1\u7b97\u590f\u666e\u6bd4\u7387", "tags": ["offline"]}}, "/offline/value/volatility": {"post": {"operationId": "value_volatility_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u79bb\u7ebf\u8ba1\u7b97\u5e74\u5316\u6ce2\u52a8\u7387\n:param request:\n:return:", "summary": "\u79bb\u7ebf\u8ba1\u7b97\u5e74\u5316\u6ce2\u52a8\u7387", "tags": ["offline"]}}, "/online/score/comprehensive": {"post": {"operationId": "score_comprehensive_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u5b9e\u65f6\u8ba1\u7b97\u7efc\u5408\u8bc4\u5206\n    :param request:`\n{\n    \"stockBeans\": [\n        {\n            \"fundId\": \"1\",\n            \"indicatorInfos\": [\n                {\n                    \"indicatorNo\": \"1\",\n                    \"indicatorValue\": \"92\"\n                },\n                {\n                    \"indicatorNo\": \"4\",\n                    \"indicatorValue\": \"95\"\n                }\n            ]\n        },\n        {\n            \"fundId\": \"2\",\n            \"indicatorInfos\": [\n                {\n                    \"indicatorNo\": \"1\",\n                    \"indicatorValue\": \"92\"\n                },\n                {\n                    \"indicatorNo\": \"4\",\n                    \"indicatorValue\": \"95\"\n                }\n            ]\n        },\n        {\n            \"fundId\": \"3\",\n            \"indicatorInfos\": [\n                {\n                    \"indicatorNo\": \"1\",\n                    \"indicatorValue\": \"92\"\n                },\n                {\n                    \"indicatorNo\": \"4\",\n                    \"indicatorValue\": \"95\"\n                }\n            ]\n        },\n        {\n            \"fundId\": \"4\",\n            \"indicatorInfos\": [\n                {\n                    \"indicatorNo\": \"1\",\n                    \"indicatorValue\": \"92\"\n                },\n                {\n                    \"indicatorNo\": \"4\",\n                    \"indicatorValue\": \"95\"\n                }\n            ]\n        },\n        {\n            \"fundId\": \"5\",\n            \"indicatorInfos\": [\n                {\n                    \"indicatorNo\": \"1\",\n                    \"indicatorValue\": \"92\"\n                },\n                {\n                    \"indicatorNo\": \"4\",\n                    \"indicatorValue\": \"95\"\n                }\n            ]\n        }\n    ]\n}\n    :resp {\n    \"code\": \"000\",\n    \"msg\": \"ok\",\n    \"score\": [\n        {\n            \"fundId\": \"1\",\n            \"score\": \"1.0\"\n        },\n        {\n            \"fundId\": \"2\",\n            \"score\": \"2.0\"\n        },\n        {\n            \"fundId\": \"3\",\n            \"score\": \"3.0\"\n        },\n        {\n            \"fundId\": \"4\",\n            \"score\": \"4.0\"\n        },\n        {\n            \"fundId\": \"5\",\n            \"score\": \"5.0\"\n        }\n    ]\n}\n    :return:", "summary": "\u5b9e\u65f6\u8ba1\u7b97\u7efc\u5408\u8bc4\u5206", "tags": ["online"]}}, "/online/value/multipleFundIndicator": {"post": {"operationId": "value_multipleFundIndicator_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u5b9e\u65f6\u7684\u4ee5\u591a\u4e2a\u57fa\u91d1\u5355\u4e2a\u6307\u6807\u503c\u4efb\u610f\u65f6\u95f4\u4e3a\u6761\u4ef6\u7684\u4ef7\u503c\u8ba1\u7b97", "summary": "\u5b9e\u65f6\u7684\u4ee5\u591a\u4e2a\u57fa\u91d1\u5355\u4e2a\u6307\u6807\u503c\u4efb\u610f\u65f6\u95f4\u4e3a\u6761\u4ef6\u7684\u4ef7\u503c\u8ba1\u7b97", "tags": ["online"]}}}, "securityDefinitions": {"basic": {"type": "basic"}}};
+  </script>
+  <script src="/static/rest_framework_swagger/bundles/vendors.bundle.js"></script>
+  <script src="/static/rest_framework_swagger/bundles/app.bundle.js"></script>
+  
+  
+  
+</body>
+
+</html>
+
+INFO 2019-06-11 19:09:44,480 13260 Thread-9 application_aware.py process_request 45: requestInfo: method:[GET],url:[/static/rest_framework_swagger/bundles/vendors.bundle.css],param:[{}]
+INFO 2019-06-11 19:09:44,481 10068 Thread-8 application_aware.py process_request 45: requestInfo: method:[GET],url:[/static/rest_framework_swagger/bundles/app.bundle.css],param:[{}]
+INFO 2019-06-11 19:09:44,488 13260 Thread-9 application_aware.py process_response 52: responseInfo:<h1>Not Found</h1><p>The requested URL /static/rest_framework_swagger/bundles/vendors.bundle.css was not found on this server.</p>
+INFO 2019-06-11 19:09:44,493 10068 Thread-8 application_aware.py process_response 52: responseInfo:<h1>Not Found</h1><p>The requested URL /static/rest_framework_swagger/bundles/app.bundle.css was not found on this server.</p>
+INFO 2019-06-11 19:09:44,777 16000 Thread-10 application_aware.py process_request 45: requestInfo: method:[GET],url:[/static/rest_framework_swagger/bundles/vendors.bundle.js],param:[{}]
+INFO 2019-06-11 19:09:44,781 16000 Thread-10 application_aware.py process_response 52: responseInfo:<h1>Not Found</h1><p>The requested URL /static/rest_framework_swagger/bundles/vendors.bundle.js was not found on this server.</p>
+INFO 2019-06-11 19:09:44,786 16524 Thread-11 application_aware.py process_request 45: requestInfo: method:[GET],url:[/static/rest_framework_swagger/bundles/app.bundle.js],param:[{}]
+INFO 2019-06-11 19:09:44,792 16524 Thread-11 application_aware.py process_response 52: responseInfo:<h1>Not Found</h1><p>The requested URL /static/rest_framework_swagger/bundles/app.bundle.js was not found on this server.</p>
+INFO 2019-06-11 19:09:44,832 12800 Thread-12 application_aware.py process_request 45: requestInfo: method:[GET],url:[/static/rest_framework_swagger/logo_small.png],param:[{}]
+INFO 2019-06-11 19:09:44,836 12800 Thread-12 application_aware.py process_response 52: responseInfo:<h1>Not Found</h1><p>The requested URL /static/rest_framework_swagger/logo_small.png was not found on this server.</p>
+INFO 2019-06-11 19:09:45,764 12948 Thread-13 application_aware.py process_request 45: requestInfo: method:[GET],url:[/favicon.ico],param:[{}]
+INFO 2019-06-11 19:09:45,768 12948 Thread-13 application_aware.py process_response 52: responseInfo:<h1>Not Found</h1><p>The requested URL /favicon.ico was not found on this server.</p>
+INFO 2019-06-11 19:11:40,115 17912 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 19:11:40,185 17912 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 19:11:40,185 17912 Dummy-6 bus_const.py load_table_info 82: load data from mysql start
+INFO 2019-06-11 19:11:40,186 17912 Dummy-6 bus_const.py load_table_info 83: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 19:11:40,262 17912 Dummy-6 bus_const.py load_table_info 90: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 19:11:40,397 17912 Dummy-6 bus_const.py load_table_info 106: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 19:11:40,398 17912 Dummy-6 bus_const.py load_table_info 112: load data from mysql done
+INFO 2019-06-11 19:11:47,662 16756 Thread-7 application_aware.py process_request 45: requestInfo: method:[GET],url:[/],param:[{}]
+INFO 2019-06-11 19:11:47,740 16756 Thread-7 application_aware.py process_response 52: responseInfo:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Swagger UI</title>
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700|Source+Code+Pro:300,600|Titillium+Web:400,600,700" rel="stylesheet">
+  <link href="/static/rest_framework_swagger/bundles/vendors.bundle.css" rel="stylesheet" type="text/css">
+  <link href="/static/rest_framework_swagger/bundles/app.bundle.css" rel="stylesheet" type="text/css">
+  
+  
+  
+</head>
+
+<body>
+  <div class="swagger-ui">
+    <div class="topbar">
+      <div class="wrapper">
+        <div class="topbar-wrapper">
+          <a href="#" class="link">
+            <img src="/static/rest_framework_swagger/logo_small.png" alt="Swagger Logo">
+            <span>swagger</span>
+          </a>
+          <div class="download-url-wrapper">
+          
+            
+            <a class="download-url-button button" href="/accounts/login/?next=/">Session Login</a>
+            
+          
+          </div>
+        </div>
+      </div>
+    </div>
+    
+    <div class="user-context wrapper">
+      
+        
+           Viewing as an anoymous user
+       
+      
+    </div>
+    
+  </div>
+
+  <div id="rest-swagger-ui"></div>
+  <input type='hidden' name='csrfmiddlewaretoken' value='JfiscSIo0uNfE5EzV1iZhNFGKs1GISmIOpxyOGNl19PSucmd8oj6FzCD9pcu5Dd7' />
+
+  <footer class="swagger-ui">
+    <div class="wrapper">
+      Powered by <a href="https://github.com/marcgibbons/django-rest-swagger" target="_new">Django REST Swagger</a>
+    </div>
+  </footer>
+
+  <script>
+    window.drsSettings = {"apisSorter": null, "docExpansion": null, "jsonEditor": false, "operationsSorter": null, "showRequestHeaders": false, "supportedSubmitMethods": ["get", "post", "put", "delete", "patch"], "acceptHeaderVersion": null, "customHeaders": {}};
+    window.drsSpec = {"swagger": "2.0", "info": {"title": "\u7b97\u6cd5\u7cfb\u7edf\u63a5\u53e3\u6587\u6863", "description": "", "version": ""}, "host": "localhost:8000", "schemes": ["http"], "paths": {"/offline/manager/equityTiming": {"post": {"operationId": "manager_equityTiming_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u57fa\u91d1\u7ecf\u7406\u80a1\u7968\u62e9\u65f6\u80fd\u529b\u8bc4\u4ef7\u6a21\u578b\n\u8bf7\u4e8e\u6bcf\u5b63\u7ed3\u675f\u540e\u7684\u7b2c\u4e00\u4e2a\u6708\u768415\u65e5\u5f00\u59cb\u8fd0\u884c\u672c\u7a0b\u5e8f(\u5373\u57fa\u91d1\u5b63\u62a5\u53d1\u5e03)\uff0c\u6309\u65e5\u66f4\u65b0\uff0c\u8fd0\u884c\u81f3\u8be5\u6708\u672b\n\u59821\u5b63\u5ea6\u7ed3\u675f\u540e\uff0c\u4e8e4\u670815\u65e5~4\u670830\u65e5\u6bcf\u65e5\u66f4\u65b0\u8be5\u6570\u636e\n:param request:\n:return:", "summary": "\u57fa\u91d1\u7ecf\u7406\u80a1\u7968\u62e9\u65f6\u80fd\u529b\u8bc4\u4ef7\u6a21\u578b", "tags": ["offline"]}}, "/offline/manager/industryConfigurationCapability/avgscore": {"post": {"operationId": "manager_industryConfigurationCapability_avgscore_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u79bb\u7ebf\u8ba1\u7b97\u57fa\u91d1\u7ecf\u7406\u884c\u4e1a\u914d\u7f6e\u80fd\u529b\n:keyword \u8868 fof_fund_industry_avgscore\n\u8bf7\u4e8e\u6bcf\u5b63\u7ed3\u675f\u540e\u7684\u7b2c\u4e00\u4e2a\u6708\u768415\u65e5\u5f00\u59cb\u8fd0\u884c\u672c\u7a0b\u5e8f(\u5373\u57fa\u91d1\u5b63\u62a5\u53d1\u5e03)\uff0c\u6309\u65e5\u66f4\u65b0\uff0c\u8fd0\u884c\u81f3\u8be5\u6708\u672b\n\u59821\u5b63\u5ea6\u7ed3\u675f\u540e\uff0c\u4e8e4\u670815\u65e5~4\u670830\u65e5\u6bcf\u65e5\u66f4\u65b0\u8be5\u6570\u636e\n:param request:\n:return:", "summary": "\u79bb\u7ebf\u8ba1\u7b97\u57fa\u91d1\u7ecf\u7406\u884c\u4e1a\u914d\u7f6e\u80fd\u529b", "tags": ["offline"]}}, "/offline/manager/industryConfigurationCapability/industry": {"post": {"operationId": "manager_industryConfigurationCapability_industry_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u79bb\u7ebf\u8ba1\u7b97\u57fa\u91d1\u7ecf\u7406\u884c\u4e1a\u914d\u7f6e\u80fd\u529b\n:keyword \u8868 fof_fund_stock_industry\n\u8bf7\u4e8e\u6bcf\u5b63\u7ed3\u675f\u540e\u7684\u7b2c\u4e00\u4e2a\u6708\u768415\u65e5\u5f00\u59cb\u8fd0\u884c\u672c\u7a0b\u5e8f(\u5373\u57fa\u91d1\u5b63\u62a5\u53d1\u5e03)\uff0c\u6309\u65e5\u66f4\u65b0\uff0c\u8fd0\u884c\u81f3\u8be5\u6708\u672b\n\u59821\u5b63\u5ea6\u7ed3\u675f\u540e\uff0c\u4e8e4\u670815\u65e5~4\u670830\u65e5\u6bcf\u65e5\u66f4\u65b0\u8be5\u6570\u636e\n:param request:\n:return:", "summary": "\u79bb\u7ebf\u8ba1\u7b97\u57fa\u91d1\u7ecf\u7406\u884c\u4e1a\u914d\u7f6e\u80fd\u529b", "tags": ["offline"]}}, "/offline/manager/industryConfigurationCapability/score": {"post": {"operationId": "manager_industryConfigurationCapability_score_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u79bb\u7ebf\u8ba1\u7b97\u57fa\u91d1\u7ecf\u7406\u884c\u4e1a\u914d\u7f6e\u80fd\u529b\n:keyword \u8868 fof_fund_industry_score\n\u8bf7\u4e8e\u6bcf\u5b63\u7ed3\u675f\u540e\u7684\u7b2c\u4e00\u4e2a\u6708\u768415\u65e5\u5f00\u59cb\u8fd0\u884c\u672c\u7a0b\u5e8f(\u5373\u57fa\u91d1\u5b63\u62a5\u53d1\u5e03)\uff0c\u6309\u65e5\u66f4\u65b0\uff0c\u8fd0\u884c\u81f3\u8be5\u6708\u672b\n\u59821\u5b63\u5ea6\u7ed3\u675f\u540e\uff0c\u4e8e4\u670815\u65e5~4\u670830\u65e5\u6bcf\u65e5\u66f4\u65b0\u8be5\u6570\u636e\n:param request:\n:return:", "summary": "\u79bb\u7ebf\u8ba1\u7b97\u57fa\u91d1\u7ecf\u7406\u884c\u4e1a\u914d\u7f6e\u80fd\u529b", "tags": ["offline"]}}, "/offline/manager/managerProduct": {"post": {"operationId": "manager_managerProduct_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u8ba1\u7b97\u57fa\u91d1\u7ecf\u7406\u7ba1\u7406\u7684\u4ea7\u54c1\u4fe1\u606f\n:param request:\n:return:", "summary": "\u8ba1\u7b97\u57fa\u91d1\u7ecf\u7406\u7ba1\u7406\u7684\u4ea7\u54c1\u4fe1\u606f", "tags": ["offline"]}}, "/offline/manager/stockScreeningAbility/return": {"post": {"operationId": "manager_stockScreeningAbility_return_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u57fa\u91d1\u7ecf\u7406\u80a1\u7968\u7b5b\u9009\u80fd\u529b", "summary": "\u57fa\u91d1\u7ecf\u7406\u80a1\u7968\u7b5b\u9009\u80fd\u529b", "tags": ["offline"]}}, "/offline/manager/stockScreeningAbility/returnHis": {"post": {"operationId": "manager_stockScreeningAbility_returnHis_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u57fa\u91d1\u7ecf\u7406\u80a1\u7968\u7b5b\u9009\u80fd\u529b", "summary": "\u57fa\u91d1\u7ecf\u7406\u80a1\u7968\u7b5b\u9009\u80fd\u529b", "tags": ["offline"]}}, "/offline/manager/stockScreeningAbility/returnTotal": {"post": {"operationId": "manager_stockScreeningAbility_returnTotal_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u57fa\u91d1\u7ecf\u7406\u80a1\u7968\u7b5b\u9009\u80fd\u529b", "summary": "\u57fa\u91d1\u7ecf\u7406\u80a1\u7968\u7b5b\u9009\u80fd\u529b", "tags": ["offline"]}}, "/offline/manager/stockScreeningAbility/returnWeight": {"post": {"operationId": "manager_stockScreeningAbility_returnWeight_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u57fa\u91d1\u7ecf\u7406\u80a1\u7968\u7b5b\u9009\u80fd\u529b\nfof_fund_excess_return_weight\n:param request:\n:return:", "summary": "\u57fa\u91d1\u7ecf\u7406\u80a1\u7968\u7b5b\u9009\u80fd\u529b", "tags": ["offline"]}}, "/offline/manager/styleAnalyze/NetValue": {"post": {"operationId": "manager_styleAnalyze_NetValue_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u57fa\u91d1\u51c0\u503c\u98ce\u683c\u5212\u5206        fof_fundnav_style\n\u8003\u8651\u5230\u670d\u52a1\u5668\u7684\u627f\u8f7d\u80fd\u529b\uff0c\u8be5\u7a0b\u5e8f\u524d\u671f\u53ef\u6bcf\u5468\u66f4\u65b0\uff0c\u540e\u7eed\u670d\u52a1\u5668\u8fd0\u8f7d\u80fd\u529b\u52a0\u5927\uff0c\u53ef\u6539\u4e3a\u6bcf\u65e5\u66f4\u65b0\n:param request:\n:return:", "summary": "\u57fa\u91d1\u51c0\u503c\u98ce\u683c\u5212\u5206        fof_fundnav_style", "tags": ["offline"]}}, "/offline/manager/styleAnalyze/handTurnoverRate": {"post": {"operationId": "manager_styleAnalyze_handTurnoverRate_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u80fd\u529b\u5206\u6790-\u6301\u80a1\u96c6\u4e2d\u5ea6\u3001\u6362\u624b\u7387  fof_fund_stock_porfolio\n\n\n\u8be5\u7a0b\u5e8f\u4e8e\u6bcf\u534a\u5e74\u8fdb\u884c\u4e00\u6b21\u66f4\u65b0\n\u8bf7\u4e8e\u6bcf\u5e74\u76843\u670820\u65e5~3\u670831\u65e5\u4ee5\u53ca8\u670820\u65e5~8\u670831\u65e5\u66f4\u65b0\n\u7531\u4e8e\u7a0b\u5e8f\u8fd0\u884c\u91cf\u4e0d\u5927\uff0c\u82e5\u66f4\u65b0\u65f6\u95f4\u914d\u7f6e\u9ebb\u70e6\uff0c\u53ef\u8bbe\u5b9a\u4e3a\u6bcf\u65e5\u66f4\u65b0\n:param request:\n:return:", "summary": "\u80fd\u529b\u5206\u6790-\u6301\u80a1\u96c6\u4e2d\u5ea6\u3001\u6362\u624b\u7387  fof_fund_stock_porfolio", "tags": ["offline"]}}, "/offline/manager/styleAnalyze/holdingStyle": {"post": {"operationId": "manager_styleAnalyze_holdingStyle_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u98ce\u683c\u5206\u6790-\u6301\u4ed3\u98ce\u683c   fof_fund_stock_style fof_fund_tentop_stock_style\n\n\u91cd\u4ed3\u80a1\u6570\u98ce\u683c\u66b4\u9732\u6570\u636e\uff0c\u8bf7\u4e8e\u6bcf\u5b63\u7ed3\u675f\u540e\u7684\u7b2c\u4e00\u4e2a\u6708\u768415\u65e5\u5f00\u59cb\u8fd0\u884c\u672c\u7a0b\u5e8f\uff0c\u6309\u65e5\u66f4\u65b0\uff0c\u8fd0\u884c\u81f3\u8be5\u6708\u672b\n\u5168\u90e8\u6301\u4ed3\u6570\u636e\uff0c\u8bf7\u4e8e\u6bcf\u5e74\u76848\u670821\u65e5~8\u670831\u65e5\uff0c\u4ee5\u53ca3\u670821\u65e5~3\u670831\u65e5\u8fd0\u884c\n:param request:\n:return:", "summary": "\u98ce\u683c\u5206\u6790-\u6301\u4ed3\u98ce\u683c   fof_fund_stock_style fof_fund_tentop_stock_style", "tags": ["offline"]}}, "/offline/score/indicatorScoreRank": {"post": {"operationId": "score_indicatorScoreRank_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u6307\u6807\u6253\u5206\n:param request:\n       indicatorId    \uff1a \u6307\u6807id\n       {\"indicatorId\": \"1\"}\n:return:", "summary": "\u6307\u6807\u6253\u5206", "tags": ["offline"]}}, "/offline/value/calmarRatio": {"post": {"operationId": "value_calmarRatio_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u79bb\u7ebf\u8ba1\u7b97\u5361\u739b\u6bd4\u7387\n:param request:\n:return:", "summary": "\u79bb\u7ebf\u8ba1\u7b97\u5361\u739b\u6bd4\u7387", "tags": ["offline"]}}, "/offline/value/informationRatio": {"post": {"operationId": "value_informationRatio_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u79bb\u7ebf\u8ba1\u7b97\u4fe1\u606f\u6bd4\u7387\n:param request:\n:return:", "summary": "\u79bb\u7ebf\u8ba1\u7b97\u4fe1\u606f\u6bd4\u7387", "tags": ["offline"]}}, "/offline/value/intervalYield": {"post": {"operationId": "value_intervalYield_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u79bb\u7ebf\u8ba1\u7b97\u533a\u95f4\u6536\u76ca\u7387\n\n:return:", "summary": "\u79bb\u7ebf\u8ba1\u7b97\u533a\u95f4\u6536\u76ca\u7387", "tags": ["offline"]}}, "/offline/value/maximumDrawdown": {"post": {"operationId": "value_maximumDrawdown_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u79bb\u7ebf\u8ba1\u7b97\u6700\u5927\u56de\u64a4\n:param request:\n:return:", "summary": "\u79bb\u7ebf\u8ba1\u7b97\u6700\u5927\u56de\u64a4", "tags": ["offline"]}}, "/offline/value/otherIndicator": {"post": {"operationId": "value_otherIndicator_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u79bb\u7ebf\u8ba1\u7b97\u5176\u4ed6\u6307\u6807\n:param request:\n    : indicatorId: \u6307\u6807Id\n:return:", "summary": "\u79bb\u7ebf\u8ba1\u7b97\u5176\u4ed6\u6307\u6807", "tags": ["offline"]}}, "/offline/value/sharpeRatio": {"post": {"operationId": "value_sharpeRatio_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u79bb\u7ebf\u8ba1\u7b97\u590f\u666e\u6bd4\u7387\n:param request:\n:return:", "summary": "\u79bb\u7ebf\u8ba1\u7b97\u590f\u666e\u6bd4\u7387", "tags": ["offline"]}}, "/offline/value/volatility": {"post": {"operationId": "value_volatility_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u79bb\u7ebf\u8ba1\u7b97\u5e74\u5316\u6ce2\u52a8\u7387\n:param request:\n:return:", "summary": "\u79bb\u7ebf\u8ba1\u7b97\u5e74\u5316\u6ce2\u52a8\u7387", "tags": ["offline"]}}, "/online/score/comprehensive": {"post": {"operationId": "score_comprehensive_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u5b9e\u65f6\u8ba1\u7b97\u7efc\u5408\u8bc4\u5206\n    :param request:`\n{\n    \"stockBeans\": [\n        {\n            \"fundId\": \"1\",\n            \"indicatorInfos\": [\n                {\n                    \"indicatorNo\": \"1\",\n                    \"indicatorValue\": \"92\"\n                },\n                {\n                    \"indicatorNo\": \"4\",\n                    \"indicatorValue\": \"95\"\n                }\n            ]\n        },\n        {\n            \"fundId\": \"2\",\n            \"indicatorInfos\": [\n                {\n                    \"indicatorNo\": \"1\",\n                    \"indicatorValue\": \"92\"\n                },\n                {\n                    \"indicatorNo\": \"4\",\n                    \"indicatorValue\": \"95\"\n                }\n            ]\n        },\n        {\n            \"fundId\": \"3\",\n            \"indicatorInfos\": [\n                {\n                    \"indicatorNo\": \"1\",\n                    \"indicatorValue\": \"92\"\n                },\n                {\n                    \"indicatorNo\": \"4\",\n                    \"indicatorValue\": \"95\"\n                }\n            ]\n        },\n        {\n            \"fundId\": \"4\",\n            \"indicatorInfos\": [\n                {\n                    \"indicatorNo\": \"1\",\n                    \"indicatorValue\": \"92\"\n                },\n                {\n                    \"indicatorNo\": \"4\",\n                    \"indicatorValue\": \"95\"\n                }\n            ]\n        },\n        {\n            \"fundId\": \"5\",\n            \"indicatorInfos\": [\n                {\n                    \"indicatorNo\": \"1\",\n                    \"indicatorValue\": \"92\"\n                },\n                {\n                    \"indicatorNo\": \"4\",\n                    \"indicatorValue\": \"95\"\n                }\n            ]\n        }\n    ]\n}\n    :resp {\n    \"code\": \"000\",\n    \"msg\": \"ok\",\n    \"score\": [\n        {\n            \"fundId\": \"1\",\n            \"score\": \"1.0\"\n        },\n        {\n            \"fundId\": \"2\",\n            \"score\": \"2.0\"\n        },\n        {\n            \"fundId\": \"3\",\n            \"score\": \"3.0\"\n        },\n        {\n            \"fundId\": \"4\",\n            \"score\": \"4.0\"\n        },\n        {\n            \"fundId\": \"5\",\n            \"score\": \"5.0\"\n        }\n    ]\n}\n    :return:", "summary": "\u5b9e\u65f6\u8ba1\u7b97\u7efc\u5408\u8bc4\u5206", "tags": ["online"]}}, "/online/value/multipleFundIndicator": {"post": {"operationId": "value_multipleFundIndicator_create", "responses": {"201": {"description": ""}}, "parameters": [], "description": "\u5b9e\u65f6\u7684\u4ee5\u591a\u4e2a\u57fa\u91d1\u5355\u4e2a\u6307\u6807\u503c\u4efb\u610f\u65f6\u95f4\u4e3a\u6761\u4ef6\u7684\u4ef7\u503c\u8ba1\u7b97", "summary": "\u5b9e\u65f6\u7684\u4ee5\u591a\u4e2a\u57fa\u91d1\u5355\u4e2a\u6307\u6807\u503c\u4efb\u610f\u65f6\u95f4\u4e3a\u6761\u4ef6\u7684\u4ef7\u503c\u8ba1\u7b97", "tags": ["online"]}}}, "securityDefinitions": {"basic": {"type": "basic"}}};
+  </script>
+  <script src="/static/rest_framework_swagger/bundles/vendors.bundle.js"></script>
+  <script src="/static/rest_framework_swagger/bundles/app.bundle.js"></script>
+  
+  
+  
+</body>
+
+</html>
+
+INFO 2019-06-11 19:11:47,796 2476 Thread-8 application_aware.py process_request 45: requestInfo: method:[GET],url:[/static/rest_framework_swagger/bundles/vendors.bundle.css],param:[{}]
+INFO 2019-06-11 19:11:47,801 2476 Thread-8 application_aware.py process_response 52: responseInfo:<h1>Not Found</h1><p>The requested URL /static/rest_framework_swagger/bundles/vendors.bundle.css was not found on this server.</p>
+INFO 2019-06-11 19:11:47,902 13068 Thread-9 application_aware.py process_request 45: requestInfo: method:[GET],url:[/static/rest_framework_swagger/bundles/app.bundle.css],param:[{}]
+INFO 2019-06-11 19:11:47,906 13068 Thread-9 application_aware.py process_response 52: responseInfo:<h1>Not Found</h1><p>The requested URL /static/rest_framework_swagger/bundles/app.bundle.css was not found on this server.</p>
+INFO 2019-06-11 19:11:48,108 18120 Thread-10 application_aware.py process_request 45: requestInfo: method:[GET],url:[/static/rest_framework_swagger/bundles/vendors.bundle.js],param:[{}]
+INFO 2019-06-11 19:11:48,124 18120 Thread-10 application_aware.py process_response 52: responseInfo:<h1>Not Found</h1><p>The requested URL /static/rest_framework_swagger/bundles/vendors.bundle.js was not found on this server.</p>
+INFO 2019-06-11 19:11:48,127 15324 Thread-11 application_aware.py process_request 45: requestInfo: method:[GET],url:[/static/rest_framework_swagger/bundles/app.bundle.js],param:[{}]
+INFO 2019-06-11 19:11:48,134 15324 Thread-11 application_aware.py process_response 52: responseInfo:<h1>Not Found</h1><p>The requested URL /static/rest_framework_swagger/bundles/app.bundle.js was not found on this server.</p>
+INFO 2019-06-11 19:11:48,146 15096 Thread-12 application_aware.py process_request 45: requestInfo: method:[GET],url:[/static/rest_framework_swagger/logo_small.png],param:[{}]
+INFO 2019-06-11 19:11:48,151 15096 Thread-12 application_aware.py process_response 52: responseInfo:<h1>Not Found</h1><p>The requested URL /static/rest_framework_swagger/logo_small.png was not found on this server.</p>
+INFO 2019-06-11 19:11:48,501 16904 Thread-13 application_aware.py process_request 45: requestInfo: method:[GET],url:[/favicon.ico],param:[{}]
+INFO 2019-06-11 19:11:48,505 16904 Thread-13 application_aware.py process_response 52: responseInfo:<h1>Not Found</h1><p>The requested URL /favicon.ico was not found on this server.</p>
+INFO 2019-06-11 19:16:16,368 14792 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 19:16:16,531 14792 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 19:16:16,531 14792 Dummy-6 bus_const.py load_table_info 82: load data from mysql start
+INFO 2019-06-11 19:16:16,531 14792 Dummy-6 bus_const.py load_table_info 83: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 19:16:16,604 14792 Dummy-6 bus_const.py load_table_info 90: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 19:16:16,742 14792 Dummy-6 bus_const.py load_table_info 106: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 19:16:16,742 14792 Dummy-6 bus_const.py load_table_info 112: load data from mysql done
+INFO 2019-06-11 19:19:23,297 14176 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 19:19:23,413 14176 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 19:19:23,414 14176 Dummy-6 bus_const.py load_table_info 82: load data from mysql start
+INFO 2019-06-11 19:19:23,414 14176 Dummy-6 bus_const.py load_table_info 83: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 19:19:23,485 14176 Dummy-6 bus_const.py load_table_info 90: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 19:19:23,623 14176 Dummy-6 bus_const.py load_table_info 106: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 19:19:23,623 14176 Dummy-6 bus_const.py load_table_info 112: load data from mysql done
+INFO 2019-06-11 19:19:32,067 12056 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": ["001050.OF","000001.OF"],
+    "startDate": "20100101",
+    "endDate": "20180930",
+    "indicators": ["1","2","3"]
+}]
+INFO 2019-06-11 19:19:43,695 12056 Thread-7 application_aware.py process_response 52: responseInfo:{"output": [["1", {"000001.OF": "0.11158127854784183", "001050.OF": ""}], ["2", {"000001.OF": "-0.21151628503283265", "001050.OF": ""}], ["3", {"000001.OF": "0.16420355957661825", "001050.OF": ""}]], "code": "000", "msg": "ok"}
+INFO 2019-06-11 19:21:20,114 17308 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 19:21:20,184 17308 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 19:21:20,184 17308 Dummy-6 bus_const.py load_table_info 82: load data from mysql start
+INFO 2019-06-11 19:21:20,185 17308 Dummy-6 bus_const.py load_table_info 83: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 19:21:20,255 17308 Dummy-6 bus_const.py load_table_info 90: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 19:21:20,393 17308 Dummy-6 bus_const.py load_table_info 106: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 19:21:20,393 17308 Dummy-6 bus_const.py load_table_info 112: load data from mysql done
+INFO 2019-06-11 19:31:02,124 18064 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 19:31:02,359 18064 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 19:31:02,359 18064 Dummy-6 bus_const.py load_table_info 82: load data from mysql start
+INFO 2019-06-11 19:31:02,359 18064 Dummy-6 bus_const.py load_table_info 83: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 19:31:02,441 18064 Dummy-6 bus_const.py load_table_info 90: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 19:31:02,590 18064 Dummy-6 bus_const.py load_table_info 106: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 19:31:02,590 18064 Dummy-6 bus_const.py load_table_info 112: load data from mysql done
+INFO 2019-06-11 19:31:26,880 14940 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/offline/score/indicatorScoreRank],param:[]
+INFO 2019-06-11 19:31:27,135 14940 Thread-7 application_aware.py process_response 52: responseInfo:{"code": "999", "message": "参数验证异常indicatorId"}
+INFO 2019-06-11 19:32:01,067 4952 Thread-8 application_aware.py process_request 45: requestInfo: method:[POST],url:[/offline/score/indicatorScoreRank],param:[{"indicatorId":"1"}]
+INFO 2019-06-11 19:32:01,071 4952 Thread-8 offline_score_view.py indicator_score_rank 30: req:
+INFO 2019-06-11 19:32:01,078 4952 Thread-8 application_aware.py process_response 52: responseInfo:{"code": "000", "msg": "ok", "jobId": "8780329e8c3c11e9b7dc64006a432069"}
+INFO 2019-06-11 19:32:01,086 15100 async_thread_pool_0 logic_processor.py doLogic 52: taskType:1,taskName:区间收益率,开始 查询流水号:8780329e8c3c11e9b7dc64006a432069
+ERROR 2019-06-11 19:37:15,536 15100 async_thread_pool_0 logic_processor.py doLogic 56: 未知异常:
+Traceback (most recent call last):
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\logic_processor.py", line 54, in doLogic
+    func(model)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\offline_score_service.py", line 51, in indicator_score_rank
+    df = pd.DataFrame(indicators).fillna('9999999999999.0')
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\pandas\core\frame.py", line 435, in __init__
+    arrays, columns = to_arrays(data, columns, dtype=dtype)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\pandas\core\internals\construction.py", line 411, in to_arrays
+    dtype=dtype)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\pandas\core\internals\construction.py", line 449, in _list_of_series_to_arrays
+    index = ibase.default_index(len(s))
+TypeError: object of type 'int' has no len()
+ERROR 2019-06-11 19:37:26,915 15100 async_thread_pool_0 logic_processor.py doLogic 64: taskType:1,taskName:区间收益率,出错 object of type 'int' has no len(),查询流水号:8780329e8c3c11e9b7dc64006a432069,耗时: 00:05:25
+INFO 2019-06-11 19:40:01,670 2972 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 19:40:01,788 2972 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 19:40:01,788 2972 Dummy-6 bus_const.py load_table_info 82: load data from mysql start
+INFO 2019-06-11 19:40:01,788 2972 Dummy-6 bus_const.py load_table_info 83: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 19:40:01,856 2972 Dummy-6 bus_const.py load_table_info 90: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 19:40:01,990 2972 Dummy-6 bus_const.py load_table_info 106: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 19:40:01,990 2972 Dummy-6 bus_const.py load_table_info 112: load data from mysql done
+INFO 2019-06-11 19:41:14,283 7472 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 19:41:14,367 7472 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 19:41:14,368 7472 Dummy-6 bus_const.py load_table_info 82: load data from mysql start
+INFO 2019-06-11 19:41:14,368 7472 Dummy-6 bus_const.py load_table_info 83: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 19:41:14,495 7472 Dummy-6 bus_const.py load_table_info 90: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 19:41:14,760 7472 Dummy-6 bus_const.py load_table_info 106: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 19:41:14,760 7472 Dummy-6 bus_const.py load_table_info 112: load data from mysql done
+INFO 2019-06-11 19:41:36,734 18152 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 19:41:36,804 18152 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 19:41:36,805 18152 Dummy-6 bus_const.py load_table_info 82: load data from mysql start
+INFO 2019-06-11 19:41:36,805 18152 Dummy-6 bus_const.py load_table_info 83: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 19:41:36,888 18152 Dummy-6 bus_const.py load_table_info 90: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 19:41:37,024 18152 Dummy-6 bus_const.py load_table_info 106: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 19:41:37,024 18152 Dummy-6 bus_const.py load_table_info 112: load data from mysql done
+INFO 2019-06-11 19:43:30,816 15460 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 19:43:30,887 15460 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 19:43:30,888 15460 Dummy-6 bus_const.py load_table_info 82: load data from mysql start
+INFO 2019-06-11 19:43:30,888 15460 Dummy-6 bus_const.py load_table_info 83: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 19:43:30,956 15460 Dummy-6 bus_const.py load_table_info 90: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 19:43:31,101 15460 Dummy-6 bus_const.py load_table_info 106: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 19:43:31,102 15460 Dummy-6 bus_const.py load_table_info 112: load data from mysql done
+INFO 2019-06-11 19:49:05,241 12824 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/offline/score/indicatorScoreRank],param:[{"indicatorId":"1"}]
+INFO 2019-06-11 19:49:05,247 12824 Thread-7 offline_score_view.py indicator_score_rank 30: req:
+INFO 2019-06-11 19:49:05,257 12824 Thread-7 application_aware.py process_response 52: responseInfo:{"code": "000", "msg": "ok", "jobId": "e9f5619e8c3e11e9b4d964006a432069"}
+INFO 2019-06-11 19:49:05,268 6280 async_thread_pool_0 logic_processor.py doLogic 52: taskType:1,taskName:区间收益率,开始 查询流水号:e9f5619e8c3e11e9b4d964006a432069
+INFO 2019-06-11 20:09:04,315 14776 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 20:09:05,247 14776 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 20:09:05,248 14776 Dummy-6 bus_const.py load_table_info 82: load data from mysql start
+INFO 2019-06-11 20:09:05,248 14776 Dummy-6 bus_const.py load_table_info 83: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 20:09:08,313 14776 Dummy-6 bus_const.py load_table_info 90: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 20:09:14,764 14776 Dummy-6 bus_const.py load_table_info 106: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 20:09:14,765 14776 Dummy-6 bus_const.py load_table_info 112: load data from mysql done
+INFO 2019-06-11 20:09:34,010 18044 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-11 20:09:35,686 18044 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-11 20:09:35,686 18044 Dummy-6 bus_const.py load_table_info 82: load data from mysql start
+INFO 2019-06-11 20:09:35,686 18044 Dummy-6 bus_const.py load_table_info 83: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-11 20:09:35,758 18044 Dummy-6 bus_const.py load_table_info 90: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-11 20:09:35,897 18044 Dummy-6 bus_const.py load_table_info 106: starting load data from mysql ,table name fof_index
+INFO 2019-06-11 20:09:35,898 18044 Dummy-6 bus_const.py load_table_info 112: load data from mysql done

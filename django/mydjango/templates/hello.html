@@ -1,0 +1,26 @@
+{% extends "base.html" %}
+
+{% block mainbody %}
+    <p>继承了 base.html 文件</p>
+{% endblock %}
+
+{% block subbody %}
+    <ul>
+        {% for line in lines %}
+            <li>{{ line }}</li>
+        {% endfor %}
+    </ul>
+{% endblock subbody %}
+{% comment %} <h1>{{ hello }}</h1>
+
+{% ifequal c1 '0' %}
+
+     </h2>c1 is 0</h2>
+
+{{{% endif %}}} {% endcomment %}
+
+{% comment %} <ul>
+{% for line in {{lines}} %}
+<li>line</li>
+{% endfor %}
+</ul> {% endcomment %}

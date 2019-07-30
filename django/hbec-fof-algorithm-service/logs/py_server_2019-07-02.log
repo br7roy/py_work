@@ -1,0 +1,14 @@
+INFO 2019-07-02 10:13:54,733 8112 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-07-02 10:13:55,046 8112 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-07-02 10:13:55,047 8112 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-07-02 10:13:55,047 8112 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-07-02 10:13:55,232 8112 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-07-02 10:13:55,609 8112 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-07-02 10:13:55,610 8112 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-07-02 10:15:03,601 5904 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/offline/manager/stockScreeningAbility/returnHis],param:[]
+INFO 2019-07-02 10:15:03,616 5904 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "jobId": "33d0d4709c6f11e98ea1be0a13bbb92e"} cost:00:00:00
+INFO 2019-07-02 10:15:03,647 5860 async_thread_pool_0 logic_processor.py doLogic 53: taskType:0,taskName:基金经理股票筛选能力-fof_fund_main_stock_return_his,开始 查询流水号:33d0d4709c6f11e98ea1be0a13bbb92e

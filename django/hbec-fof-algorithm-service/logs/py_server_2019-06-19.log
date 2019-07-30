@@ -1,0 +1,70 @@
+INFO 2019-06-19 10:50:02,107 2488 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-19 10:50:03,021 2488 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-19 10:50:03,021 2488 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-19 10:50:03,022 2488 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-19 10:50:03,218 2488 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-19 10:50:03,526 2488 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-19 10:50:03,527 2488 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-19 10:50:15,501 16884 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/offline/value/informationRatio],param:[]
+INFO 2019-06-19 10:50:15,546 16884 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "jobId": "f73f17e6923c11e9bfb0e6f6cde40b92"} cost:00:00:00
+INFO 2019-06-19 10:50:15,564 16704 async_thread_pool_0 logic_processor.py doLogic 52: taskType:0,taskName:信息比率,开始 查询流水号:f73f17e6923c11e9bfb0e6f6cde40b92
+INFO 2019-06-19 11:58:33,092 16704 async_thread_pool_0 logic_processor.py doLogic 72: taskType:0,taskName:信息比率,成功,查询流水号:f73f17e6923c11e9bfb0e6f6cde40b92,耗时: 01:08:17
+INFO 2019-06-19 15:40:14,075 16576 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-19 15:40:14,417 16576 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-19 15:40:14,417 16576 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-19 15:40:14,417 16576 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-19 15:40:14,591 16576 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-19 15:40:14,740 16576 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-19 15:40:14,740 16576 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-19 15:40:38,041 14940 Thread-7 application_aware.py process_request 49: requestInfo: method:[GET],url:[/],param:[{}]
+ERROR 2019-06-19 15:40:38,618 14940 Thread-7 exception.py handle_uncaught_exception 118: Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\utils\deprecation.py", line 97, in __call__
+    response = self.process_response(request, response)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\aware\application_aware.py", line 56, in process_response
+    hours, minutes, seconds = compute_time(self.start)
+AttributeError: 'ServerEventAware' object has no attribute 'start'
+ERROR 2019-06-19 15:40:38,728 14940 Thread-7 basehttp.py log_message 124: "GET / HTTP/1.1" 500 27
+INFO 2019-06-19 15:40:39,981 14984 Thread-8 application_aware.py process_request 49: requestInfo: method:[GET],url:[/favicon.ico],param:[{}]
+ERROR 2019-06-19 15:40:39,988 14984 Thread-8 exception.py handle_uncaught_exception 118: Internal Server Error: /favicon.ico
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\utils\deprecation.py", line 97, in __call__
+    response = self.process_response(request, response)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\aware\application_aware.py", line 56, in process_response
+    hours, minutes, seconds = compute_time(self.start)
+AttributeError: 'ServerEventAware' object has no attribute 'start'
+ERROR 2019-06-19 15:40:39,991 14984 Thread-8 basehttp.py log_message 124: "GET /favicon.ico HTTP/1.1" 500 27
+INFO 2019-06-19 15:41:45,139 12540 Thread-10 application_aware.py process_request 49: requestInfo: method:[GET],url:[/],param:[{}]
+ERROR 2019-06-19 15:42:13,802 12540 Thread-10 exception.py handle_uncaught_exception 118: Internal Server Error: /
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\exception.py", line 35, in inner
+    response = get_response(request)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\utils\deprecation.py", line 97, in __call__
+    response = self.process_response(request, response)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\aware\application_aware.py", line 56, in process_response
+    hours, minutes, seconds = compute_time(self.start)
+AttributeError: 'ServerEventAware' object has no attribute 'start'
+ERROR 2019-06-19 15:42:51,513 12540 Thread-10 basehttp.py log_message 124: "GET / HTTP/1.1" 500 27
+INFO 2019-06-19 16:36:37,733 16556 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-19 16:36:38,445 16556 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-19 16:36:38,446 16556 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-19 16:36:38,447 16556 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-19 16:36:38,600 16556 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-19 16:36:38,928 16556 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-19 16:36:38,928 16556 Dummy-6 bus_const.py load_table_info 111: load data from mysql done

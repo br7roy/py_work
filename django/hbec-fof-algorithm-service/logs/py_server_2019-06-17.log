@@ -1,0 +1,84 @@
+INFO 2019-06-17 08:45:22,900 6484 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-17 08:45:23,038 6484 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-17 08:45:23,042 6484 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-17 08:45:23,044 6484 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-17 08:45:23,270 6484 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-17 08:45:24,053 6484 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-17 08:45:26,603 6484 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-17 08:45:48,698 11744 Thread-11 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": ["001050.OF","000906.SH"],
+    "startDate": "20180101",
+    "endDate": "20180930",
+    "indicators": ["1"]
+}]
+INFO 2019-06-17 08:50:13,320 11744 Thread-11 application_aware.py process_response 58: responseInfo:{"output": [{"indicator": "1", "value": {"001050.OF": "-0.15109170305676856"}}], "code": "000", "message": "ok"} cost:00:04:24
+INFO 2019-06-17 08:50:20,873 9156 Thread-60 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": ["001050.OF","000001.OF"],
+    "startDate": "20100101",
+    "endDate": "20180930",
+    "indicators": ["1","2"]
+}]
+INFO 2019-06-17 08:51:45,101 9156 Thread-60 application_aware.py process_response 58: responseInfo:{"output": [{"indicator": "1", "value": {"000001.OF": "0.11158127854784183", "001050.OF": {}}}, {"indicator": "2", "value": {"000001.OF": "-0.21151628503283265", "001050.OF": {}}}], "code": "000", "message": "ok"} cost:00:01:24
+INFO 2019-06-17 08:52:14,795 10332 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-17 08:52:15,039 10332 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-17 08:52:15,041 10332 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-17 08:52:15,041 10332 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-17 08:52:15,285 10332 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-17 08:52:15,486 10332 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-17 08:52:18,308 10332 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-17 08:52:24,427 684 Thread-11 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": ["001050.OF","000001.OF"],
+    "startDate": "20100101",
+    "endDate": "20180930",
+    "indicators": ["1","2"]
+}]
+INFO 2019-06-17 08:52:42,512 684 Thread-11 application_aware.py process_response 58: responseInfo:{"output": [{"indicator": "1", "value": {"000001.OF": "0.11158127854784183", "001050.OF": {}}}, {"indicator": "2", "value": {"000001.OF": "-0.21151628503283265", "001050.OF": {}}}], "code": "000", "message": "ok"} cost:00:00:18
+INFO 2019-06-17 08:53:09,498 6252 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-17 08:53:09,569 6252 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-17 08:53:09,570 6252 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-17 08:53:09,570 6252 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-17 08:53:09,650 6252 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-17 08:53:09,806 6252 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-17 08:53:09,806 6252 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-17 08:53:25,400 11764 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": ["001050.OF","000906.SH"],
+    "startDate": "20180101",
+    "endDate": "20180930",
+    "indicators": ["1"]
+}]
+INFO 2019-06-17 08:54:42,989 11764 Thread-7 application_aware.py process_response 58: responseInfo:{"output": [{"indicator": "1", "value": {"001050.OF": "-0.15109170305676856"}}], "code": "000", "message": "ok"} cost:00:01:17
+INFO 2019-06-17 08:57:17,758 3600 Thread-91 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": ["001050.OF","000001.OF"],
+    "startDate": "20100101",
+    "endDate": "20180930",
+    "indicators": ["1","2"]
+}]
+INFO 2019-06-17 08:58:12,935 3600 Thread-91 application_aware.py process_response 58: responseInfo:{"output": [{"indicator": "1", "value": {"000001.OF": "0.11158127854784183", "001050.OF": {}}}, {"indicator": "2", "value": {"000001.OF": "-0.21151628503283265", "001050.OF": {}}}], "code": "000", "message": "ok"} cost:00:00:55
+INFO 2019-06-17 08:58:18,898 6772 Thread-109 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": ["001050.OF","000906.SH"],
+    "startDate": "20180101",
+    "endDate": "20180930",
+    "indicators": ["1"]
+}
+]
+INFO 2019-06-17 08:58:20,124 6772 Thread-109 application_aware.py process_response 58: responseInfo:{"output": [{"indicator": "1", "value": {"001050.OF": "-0.15109170305676856"}}], "code": "000", "message": "ok"} cost:00:00:01
+INFO 2019-06-17 08:58:24,458 2096 Thread-110 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": ["001050.OF","000906.SH"],
+    "startDate": "20180101",
+    "endDate": "20180930",
+    "indicators": ["1"]
+}
+]
+INFO 2019-06-17 09:01:39,801 2096 Thread-110 application_aware.py process_response 58: responseInfo:{"output": [{"indicator": "1", "value": {"001050.OF": "-0.15109170305676856"}}], "code": "000", "message": "ok"} cost:00:03:15

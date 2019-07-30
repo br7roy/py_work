@@ -1,0 +1,42 @@
+INFO 2019-06-28 09:00:53,560 6572 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-28 09:00:53,703 6572 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-28 09:00:53,704 6572 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-28 09:00:53,705 6572 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-28 09:00:53,879 6572 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-28 09:00:54,225 6572 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-28 09:00:54,225 6572 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-28 09:01:42,166 12632 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/offline/manager/styleAnalyze/holdingStyleMain],param:[{   "indicatorId": "1" }]
+INFO 2019-06-28 09:01:42,230 12632 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "jobId": "4abac84c994011e9b62564006a432069"} cost:00:00:00
+INFO 2019-06-28 09:02:30,483 10348 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-28 09:02:30,558 10348 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-28 09:02:30,558 10348 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-28 09:02:30,558 10348 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-28 09:02:30,632 10348 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-28 09:02:30,837 10348 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-28 09:02:30,838 10348 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-28 09:02:36,324 2852 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/offline/manager/styleAnalyze/holdingStyleMain],param:[{   "indicatorId": "1" }]
+INFO 2019-06-28 09:02:36,339 2852 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "jobId": "6afb52de994011e99ddf64006a432069"} cost:00:00:00
+INFO 2019-06-28 09:02:38,069 12104 async_thread_pool_0 logic_processor.py doLogic 53: taskType:0,taskName:基金经理风格分析持仓风格10大-fof_fund_tentop_stock_style,开始 查询流水号:6afb52de994011e99ddf64006a432069
+ERROR 2019-06-28 09:04:53,258 12104 async_thread_pool_0 logic_processor.py doLogic 57: 未知异常:
+Traceback (most recent call last):
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\logic_processor.py", line 55, in doLogic
+    func(model)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\manager_service.py", line 623, in holding_style_main
+    fundSymbols = getData_fundSymbols(['股票型', ' 混合型'])
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\algorithm\getData_sql.py", line 116, in getData_fundSymbols
+    fundType = [fundClass[m] for m in fundType]
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\algorithm\getData_sql.py", line 116, in <listcomp>
+    fundType = [fundClass[m] for m in fundType]
+KeyError: ' 混合型基金'
+ERROR 2019-06-28 09:04:53,354 12104 async_thread_pool_0 logic_processor.py doLogic 65: taskType:0,taskName:基金经理风格分析持仓风格10大-fof_fund_tentop_stock_style,出错 ' 混合型基金',查询流水号:6afb52de994011e99ddf64006a432069,耗时: 00:02:15
+INFO 2019-06-28 09:06:03,959 12760 Thread-52 application_aware.py process_request 49: requestInfo: method:[POST],url:[/offline/manager/styleAnalyze/holdingStyleMain],param:[{   "indicatorId": "1" }]
+INFO 2019-06-28 09:06:03,975 12760 Thread-52 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "jobId": "e6bd960c994011e9b71464006a432069"} cost:00:00:00
+INFO 2019-06-28 09:06:08,474 12104 async_thread_pool_0 logic_processor.py doLogic 53: taskType:0,taskName:基金经理风格分析持仓风格10大-fof_fund_tentop_stock_style,开始 查询流水号:e6bd960c994011e9b71464006a432069

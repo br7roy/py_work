@@ -1,0 +1,1551 @@
+INFO 2019-06-14 09:59:32,748 6652 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-14 09:59:33,054 6652 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 09:59:33,054 6652 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 09:59:33,054 6652 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 09:59:33,196 6652 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 09:59:33,346 6652 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 09:59:33,346 6652 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 10:01:15,931 5644 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": ["001050.OF","000001.OF"],
+    "startDate": "20100101",
+    "endDate": "20180930",
+    "indicators": ["1","2"]
+}]
+INFO 2019-06-14 10:01:24,149 5644 Thread-7 application_aware.py process_response 52: responseInfo:{"output": [{"indicator": "1", "value": {"000001.OF": "0.11158127854784183", "001050.OF": ""}}, {"indicator": "2", "value": {"000001.OF": "-0.21151628503283265", "001050.OF": ""}}], "code": "000", "message": "ok"}
+INFO 2019-06-14 10:02:02,134 12564 Thread-8 application_aware.py process_request 45: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": ["001050.OF","000001.OF"],
+    "startDate": "20100101",
+    "endDate": "20180930",
+    "indicators": ["1","2"]
+}]
+INFO 2019-06-14 10:09:05,563 12564 Thread-8 application_aware.py process_response 52: responseInfo:{"output": [{"indicator": "1", "value": {"000001.OF": "0.11158127854784183", "001050.OF": ""}}, {"indicator": "2", "value": {"000001.OF": "-0.21151628503283265", "001050.OF": ""}}], "code": "000", "message": "ok"}
+INFO 2019-06-14 10:09:55,824 10076 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-14 10:09:55,994 10076 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 10:09:55,995 10076 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 10:09:55,995 10076 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 10:09:56,080 10076 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 10:09:56,226 10076 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 10:09:56,226 10076 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 10:11:00,092 13316 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": ["001050.OF","000001.OF"],
+    "startDate": "20100101",
+    "endDate": "20180930",
+    "indicators": ["1","2"]
+}]
+ERROR 2019-06-14 10:11:18,702 13316 Thread-7 application_aware.py process_exception 63: 
+系统异常
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\decorators.py", line 55, in handler
+    return func(*args, **kwargs)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py", line 180, in multiple_value
+    return JsonResponse(enchance_dict(data))
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\http\response.py", line 509, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type set is not JSON serializable
+INFO 2019-06-14 10:11:18,871 13316 Thread-7 application_aware.py process_response 52: responseInfo:{"code": "999", "message": "Object of type set is not JSON serializable"}
+INFO 2019-06-14 10:11:32,424 6964 Thread-8 application_aware.py process_request 45: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": ["001050.OF","000001.OF"],
+    "startDate": "20100101",
+    "endDate": "20180930",
+    "indicators": ["1","2"]
+}]
+ERROR 2019-06-14 10:12:52,838 6964 Thread-8 application_aware.py process_exception 63: 
+系统异常
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\decorators.py", line 55, in handler
+    return func(*args, **kwargs)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py", line 180, in multiple_value
+    return JsonResponse(enchance_dict(data))
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\http\response.py", line 509, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type set is not JSON serializable
+INFO 2019-06-14 10:12:52,844 6964 Thread-8 application_aware.py process_response 52: responseInfo:{"code": "999", "message": "Object of type set is not JSON serializable"}
+INFO 2019-06-14 10:12:59,345 7188 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-14 10:12:59,462 7188 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 10:12:59,462 7188 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 10:12:59,462 7188 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 10:12:59,558 7188 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 10:12:59,714 7188 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 10:12:59,714 7188 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 10:13:08,108 13408 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": ["001050.OF","000001.OF"],
+    "startDate": "20100101",
+    "endDate": "20180930",
+    "indicators": ["1","2"]
+}]
+ERROR 2019-06-14 10:13:23,519 13408 Thread-7 application_aware.py process_exception 63: 
+系统异常
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\decorators.py", line 55, in handler
+    return func(*args, **kwargs)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py", line 178, in multiple_value
+    data = multipleIndicatorValue(mod)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 27, in multipleIndicatorValue
+    rr = [exTractVal(indicator, fundCodes, startDate, endDate) for indicator in indicators if
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 28, in <listcomp>
+    indicator in INDEX_CODE_NAME_CACHE]
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 18, in exTractVal
+    return {"indicator": indicator, "value": {(k, v if v else dict()) for k, v in output_json['factorValue'].items()}}
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 18, in <setcomp>
+    return {"indicator": indicator, "value": {(k, v if v else dict()) for k, v in output_json['factorValue'].items()}}
+TypeError: unhashable type: 'dict'
+INFO 2019-06-14 10:13:23,535 13408 Thread-7 application_aware.py process_response 52: responseInfo:{"code": "999", "message": "unhashable type: 'dict'"}
+INFO 2019-06-14 10:13:44,758 5744 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-14 10:13:44,883 5744 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 10:13:44,884 5744 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 10:13:44,884 5744 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 10:13:45,007 5744 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 10:13:45,160 5744 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 10:13:45,160 5744 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 10:13:47,165 7204 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": ["001050.OF","000001.OF"],
+    "startDate": "20100101",
+    "endDate": "20180930",
+    "indicators": ["1","2"]
+}]
+ERROR 2019-06-14 10:14:00,439 7204 Thread-7 application_aware.py process_exception 63: 
+系统异常
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\decorators.py", line 55, in handler
+    return func(*args, **kwargs)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py", line 178, in multiple_value
+    data = multipleIndicatorValue(mod)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 27, in multipleIndicatorValue
+    rr = [exTractVal(indicator, fundCodes, startDate, endDate) for indicator in indicators if
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 28, in <listcomp>
+    indicator in INDEX_CODE_NAME_CACHE]
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 18, in exTractVal
+    return {"indicator": indicator, "value": {(k, v if v else {}) for k, v in output_json['factorValue'].items()}}
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 18, in <setcomp>
+    return {"indicator": indicator, "value": {(k, v if v else {}) for k, v in output_json['factorValue'].items()}}
+TypeError: unhashable type: 'dict'
+INFO 2019-06-14 10:14:00,443 7204 Thread-7 application_aware.py process_response 52: responseInfo:{"code": "999", "message": "unhashable type: 'dict'"}
+INFO 2019-06-14 10:14:21,909 13224 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-14 10:14:21,981 13224 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 10:14:21,981 13224 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 10:14:21,981 13224 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 10:14:22,060 13224 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 10:14:22,211 13224 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 10:14:22,211 13224 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 10:14:35,819 13696 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": ["001050.OF","000001.OF"],
+    "startDate": "20100101",
+    "endDate": "20180930",
+    "indicators": ["1","2"]
+}]
+ERROR 2019-06-14 10:14:44,385 13696 Thread-7 application_aware.py process_exception 63: 
+系统异常
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\decorators.py", line 55, in handler
+    return func(*args, **kwargs)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py", line 178, in multiple_value
+    data = multipleIndicatorValue(mod)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 27, in multipleIndicatorValue
+    rr = [exTractVal(indicator, fundCodes, startDate, endDate) for indicator in indicators if
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 28, in <listcomp>
+    indicator in INDEX_CODE_NAME_CACHE]
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 18, in exTractVal
+    return {"indicator": indicator, "value": {(k, v if v else {"":""}) for k, v in output_json['factorValue'].items()}}
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 18, in <setcomp>
+    return {"indicator": indicator, "value": {(k, v if v else {"":""}) for k, v in output_json['factorValue'].items()}}
+TypeError: unhashable type: 'dict'
+INFO 2019-06-14 10:14:44,393 13696 Thread-7 application_aware.py process_response 52: responseInfo:{"code": "999", "message": "unhashable type: 'dict'"}
+INFO 2019-06-14 10:16:23,534 13556 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-14 10:16:23,723 13556 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 10:16:23,723 13556 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 10:16:23,723 13556 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 10:16:23,802 13556 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 10:16:23,949 13556 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 10:16:23,950 13556 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 10:16:28,467 11524 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": ["001050.OF","000001.OF"],
+    "startDate": "20100101",
+    "endDate": "20180930",
+    "indicators": ["1","2"]
+}]
+ERROR 2019-06-14 10:16:47,987 11524 Thread-7 application_aware.py process_exception 63: 
+系统异常
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\decorators.py", line 55, in handler
+    return func(*args, **kwargs)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py", line 180, in multiple_value
+    return JsonResponse(enchance_dict(data))
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\http\response.py", line 509, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type set is not JSON serializable
+INFO 2019-06-14 10:16:48,012 11524 Thread-7 application_aware.py process_response 52: responseInfo:{"code": "999", "message": "Object of type set is not JSON serializable"}
+INFO 2019-06-14 10:17:24,051 12028 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-14 10:17:24,188 12028 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 10:17:24,188 12028 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 10:17:24,188 12028 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 10:17:24,271 12028 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 10:17:24,428 12028 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 10:17:24,429 12028 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 10:17:26,945 6428 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": ["001050.OF","000001.OF"],
+    "startDate": "20100101",
+    "endDate": "20180930",
+    "indicators": ["1","2"]
+}]
+ERROR 2019-06-14 10:17:43,984 6428 Thread-7 application_aware.py process_exception 63: 
+系统异常
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\decorators.py", line 55, in handler
+    return func(*args, **kwargs)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py", line 180, in multiple_value
+    return JsonResponse(enchance_dict(data))
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\http\response.py", line 509, in __init__
+    data = json.dumps(data, cls=encoder, **json_dumps_params)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\json\__init__.py", line 238, in dumps
+    **kw).encode(obj)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\json\encoder.py", line 199, in encode
+    chunks = self.iterencode(o, _one_shot=True)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\json\encoder.py", line 257, in iterencode
+    return _iterencode(o, 0)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\serializers\json.py", line 104, in default
+    return super().default(o)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\json\encoder.py", line 179, in default
+    raise TypeError(f'Object of type {o.__class__.__name__} '
+TypeError: Object of type set is not JSON serializable
+INFO 2019-06-14 10:17:43,989 6428 Thread-7 application_aware.py process_response 52: responseInfo:{"code": "999", "message": "Object of type set is not JSON serializable"}
+INFO 2019-06-14 10:28:40,848 12176 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-14 10:28:41,187 12176 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 10:28:41,187 12176 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 10:28:41,187 12176 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 10:28:41,278 12176 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 10:28:41,434 12176 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 10:28:41,434 12176 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 10:28:47,533 2192 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": ["001050.OF","000001.OF"],
+    "startDate": "20100101",
+    "endDate": "20180930",
+    "indicators": ["1","2"]
+}]
+ERROR 2019-06-14 10:28:51,753 2192 Thread-7 application_aware.py process_exception 63: 
+系统异常
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\decorators.py", line 55, in handler
+    return func(*args, **kwargs)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py", line 178, in multiple_value
+    data = multipleIndicatorValue(mod)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 31, in multipleIndicatorValue
+    rr = [exTractVal(indicator, fundCodes, startDate, endDate) for indicator in indicators if
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 32, in <listcomp>
+    indicator in INDEX_CODE_NAME_CACHE]
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 20, in exTractVal
+    v.setdefault(k,v if v else {})
+AttributeError: 'str' object has no attribute 'setdefault'
+INFO 2019-06-14 10:28:51,759 2192 Thread-7 application_aware.py process_response 52: responseInfo:{"code": "999", "message": "'str' object has no attribute 'setdefault'"}
+INFO 2019-06-14 10:29:17,155 7008 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-14 10:29:17,311 7008 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 10:29:17,311 7008 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 10:29:17,311 7008 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 10:29:17,382 7008 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 10:29:17,540 7008 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 10:29:17,540 7008 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 10:29:25,429 5780 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": ["001050.OF","000001.OF"],
+    "startDate": "20100101",
+    "endDate": "20180930",
+    "indicators": ["1","2"]
+}]
+INFO 2019-06-14 10:29:58,584 5780 Thread-7 application_aware.py process_response 52: responseInfo:{"output": [{"indicator": "1", "value": {"000001.OF": "0.11158127854784183", "001050.OF": {}}}, {"indicator": "2", "value": {"000001.OF": "-0.21151628503283265", "001050.OF": {}}}], "code": "000", "message": "ok"}
+INFO 2019-06-14 10:34:00,007 7212 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-14 10:34:00,192 7212 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 10:34:00,192 7212 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 10:34:00,192 7212 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 10:34:00,274 7212 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 10:34:00,424 7212 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 10:34:00,424 7212 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 10:34:06,936 6648 Thread-7 application_aware.py process_request 45: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": ["001050.OF","000001.OF"],
+    "startDate": "20100101",
+    "endDate": "20180930",
+    "indicators": ["1","2"]
+}]
+INFO 2019-06-14 10:34:16,946 6648 Thread-7 application_aware.py process_response 52: responseInfo:{"output": [{"indicator": "1", "value": {"000001.OF": "0.11158127854784183", "001050.OF": {}}}, {"indicator": "2", "value": {"000001.OF": "-0.21151628503283265", "001050.OF": {}}}], "code": "000", "message": "ok"}
+INFO 2019-06-14 10:34:59,008 13172 Dummy-6 application_aware.py __init__ 17: starting create database pool.
+INFO 2019-06-14 10:34:59,176 13172 Dummy-6 application_aware.py __init__ 23: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 10:34:59,176 13172 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 10:34:59,176 13172 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 10:34:59,292 13172 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 10:34:59,445 13172 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 10:34:59,446 13172 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 10:52:51,803 8648 Dummy-6 application_aware.py __init__ 20: starting create database pool.
+INFO 2019-06-14 10:52:51,894 8648 Dummy-6 application_aware.py __init__ 26: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 10:52:51,894 8648 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 10:52:51,894 8648 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 10:52:51,976 8648 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 10:52:52,141 8648 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 10:52:52,141 8648 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 10:53:56,427 8804 Thread-7 application_aware.py process_request 50: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": ["001050.OF","000001.OF"],
+    "startDate": "20100101",
+    "endDate": "20180930",
+    "indicators": ["1","2"]
+}]
+INFO 2019-06-14 10:54:04,402 8804 Thread-7 application_aware.py process_response 59: responseInfo:{"output": [{"indicator": "1", "value": {"000001.OF": "0.11158127854784183", "001050.OF": {}}}, {"indicator": "2", "value": {"000001.OF": "-0.21151628503283265", "001050.OF": {}}}], "code": "000", "message": "ok"},cost:00:00:07
+INFO 2019-06-14 10:54:57,364 14252 Dummy-6 application_aware.py __init__ 20: starting create database pool.
+INFO 2019-06-14 10:54:57,646 14252 Dummy-6 application_aware.py __init__ 26: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 10:54:57,647 14252 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 10:54:57,647 14252 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 10:54:57,726 14252 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 10:54:57,965 14252 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 10:54:57,966 14252 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 10:56:22,658 10700 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-14 10:56:22,750 10700 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 10:56:22,750 10700 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 10:56:22,750 10700 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 10:56:22,835 10700 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 10:56:22,982 10700 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 10:56:22,982 10700 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 13:56:08,210 12620 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-14 13:56:09,571 12620 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 13:56:09,572 12620 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 13:56:09,572 12620 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 13:56:09,669 12620 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 13:56:09,836 12620 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 13:56:09,836 12620 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 13:56:33,946 9564 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "1",
+            "indicatorValue": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fundId": "2",
+            "indicatorValue": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fundId": "3",
+            "indicatorValue": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fundId": "4",
+            "indicatorValue": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        },
+        {
+            "fundId": "5",
+            "indicatorValue": [
+                "0",
+                "1",
+                "2",
+                "3",
+                "4"
+            ]
+        }
+    ],
+    "weightList": [
+        "1",
+        "3",
+        "5",
+        "7",
+        "9"
+    ]
+}]
+INFO 2019-06-14 14:01:08,219 9564 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "1", "score": "70.0"}, {"fundId": "2", "score": "70.0"}, {"fundId": "3", "score": "70.0"}, {"fundId": "4", "score": "70.0"}, {"fundId": "5", "score": "70.0"}]} cost:00:04:34
+INFO 2019-06-14 14:01:21,976 7748 Thread-184 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:05:35,853 7748 Thread-184 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": "3.6500000000000004"}, {"fundId": "F180003.OF", "score": "3.6500000000000004"}]} cost:00:04:13
+INFO 2019-06-14 14:05:54,901 2244 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-14 14:05:55,096 2244 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 14:05:55,096 2244 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 14:05:55,097 2244 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 14:05:55,210 2244 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 14:05:55,386 2244 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 14:05:55,386 2244 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 14:06:10,405 12348 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:06:26,035 12348 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": 3.6500000000000004}, {"fundId": "F180003.OF", "score": 3.6500000000000004}]} cost:00:00:15
+INFO 2019-06-14 14:07:31,398 9520 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-14 14:07:31,540 9520 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 14:07:31,540 9520 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 14:07:31,540 9520 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 14:07:31,630 9520 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 14:07:31,798 9520 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 14:07:31,798 9520 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 14:07:39,710 5768 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:07:42,080 5768 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": 4}, {"fundId": "F180003.OF", "score": 4}]} cost:00:00:02
+INFO 2019-06-14 14:08:06,020 7992 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-14 14:08:06,094 7992 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 14:08:06,095 7992 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 14:08:06,095 7992 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 14:08:06,187 7992 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 14:08:06,342 7992 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 14:08:06,342 7992 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 14:08:18,232 7744 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-14 14:08:18,320 7744 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 14:08:18,320 7744 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 14:08:18,321 7744 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 14:08:18,428 7744 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 14:08:18,585 7744 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 14:08:18,585 7744 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 14:08:28,047 6116 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:08:28,095 6116 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": 3.65}, {"fundId": "F180003.OF", "score": 3.65}]} cost:00:00:00
+INFO 2019-06-14 14:09:25,330 11480 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-14 14:09:25,668 11480 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 14:09:25,668 11480 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 14:09:25,668 11480 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 14:09:25,802 11480 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 14:09:25,940 11480 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 14:09:25,940 11480 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 14:09:31,236 8600 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:09:31,282 8600 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": "3.65"}, {"fundId": "F180003.OF", "score": "3.65"}]} cost:00:00:00
+INFO 2019-06-14 14:09:38,461 5372 Thread-8 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:09:38,510 5372 Thread-8 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": "3.65"}, {"fundId": "F180003.OF", "score": "3.65"}]} cost:00:00:00
+INFO 2019-06-14 14:09:45,029 7860 Thread-9 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:09:45,065 7860 Thread-9 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": "3.65"}, {"fundId": "F180003.OF", "score": "3.65"}]} cost:00:00:00
+INFO 2019-06-14 14:12:23,730 9520 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-14 14:12:23,954 9520 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 14:12:23,954 9520 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 14:12:23,954 9520 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 14:12:24,041 9520 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 14:12:24,197 9520 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 14:12:24,198 9520 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 14:12:31,044 13280 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+ERROR 2019-06-14 14:12:31,076 13280 Thread-7 application_aware.py process_exception 69: 
+系统异常
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\decorators.py", line 55, in handler
+    return func(*args, **kwargs)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py", line 120, in comprehensive
+    for i in sb]
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py", line 120, in <listcomp>
+    for i in sb]
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\algorithm\template_singleIndexScore.py", line 42, in compScore
+    return tmp[0]
+TypeError: 'set' object is not subscriptable
+INFO 2019-06-14 14:12:31,527 13280 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "999", "message": "'set' object is not subscriptable"} cost:00:00:00
+INFO 2019-06-14 14:12:50,234 10820 Thread-8 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+ERROR 2019-06-14 14:13:43,202 10820 Thread-8 application_aware.py process_exception 69: 
+系统异常
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\decorators.py", line 55, in handler
+    return func(*args, **kwargs)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py", line 120, in comprehensive
+    for i in sb]
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py", line 120, in <listcomp>
+    for i in sb]
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\algorithm\template_singleIndexScore.py", line 42, in compScore
+    return tmp[0]
+TypeError: 'set' object is not subscriptable
+INFO 2019-06-14 14:13:43,207 10820 Thread-8 application_aware.py process_response 58: responseInfo:{"code": "999", "message": "'set' object is not subscriptable"} cost:00:00:52
+INFO 2019-06-14 14:14:29,672 13940 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-14 14:14:29,895 13940 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 14:14:29,895 13940 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 14:14:29,896 13940 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 14:14:29,983 13940 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 14:14:30,154 13940 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 14:14:30,155 13940 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 14:17:39,671 13876 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-14 14:17:39,826 13876 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 14:17:39,827 13876 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 14:17:39,828 13876 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 14:17:39,913 13876 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 14:17:40,054 13876 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 14:20:27,715 7584 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-14 14:20:29,417 7584 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 14:20:29,419 7584 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 14:20:29,419 7584 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 14:20:29,604 7584 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 14:20:29,839 7584 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 14:20:37,395 7584 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 14:20:42,931 11808 Thread-15 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:21:01,749 11808 Thread-15 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": "3.65"}, {"fundId": "F180003.OF", "score": "3.65"}]} cost:00:00:18
+INFO 2019-06-14 14:21:10,701 13232 Thread-41 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:21:10,801 13232 Thread-41 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": "3.65"}, {"fundId": "F180003.OF", "score": "3.65"}]} cost:00:00:00
+INFO 2019-06-14 14:21:12,827 744 Thread-42 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:21:12,928 744 Thread-42 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": "3.65"}, {"fundId": "F180003.OF", "score": "3.65"}]} cost:00:00:00
+INFO 2019-06-14 14:21:18,567 12816 Thread-43 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:21:18,666 12816 Thread-43 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": "3.65"}, {"fundId": "F180003.OF", "score": "3.65"}]} cost:00:00:00
+INFO 2019-06-14 14:21:20,566 2600 Thread-44 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:21:20,668 2600 Thread-44 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": "3.65"}, {"fundId": "F180003.OF", "score": "3.65"}]} cost:00:00:00
+INFO 2019-06-14 14:22:15,362 13976 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-14 14:22:15,749 13976 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 14:22:15,750 13976 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 14:22:15,750 13976 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 14:22:15,848 13976 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 14:22:16,024 13976 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 14:22:16,024 13976 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 14:22:46,097 14092 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-14 14:22:46,428 14092 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 14:22:46,428 14092 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 14:22:46,428 14092 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 14:22:46,582 14092 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 14:22:46,819 14092 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 14:22:46,819 14092 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 14:22:50,545 2948 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:22:50,590 2948 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": "3.65"}, {"fundId": "F180003.OF", "score": "3.65"}]} cost:00:00:00
+INFO 2019-06-14 14:22:52,707 5768 Thread-8 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:22:52,747 5768 Thread-8 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": "3.65"}, {"fundId": "F180003.OF", "score": "3.65"}]} cost:00:00:00
+INFO 2019-06-14 14:22:54,429 11240 Thread-9 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:22:54,473 11240 Thread-9 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": "3.65"}, {"fundId": "F180003.OF", "score": "3.65"}]} cost:00:00:00
+INFO 2019-06-14 14:26:39,106 14628 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-14 14:26:39,719 14628 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 14:26:39,720 14628 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 14:26:39,720 14628 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 14:26:39,853 14628 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 14:26:40,081 14628 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 14:26:40,081 14628 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 14:26:49,099 14936 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:26:49,154 14936 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": "3.65"}, {"fundId": "F180003.OF", "score": "3.65"}]} cost:00:00:00
+INFO 2019-06-14 14:26:51,459 6820 Thread-8 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:26:51,495 6820 Thread-8 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": "3.65"}, {"fundId": "F180003.OF", "score": "3.65"}]} cost:00:00:00
+INFO 2019-06-14 14:26:53,091 14804 Thread-9 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:26:53,129 14804 Thread-9 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": "3.65"}, {"fundId": "F180003.OF", "score": "3.65"}]} cost:00:00:00
+INFO 2019-06-14 14:26:55,018 8380 Thread-10 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:26:55,053 8380 Thread-10 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": "3.65"}, {"fundId": "F180003.OF", "score": "3.65"}]} cost:00:00:00
+INFO 2019-06-14 14:26:56,964 15060 Thread-11 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:26:57,003 15060 Thread-11 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": "3.65"}, {"fundId": "F180003.OF", "score": "3.65"}]} cost:00:00:00
+INFO 2019-06-14 14:26:59,184 15152 Thread-12 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:26:59,219 15152 Thread-12 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": "3.65"}, {"fundId": "F180003.OF", "score": "3.65"}]} cost:00:00:00
+INFO 2019-06-14 14:27:21,439 13328 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-14 14:27:22,037 13328 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 14:27:22,038 13328 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 14:27:22,038 13328 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 14:27:22,193 13328 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 14:27:22,414 13328 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 14:27:22,415 13328 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 14:27:25,585 12952 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:27:25,630 12952 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": "3.65"}, {"fundId": "F180003.OF", "score": "3.65"}]} cost:00:00:00
+INFO 2019-06-14 14:27:27,229 11248 Thread-8 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:27:27,263 11248 Thread-8 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": "3.65"}, {"fundId": "F180003.OF", "score": "3.65"}]} cost:00:00:00
+INFO 2019-06-14 14:27:28,659 6388 Thread-9 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:27:28,702 6388 Thread-9 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": "3.65"}, {"fundId": "F180003.OF", "score": "3.65"}]} cost:00:00:00
+INFO 2019-06-14 14:27:29,973 14676 Thread-10 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/score/comprehensive],param:[{
+    "fundBeans": [
+        {
+            "fundId": "180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        },
+        {
+            "fundId": "F180003.OF",
+            "indicatorValue": [
+                "3",
+                "1",
+                "6",
+                "5"
+            ]
+        }
+    ],
+    "weightList": [
+        "0.2",
+        "0.3",
+        "0.25",
+        "0.25"
+    ]
+}]
+INFO 2019-06-14 14:27:30,009 14676 Thread-10 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "score": [{"fundId": "180003.OF", "score": "3.65"}, {"fundId": "F180003.OF", "score": "3.65"}]} cost:00:00:00
+INFO 2019-06-14 14:27:40,364 15072 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-14 14:27:40,600 15072 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 14:27:40,600 15072 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 14:27:40,601 15072 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 14:27:40,744 15072 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 14:27:40,960 15072 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 14:27:40,960 15072 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-14 14:27:52,463 15024 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-14 14:27:52,828 15024 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-14 14:27:52,828 15024 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-14 14:27:52,828 15024 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-14 14:27:53,023 15024 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-14 14:27:53,270 15024 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-14 14:27:53,270 15024 Dummy-6 bus_const.py load_table_info 111: load data from mysql done

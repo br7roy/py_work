@@ -1,0 +1,15 @@
+INFO 2019-06-20 13:59:17,358 17620 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-20 13:59:17,801 17620 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-20 13:59:17,802 17620 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-20 13:59:17,802 17620 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-20 13:59:17,896 17620 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-20 13:59:38,126 17620 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-20 13:59:38,127 17620 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-20 14:01:04,732 8168 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/offline/manager/styleAnalyze/holdingStyleAll],param:[]
+INFO 2019-06-20 14:01:04,817 16488 async_thread_pool_0 logic_processor.py doLogic 52: taskType:0,taskName:基金经理风格分析持仓风格全部-fof_fund_stock_style,开始 查询流水号:c9eb7df8932011e984e2e6f6cde40b92
+INFO 2019-06-20 14:01:10,579 8168 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "jobId": "c9eb7df8932011e984e2e6f6cde40b92"} cost:00:00:11
+INFO 2019-06-20 18:25:54,526 16488 async_thread_pool_0 logic_processor.py doLogic 72: taskType:0,taskName:基金经理风格分析持仓风格全部-fof_fund_stock_style,成功,查询流水号:c9eb7df8932011e984e2e6f6cde40b92,耗时: 04:24:49

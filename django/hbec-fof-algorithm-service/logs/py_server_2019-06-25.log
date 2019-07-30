@@ -1,0 +1,669 @@
+INFO 2019-06-25 08:35:51,093 21456 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-25 08:35:51,345 21456 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-25 08:35:51,345 21456 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-25 08:35:51,345 21456 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-25 08:35:51,420 21456 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-25 08:35:51,581 21456 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-25 08:35:51,581 21456 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-25 08:36:22,606 14632 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+      "fundCodes": [        {
+            "001105.OF": "000906.SH"
+        },
+        {
+            "002205.OF": "000906.SH"
+        }],
+    "startDate": "20180101",
+    "endDate": "20180930",
+    "indicators": ["1"]
+}
+]
+ERROR 2019-06-25 08:36:23,531 14632 Thread-7 application_aware.py process_exception 69: 
+系统异常
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\decorators.py", line 55, in handler
+    return func(*args, **kwargs)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py", line 185, in multiple_value
+    data = multipleIndicatorValue(mod)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 32, in multipleIndicatorValue
+    rr = [exTractVal(indicator, fundCodes, startDate, endDate) for indicator in indicators if
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 33, in <listcomp>
+    indicator in INDEX_CODE_NAME_CACHE]
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 12, in exTractVal
+    indic,=fundCodes
+ValueError: too many values to unpack (expected 1)
+INFO 2019-06-25 08:36:23,647 14632 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "999", "message": "too many values to unpack (expected 1)"} cost:00:00:05
+INFO 2019-06-25 08:36:44,766 17548 Thread-30 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+      "fundCodes": [        {
+            "001105.OF": "000906.SH"
+        },
+        {
+            "002205.OF": "000906.SH"
+        }],
+    "startDate": "20180101",
+    "endDate": "20180930",
+    "indicators": ["1"]
+}
+]
+ERROR 2019-06-25 08:37:34,917 17548 Thread-30 application_aware.py process_exception 69: 
+系统异常
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\decorators.py", line 55, in handler
+    return func(*args, **kwargs)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py", line 185, in multiple_value
+    data = multipleIndicatorValue(mod)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 32, in multipleIndicatorValue
+    rr = [exTractVal(indicator, fundCodes, startDate, endDate) for indicator in indicators if
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 33, in <listcomp>
+    indicator in INDEX_CODE_NAME_CACHE]
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 12, in exTractVal
+    indic,=fundCodes
+ValueError: too many values to unpack (expected 1)
+INFO 2019-06-25 08:37:34,922 17548 Thread-30 application_aware.py process_response 58: responseInfo:{"code": "999", "message": "too many values to unpack (expected 1)"} cost:00:00:50
+INFO 2019-06-25 08:37:42,660 20168 Thread-92 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+      "fundCodes": [        {
+            "001105.OF": "000906.SH"
+        },
+        {
+            "002205.OF": "000906.SH"
+        }],
+    "startDate": "20180101",
+    "endDate": "20180930",
+    "indicators": ["1"]
+}
+]
+ERROR 2019-06-25 09:00:56,268 20168 Thread-92 application_aware.py process_exception 69: 
+系统异常
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\decorators.py", line 55, in handler
+    return func(*args, **kwargs)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py", line 185, in multiple_value
+    data = multipleIndicatorValue(mod)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 32, in multipleIndicatorValue
+    rr = [exTractVal(indicator, fundCodes, startDate, endDate) for indicator in indicators if
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 33, in <listcomp>
+    indicator in INDEX_CODE_NAME_CACHE]
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 12, in exTractVal
+    indic,=fundCodes
+ValueError: too many values to unpack (expected 1)
+INFO 2019-06-25 09:00:56,273 20168 Thread-92 application_aware.py process_response 58: responseInfo:{"code": "999", "message": "too many values to unpack (expected 1)"} cost:00:23:13
+INFO 2019-06-25 09:03:10,016 20320 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-25 09:03:10,603 20320 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-25 09:03:10,603 20320 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-25 09:03:10,604 20320 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-25 09:03:10,708 20320 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-25 09:03:10,874 20320 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-25 09:03:10,874 20320 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-25 09:06:21,253 816 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-25 09:06:21,707 816 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-25 09:06:21,707 816 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-25 09:06:21,708 816 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-25 09:06:21,828 816 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-25 09:06:22,009 816 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-25 09:06:22,009 816 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-25 09:06:27,440 14880 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+      "fundCodes": [        {
+            "001105.OF": "000906.SH"
+        },
+        {
+            "002205.OF": "000906.SH"
+        }],
+    "startDate": "20180101",
+    "endDate": "20180930",
+    "indicators": ["1"]
+}
+]
+INFO 2019-06-25 09:10:30,450 14880 Thread-7 application_aware.py process_response 58: responseInfo:{"output": [{"indicator": "1", "value": {"001105.OF": "-0.18274111675126903"}}], "code": "000", "message": "ok"} cost:00:04:03
+INFO 2019-06-25 09:10:37,184 19096 Thread-58 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+      "fundCodes": [        {
+            "001050.OF": "000906.SH"
+        },
+        {
+            "000001.OF": "000906.SH"
+        }],
+    "startDate": "20180101",
+    "endDate": "20180930",
+    "indicators": ["1"]
+}
+]
+INFO 2019-06-25 09:11:22,635 19096 Thread-58 application_aware.py process_response 58: responseInfo:{"output": [{"indicator": "1", "value": {"000001.OF": "-0.13834646393427552", "001050.OF": "-0.15109170305676856"}}], "code": "000", "message": "ok"} cost:00:00:45
+INFO 2019-06-25 09:14:40,569 15684 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-25 09:14:40,694 15684 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-25 09:14:40,694 15684 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-25 09:14:40,695 15684 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-25 09:14:40,846 15684 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-25 09:14:41,045 15684 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-25 09:14:41,045 15684 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-25 09:14:44,571 9476 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+      "fundCodes": [        {
+            "001050.OF": "000906.SH"
+        },
+        {
+            "000001.OF": "000906.SH"
+        }],
+    "startDate": "20180101",
+    "endDate": "20180930",
+    "indicators": ["1"]
+}
+]
+ERROR 2019-06-25 09:14:52,126 9476 Thread-7 application_aware.py process_exception 69: 
+系统异常
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\decorators.py", line 55, in handler
+    return func(*args, **kwargs)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py", line 185, in multiple_value
+    data = multipleIndicatorValue(mod)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 44, in multipleIndicatorValue
+    rr = [exTractVal(indicator, fundCodes, startDate, endDate) for indicator in indicators if
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 45, in <listcomp>
+    indicator in INDEX_CODE_NAME_CACHE]
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 15, in exTractVal
+    ff = { f for f in fundCodes}
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 15, in <setcomp>
+    ff = { f for f in fundCodes}
+TypeError: unhashable type: 'dict'
+INFO 2019-06-25 09:14:52,194 9476 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "999", "message": "unhashable type: 'dict'"} cost:00:00:07
+INFO 2019-06-25 09:16:03,195 9924 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-25 09:16:03,307 9924 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-25 09:16:03,307 9924 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-25 09:16:03,307 9924 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-25 09:16:03,449 9924 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-25 09:16:03,635 9924 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-25 09:16:03,636 9924 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-25 12:17:53,612 15860 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-25 12:17:53,792 15860 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-25 12:17:53,793 15860 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-25 12:17:53,793 15860 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-25 12:17:53,953 15860 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-25 12:17:54,127 15860 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-25 12:17:54,127 15860 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-25 12:18:10,865 8684 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+      "fundCodes": [        {
+            "CBA000301": "CBA000301"
+        },
+        {
+            "000001.OF": "000906.SH"
+        }],
+    "startDate": "20180101",
+    "endDate": "20180930",
+    "indicators": ["1"]
+}
+]
+ERROR 2019-06-25 12:18:16,508 8684 Thread-7 application_aware.py process_exception 69: 
+系统异常
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\decorators.py", line 55, in handler
+    return func(*args, **kwargs)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py", line 185, in multiple_value
+    data = multipleIndicatorValue(mod)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 43, in multipleIndicatorValue
+    rr = [exTractVal(indicator, fundCodes, startDate, endDate) for indicator in indicators if
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 44, in <listcomp>
+    indicator in INDEX_CODE_NAME_CACHE]
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 31, in exTractVal
+    vv = {k: v if v else {} for k, v in output_json['factorValue'].items()}
+AttributeError: 'str' object has no attribute 'items'
+INFO 2019-06-25 12:18:16,570 8684 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "999", "message": "'str' object has no attribute 'items'"} cost:00:00:05
+INFO 2019-06-25 12:18:21,852 4288 Thread-21 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+      "fundCodes": [        {
+            "CBA000301": "CBA000301"
+        },
+        {
+            "000001.OF": "000906.SH"
+        }],
+    "startDate": "20180101",
+    "endDate": "20180930",
+    "indicators": ["1"]
+}
+]
+ERROR 2019-06-25 12:18:59,683 4288 Thread-21 application_aware.py process_exception 69: 
+系统异常
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\decorators.py", line 55, in handler
+    return func(*args, **kwargs)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py", line 185, in multiple_value
+    data = multipleIndicatorValue(mod)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 43, in multipleIndicatorValue
+    rr = [exTractVal(indicator, fundCodes, startDate, endDate) for indicator in indicators if
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 44, in <listcomp>
+    indicator in INDEX_CODE_NAME_CACHE]
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 31, in exTractVal
+    vv = {k: v if v else {} for k, v in output_json['factorValue'].items()}
+AttributeError: 'str' object has no attribute 'items'
+INFO 2019-06-25 12:18:59,685 4288 Thread-21 application_aware.py process_response 58: responseInfo:{"code": "999", "message": "'str' object has no attribute 'items'"} cost:00:00:37
+INFO 2019-06-25 12:19:04,250 1648 Thread-111 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+      "fundCodes": [        {
+            "CBA000301": "CBA000301"
+        },
+        {
+            "000001.OF": "000906.SH"
+        }],
+    "startDate": "20180101",
+    "endDate": "20180930",
+    "indicators": ["1"]
+}
+]
+ERROR 2019-06-25 12:20:01,482 1648 Thread-111 application_aware.py process_exception 69: 
+系统异常
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\decorators.py", line 55, in handler
+    return func(*args, **kwargs)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py", line 185, in multiple_value
+    data = multipleIndicatorValue(mod)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 43, in multipleIndicatorValue
+    endDate = model.endDate
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 44, in <listcomp>
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 31, in exTractVal
+    if output_json['factorValue'] is None:
+AttributeError: 'str' object has no attribute 'items'
+INFO 2019-06-25 12:20:01,487 1648 Thread-111 application_aware.py process_response 58: responseInfo:{"code": "999", "message": "'str' object has no attribute 'items'"} cost:00:00:57
+INFO 2019-06-25 12:20:06,827 15168 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-25 12:20:06,869 15168 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-25 12:20:06,870 15168 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-25 12:20:06,870 15168 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-25 12:20:06,950 15168 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-25 12:20:07,089 15168 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-25 12:20:07,089 15168 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-25 12:20:11,710 19140 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+      "fundCodes": [        {
+            "CBA000301": "CBA000301"
+        },
+        {
+            "000001.OF": "000906.SH"
+        }],
+    "startDate": "20180101",
+    "endDate": "20180930",
+    "indicators": ["1"]
+}
+]
+ERROR 2019-06-25 12:20:39,728 19140 Thread-7 application_aware.py process_exception 69: 
+系统异常
+Traceback (most recent call last):
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\core\handlers\base.py", line 126, in _get_response
+    response = wrapped_callback(request, *callback_args, **callback_kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\decorators\csrf.py", line 54, in wrapped_view
+    return view_func(*args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\django\views\generic\base.py", line 69, in view
+    return self.dispatch(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 495, in dispatch
+    response = self.handle_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 455, in handle_exception
+    self.raise_uncaught_exception(exc)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\views.py", line 492, in dispatch
+    response = handler(request, *args, **kwargs)
+  File "F:\dev\lang\python\Anaconda3\envs\hbec_fof_algorithm_service\lib\site-packages\rest_framework\decorators.py", line 55, in handler
+    return func(*args, **kwargs)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\view\online_view.py", line 185, in multiple_value
+    data = multipleIndicatorValue(mod)
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 45, in multipleIndicatorValue
+    rr = [exTractVal(indicator, fundCodes, startDate, endDate) for indicator in indicators if
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 46, in <listcomp>
+    indicator in INDEX_CODE_NAME_CACHE]
+  File "F:\project\py_projects\hbec-fof-algorithm-service\hbec_fof_algorithm_service\fof\service\online_service.py", line 33, in exTractVal
+    vv = {k: v if v else {} for k, v in output_json['factorValue'].items()}
+AttributeError: 'str' object has no attribute 'items'
+INFO 2019-06-25 12:20:39,734 19140 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "999", "message": "'str' object has no attribute 'items'"} cost:00:00:28
+INFO 2019-06-25 12:20:45,616 16068 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-25 12:20:45,831 16068 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-25 12:20:45,831 16068 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-25 12:20:45,832 16068 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-25 12:20:45,966 16068 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-25 12:20:46,202 16068 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-25 12:20:46,202 16068 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-25 12:21:04,449 10540 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-25 12:21:04,501 10540 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-25 12:21:04,501 10540 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-25 12:21:04,501 10540 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-25 12:21:04,576 10540 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-25 12:21:04,718 10540 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-25 12:21:04,718 10540 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-25 12:21:09,028 18576 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+      "fundCodes": [        {
+            "CBA000301": "CBA000301"
+        },
+        {
+            "000001.OF": "000906.SH"
+        }],
+    "startDate": "20180101",
+    "endDate": "20180930",
+    "indicators": ["1"]
+}
+]
+INFO 2019-06-25 12:21:23,794 18576 Thread-7 application_aware.py process_response 58: responseInfo:{"output": [{"indicator": "1", "value": {"000001.OF": "-0.13834646393427552"}}], "code": "000", "message": "ok"} cost:00:00:14
+INFO 2019-06-25 12:25:59,688 20312 Thread-75 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+      "fundCodes": [        {
+            "CBA000301": "CBA000301"
+        },
+        {
+            "000001.OF": "000906.SH"
+        }],
+    "startDate": "20180101",
+    "endDate": "20180930",
+    "indicators": ["1"]
+}
+]
+INFO 2019-06-25 12:26:45,961 20312 Thread-75 application_aware.py process_response 58: responseInfo:{"output": [{"indicator": "1", "value": {"000001.OF": "-0.13834646393427552"}}], "code": "000", "message": "ok"} cost:00:00:46
+INFO 2019-06-25 12:26:49,075 17392 Thread-97 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+      "fundCodes": [        {
+            "CBA000301": "CBA000301"
+        },
+        {
+            "CBA000302": "CBA000301"
+        },
+        {
+            "000001.OF": "000906.SH"
+        }],
+    "startDate": "20180101",
+    "endDate": "20180930",
+    "indicators": ["1"]
+}
+]
+INFO 2019-06-25 12:28:00,484 17392 Thread-97 application_aware.py process_response 58: responseInfo:{"output": [{"indicator": "1", "value": {"000001.OF": "-0.13834646393427552"}}], "code": "000", "message": "ok"} cost:00:01:11
+INFO 2019-06-25 12:28:09,110 8904 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-25 12:28:09,164 8904 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-25 12:28:09,164 8904 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-25 12:28:09,164 8904 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-25 12:28:09,246 8904 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-25 12:28:09,383 8904 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-25 12:28:09,384 8904 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-25 12:28:16,592 20476 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+      "fundCodes": [        {
+            "CBA000301": "CBA000301"
+        },
+        {
+            "CBA000302": "CBA000301"
+        },
+        {
+            "000001.OF": "000906.SH"
+        }],
+    "startDate": "20180101",
+    "endDate": "20180930",
+    "indicators": ["1"]
+}
+]
+INFO 2019-06-25 12:28:20,991 20476 Thread-7 application_aware.py process_response 58: responseInfo:{"output": [{"indicator": "1", "value": {"CBA000301": {}, "CBA000302": {}, "000001.OF": "-0.13834646393427552"}}], "code": "000", "message": "ok"} cost:00:00:04
+INFO 2019-06-25 13:00:46,369 14236 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-25 13:00:46,413 14236 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-25 13:00:46,414 14236 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-25 13:00:46,414 14236 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-25 13:00:46,495 14236 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-25 13:00:46,631 14236 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-25 13:00:46,632 14236 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-25 13:01:00,108 3732 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+      "fundCodes": [        {
+            "CBA000301": "CBA000301"
+        },
+        {
+            "CBA000302": "CBA000301"
+        },
+        {
+            "000001.OF": "000906.SH"
+        }],
+    "startDate": "20180101",
+    "endDate": "20180930",
+    "indicators": ["1"]
+}
+]
+INFO 2019-06-25 13:01:02,824 3732 Thread-7 application_aware.py process_response 58: responseInfo:{"output": [{"indicator": "1", "value": {"CBA000301": "", "CBA000302": "", "000001.OF": "-0.13834646393427552"}}], "code": "000", "message": "ok"} cost:00:00:02
+INFO 2019-06-25 13:02:51,674 16780 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-25 13:02:51,768 16780 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-25 13:02:51,768 16780 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-25 13:02:51,768 16780 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-25 13:02:51,847 16780 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-25 13:02:51,995 16780 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-25 13:02:51,995 16780 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-25 13:02:58,254 19280 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+      "fundCodes": [        {
+            "CBA000301": "CBA000301"
+        },
+        {
+            "CBA000302": "CBA000301"
+        },
+        {
+            "000001.OF": "000906.SH"
+        }],
+    "startDate": "20180101",
+    "endDate": "20180930",
+    "indicators": ["1"]
+}
+]
+INFO 2019-06-25 13:03:03,893 19280 Thread-7 application_aware.py process_response 58: responseInfo:{"output": [{"indicator": "1", "value": {"CBA000301": "", "CBA000302": "", "000001.OF": "-0.13834646393427552"}}], "code": "000", "message": "ok"} cost:00:00:05
+INFO 2019-06-25 16:37:37,022 6520 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-25 16:37:37,448 6520 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-25 16:37:37,449 6520 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-25 16:37:37,451 6520 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-25 16:37:37,555 6520 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-25 16:37:37,821 6520 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-25 16:37:37,822 6520 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-25 16:37:46,723 17464 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": [
+        {
+            "000906.SH": "000906.SH"
+        },
+        {
+            "000041.OF": "000906.SH"
+        }
+    ],
+    "startDate": "20180625",
+    "endDate": "20190325",
+    "indicators": [
+        "1"
+    ]
+}]
+INFO 2019-06-25 16:39:15,640 17464 Thread-7 application_aware.py process_response 58: responseInfo:{"output": [{"indicator": "1", "value": {"000041.OF": "-0.031968031968031885"}}], "code": "000", "message": "ok"} cost:00:01:28
+INFO 2019-06-25 16:39:25,435 12924 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-25 16:39:25,556 12924 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-25 16:39:25,557 12924 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-25 16:39:25,557 12924 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-25 16:39:25,714 12924 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-25 16:39:25,887 12924 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-25 16:39:25,888 12924 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-25 16:39:37,698 10192 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": [
+        {
+            "000906.SH": "000906.SH"
+        },
+        {
+            "000041.OF": "000906.SH"
+        }
+    ],
+    "startDate": "20180625",
+    "endDate": "20190325",
+    "indicators": [
+        "1"
+    ]
+}]
+INFO 2019-06-25 16:39:57,082 10192 Thread-7 application_aware.py process_response 58: responseInfo:{"output": [{"indicator": "1", "value": {"000041.OF": "-0.031968031968031885"}}], "code": "000", "message": "ok"} cost:00:00:19
+INFO 2019-06-25 16:40:20,434 19148 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-25 16:40:20,477 19148 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-25 16:40:20,477 19148 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-25 16:40:20,477 19148 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-25 16:40:20,555 19148 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-25 16:40:20,693 19148 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-25 16:40:20,693 19148 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-25 16:40:23,841 21924 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": [
+        {
+            "000906.SH": "000906.SH"
+        },
+        {
+            "000041.OF": "000906.SH"
+        }
+    ],
+    "startDate": "20180625",
+    "endDate": "20190325",
+    "indicators": [
+        "1"
+    ]
+}]
+INFO 2019-06-25 16:40:26,618 21924 Thread-7 application_aware.py process_response 58: responseInfo:{"output": [{"indicator": "1", "value": {"000906.SH": "", "000041.OF": "-0.031968031968031885"}}], "code": "000", "message": "ok"} cost:00:00:02
+INFO 2019-06-25 16:40:44,771 21060 Thread-9 application_aware.py process_request 49: requestInfo: method:[POST],url:[/online/value/multipleFundIndicator],param:[{
+    "fundCodes": [
+        {
+            "000906.SH": "000906.SH"
+        },
+        {
+            "000041.OF": "000906.SH"
+        }
+    ],
+    "startDate": "20180625",
+    "endDate": "20190325",
+    "indicators": [
+        "1"
+    ]
+}]
+INFO 2019-06-25 16:40:46,010 21060 Thread-9 application_aware.py process_response 58: responseInfo:{"output": [{"indicator": "1", "value": {"000906.SH": "", "000041.OF": "-0.031968031968031885"}}], "code": "000", "message": "ok"} cost:00:00:01
+INFO 2019-06-25 16:41:34,249 21684 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-25 16:41:34,318 21684 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-25 16:41:34,318 21684 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-25 16:41:34,318 21684 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-25 16:41:34,400 21684 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-25 16:41:34,542 21684 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-25 16:41:34,542 21684 Dummy-6 bus_const.py load_table_info 111: load data from mysql done

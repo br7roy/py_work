@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>run title</title>
+</head>
+<body>
+<h1>Hello World!</h1>
+<p>Django 测试。</p>
+{% block mainbody %}
+    <p>original</p>
+{% endblock %}
+{% ifequal section 'sitenews' %}
+    <h1>Site News</h1>
+{% else %}
+    <h1>No News Here</h1>
+{% endifequal %}
+{% ifequal c1 '0' %}
+    <h1>c1 euqlas 0</h1>
+{% else %}
+    <h1>c1 ！= 0</h1>
+{% endifequal %}
+{% block subbody %}
+    <ul>
+        <li>null list</li>
+    </ul>
+{% endblock subbody %}
+</body>
+</html>

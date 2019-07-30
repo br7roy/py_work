@@ -1,0 +1,14 @@
+INFO 2019-06-21 09:01:24,878 17332 Dummy-6 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-21 09:01:25,045 17332 Dummy-6 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.30.59,platform_app,fbdb,20,fof,20}
+INFO 2019-06-21 09:01:25,045 17332 Dummy-6 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-21 09:01:25,046 17332 Dummy-6 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-21 09:01:25,117 17332 Dummy-6 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-21 09:01:25,531 17332 Dummy-6 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-21 09:01:25,532 17332 Dummy-6 bus_const.py load_table_info 111: load data from mysql done
+INFO 2019-06-21 09:02:19,990 11488 Thread-7 application_aware.py process_request 49: requestInfo: method:[POST],url:[/offline/index/riskMultiple],param:[]
+INFO 2019-06-21 09:02:20,011 11488 Thread-7 application_aware.py process_response 58: responseInfo:{"code": "000", "message": "ok", "jobId": "385c7bbe93c011e99786e6f6cde40b92"} cost:00:00:00
+INFO 2019-06-21 09:02:20,022 8416 async_thread_pool_0 logic_processor.py doLogic 52: taskType:0,taskName:风险因子业绩归因模块 fof_multi_attr_riskmodel,开始 查询流水号:385c7bbe93c011e99786e6f6cde40b92

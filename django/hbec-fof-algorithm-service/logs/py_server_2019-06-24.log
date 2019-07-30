@@ -1,0 +1,12 @@
+INFO 2019-06-24 15:03:39,239 20772 Dummy-1 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-24 15:04:18,939 15156 Dummy-1 application_aware.py __init__ 19: starting create database pool.
+INFO 2019-06-24 15:04:19,188 15156 Dummy-1 application_aware.py __init__ 25: 
+database pool created.
+Using :
+from conf import mysqlops,
+mysql info:{10.0.29.179,fof_app,,fof,20}
+INFO 2019-06-24 15:04:19,188 15156 Dummy-1 bus_const.py load_table_info 80: load data from mysql start
+INFO 2019-06-24 15:04:19,188 15156 Dummy-1 bus_const.py load_table_info 81: starting load data from mysql ,table name chinamutualfundbenchmark
+INFO 2019-06-24 15:04:19,421 15156 Dummy-1 bus_const.py load_table_info 88: starting load data from mysql ,table name chinamutualfunddescription
+INFO 2019-06-24 15:04:20,026 15156 Dummy-1 bus_const.py load_table_info 104: starting load data from mysql ,table name fof_index
+INFO 2019-06-24 15:04:20,026 15156 Dummy-1 bus_const.py load_table_info 111: load data from mysql done
