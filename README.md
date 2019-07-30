@@ -1,5 +1,4 @@
-# py_work
-
+# A project with multiple python implementations !
 ##  package **basic**
 - basic python usage
 
