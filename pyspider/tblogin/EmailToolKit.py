@@ -4,7 +4,7 @@ from email.mime.text import MIMEText
 from email.utils import formataddr
 
 ctx = ''
-with open(os.path.abspath('../py_request')+r'/email.key', 'r+', encoding='utf-8') as f:
+with open(os.path.abspath('email.key'), 'r+', encoding='utf-8') as f:
     ctx = f.read()
 sp = ctx.split(',')
 

@@ -1,11 +1,16 @@
+import time
+
 import requests
 import json
 import os
 import re
 
-from pyspider.py_request.EmailToolKit import send_email
-
+from pyspider.tblogin.EmailToolKit import send_email
+requests.adapters.DEFAULT_RETRIES = 15
 s = requests.Session()
+s.keep_alive = False
+# above refer https://www.cnblogs.com/tig666666/p/9296466.html
+
 COOKIE_FILE_PATH = os.path.abspath('cookie.txt')
 
 
@@ -21,7 +26,8 @@ class UserNameLogin:
         self.nick_check_url = 'https://login.taobao.com/member/request_nick_check.do?_input_charset=utf-8'
         self.login_url = "http://login.taobao.com/member/login.jhtml"
         self.vst_url = "https://login.taobao.com/member/vst.htm?st={}"
-        self.adidas_good_url = 'https://detail.tmall.com/item.htm?id=597859359278&spm=a1z09.2.0.0.42692e8d5LzujT&_u=11vdkde6c54&sku_properties=1627207:28341'
+        self.adidas_good_url1 = 'https://detail.tmall.com/item.htm?id=597859359278&spm=2014.21600715.0.0'
+        self.adidas_good_url2 = 'https://detail.tmall.com/item.htm?id=575795232352'
         self.userName = userName
         self.ua = ua
         self.TPL_password2 = TPL_password2
@@ -42,7 +48,7 @@ class UserNameLogin:
             print('检测是否需要验证码请求失败，原因:{}', format(e))
             return True
         needcode = resp.json()['needcode']
-        print('是否需要话快验证：%s' % '是' if needcode else '否')
+        print('是否需要滑块验证：%s' % ('是' if needcode else '否'))
         return needcode
 
     def verify_password(self):
@@ -138,7 +144,7 @@ class UserNameLogin:
             raise e
         nick_name_match = re.search(r'<input id="mtb-nickname" type="hidden" value="(.*?)"/>', response.text)
         if nick_name_match:
-            print('nickname : {}'.format(nick_name_match.group(1)))
+            print('nickname : {}'.format(nick_name_match.group(1)[:3] + '***'))
             return nick_name_match.group(1)
         else:
             raise RuntimeError("获取淘宝昵称失败 response {}".format(response.text))
@@ -209,23 +215,47 @@ class UserNameLogin:
             raise RuntimeError('使用st登录淘宝失败, {}'.format(response.text))
 
     def search_kw(self):
-        r = s.get(self.adidas_good_url)
-        r.raise_for_status()
-        goods = re.search(r'TShop.Setup\(\s+(.*?)\s+\)', r.text)
-        goods_dict = goods.group(1)
-        # 4175113913309
-        goods_dict = json.loads(goods_dict)
-        mm = goods_dict['valItemInfo']['skuMap']
-        for k in mm:
-            gv = mm[k]
-            if gv['skuId'] == '4175113913309':
-                s_num = gv['stock']
-                if s_num > 0:
-                    print('42.5库存大于0')
-                    send_email(subj='42.5有货可以下单', detail='42.5有货可以下单')
-                else:
-                    print('42.5库存不足')
-                    send_email(subj='42.5库存不足', detail='42.5库存不足')
+
+        urls = [self.adidas_good_url1, self.adidas_good_url2]
+        for url in urls:
+            r = None
+            try:
+                r = s.get(url)
+                r.raise_for_status()
+            except:
+                self.login()
+                r = s.get(url)
+                r.raise_for_status()
+
+            goods = re.search(r'TShop.Setup\(\s+(.*?)\s+\)', r.text)
+            goods_dict = goods.group(1)
+            # 4175113913309
+            goods_dict = json.loads(goods_dict)
+            goods_arr = goods_dict['valItemInfo']['skuList']
+            skuId = ''
+            for am in goods_arr:
+                if re.sub(r'\s+', '', am['names']) == '42.5黑色':
+                    skuId = am['skuId']
+                    break
+            if not skuId:
+                print('skuId can not be found, check webUI!!')
+                return
+
+            mm = goods_dict['valItemInfo']['skuMap']
+            for k in mm:
+                gv = mm[k]
+                if gv['skuId'] == skuId:
+                    s_num = gv['stock']
+                    if s_num > 0:
+                        print('42.5库存大于0')
+                        send_email(subj='42.5有货可以下单', detail='42.5有货可以下单，地址:{}'.format(url))
+                    else:
+                        print('42.5库存不足,url {}'.format(url))
+                        # send_email(subj='42.5库存不足', detail='42.5库存不足')
+                    r.close()
+                    del r
+                    time.sleep(5)
+                    break
 
 
 if __name__ == '__main__':
@@ -235,4 +265,6 @@ if __name__ == '__main__':
     sp = ctx.split(",")
     user = UserNameLogin(sp[0].replace("'", ""), sp[1].replace("'", ""), sp[2].replace("'", ""))
     user.login()
-    user.search_kw()
+    while 1:
+        user.search_kw()
+        time.sleep(1 * 60)

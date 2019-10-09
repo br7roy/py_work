@@ -6,7 +6,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait
 
-from pyspider.py_request.EmailToolKit import send_email
+from pyspider.tblogin.EmailToolKit import send_email
 
 s = requests.Session()
 
