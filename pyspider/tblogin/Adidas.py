@@ -6,6 +6,7 @@ import os
 import re
 
 from pyspider.tblogin.EmailToolKit import send_email
+
 requests.adapters.DEFAULT_RETRIES = 15
 s = requests.Session()
 s.keep_alive = False
@@ -258,13 +259,48 @@ class UserNameLogin:
                     break
 
 
+def search_kw3(path):
+    r = requests.get(path)
+    r.raise_for_status()
+    goods = re.search(r'TShop.Setup\(\s+(.*?)\s+\)', r.text)
+    goods_dict = goods.group(1)
+    goods_dict = json.loads(goods_dict)
+    goods_arr = goods_dict['valItemInfo']['skuList']
+    skuId = ''
+    for am in goods_arr:
+        if re.sub(r'\s+', '', am['names']) == '42.5黑色':
+            skuId = am['skuId']
+            break
+    if not skuId:
+        print('skuId can not be found, check webUI!!')
+        return
+    mm = goods_dict['valItemInfo']['skuMap']
+    for k in mm:
+        gv = mm[k]
+        if gv['skuId'] == skuId:
+            s_num = gv['stock']
+            if s_num > 0:
+                print('42.5库存大于0')
+                send_email(subj='42.5有货可以下单', detail='42.5有货可以下单，地址:{}'.format(path))
+            else:
+                print('42.5库存不足,url {}'.format(path))
+            r.close()
+            del r
+            time.sleep(5)
+            break
+
+
 if __name__ == '__main__':
-    ctx = ''
-    with open(os.path.abspath('ua.key'), 'r+') as f:
-        ctx = f.read()
-    sp = ctx.split(",")
-    user = UserNameLogin(sp[0].replace("'", ""), sp[1].replace("'", ""), sp[2].replace("'", ""))
-    user.login()
-    while 1:
-        user.search_kw()
-        time.sleep(1 * 60)
+    path = r'https://detail.tmall.com/item.htm?id=575795232352&price=1199&sourceType=item&sourceType=item&suid=702f68e8-6a96-4235-9774-c318160cdab1&ut_sk=1.WkkJmOEVAzcDAO2WhfBxbAop_21646297_1571671196433.Copy.1&un=8249bdea03cd78854b68d5f77a161062&share_crt_v=1&spm=a2159r.13376460.0.0&sp_tk=JExwOTZZSmFmZVNPJA==&cpp=1&shareurl=true&short_name=h.eKOSkfz&sm=1dd5ea&app=chrome'
+    search_kw3(path)
+
+# if __name__ == '__main__':
+#     ctx = ''
+#     with open(os.path.abspath('ua.key'), 'r+') as f:
+#         ctx = f.read()
+#     sp = ctx.split(",")
+#     user = UserNameLogin(sp[0].replace("'", ""), sp[1].replace("'", ""), sp[2].replace("'", ""))
+#     user.login()
+#     while 1:
+#         user.search_kw()
+#         time.sleep(1 * 60)
