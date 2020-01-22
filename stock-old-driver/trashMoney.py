@@ -22,8 +22,18 @@ def run():
         total.append(rs.get_row_data())
     res = pd.DataFrame(total, columns=rs.fields)
 
-    # res.to_csv(os.environ['HOME'] + "\\Desktop\\data.csv", encoding='gbk', index=False)
+    res.to_csv(os.environ['HOMEPATH'] + "\\Desktop\\data.csv", encoding='gbk', index=False)
     print(res)
+
+
+def get_all_stock_data_by_day(date):
+    stock_rs = bs.query_all_stock(date)
+    stock_df = stock_rs.get_data()
+    data_df = pd.DataFrame()
+    for code in stock_df["code"]:
+        print("Downloading :" + code)
+        k_rs = bs.query_history_k_data_plus(code, "date,code,open,high,low,turn,close", date, date)
+        data_df = data_df.append(k_rs.get_data())
 
 
 if __name__ == '__main__':
