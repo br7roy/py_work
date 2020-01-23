@@ -32,9 +32,19 @@ def get_all_stock_data_by_day(date):
     data_df = pd.DataFrame()
     for code in stock_df["code"]:
         print("Downloading :" + code)
-        k_rs = bs.query_history_k_data_plus(code, "date,code,open,high,low,turn,close", date, date)
+        k_rs = bs.query_history_k_data_plus(code, "date,code,open,high,low,turn,liqaShare,close", date, date)
         data_df = data_df.append(k_rs.get_data())
+    data_df.to_csv(r"C:\Users\Administrator\Desktop\data.csv")
+    print(data_df)
+
+
+def open():
+    df = pd.DataFrame(pd.read_csv(r"C:\Users\Administrator\Desktop\data.csv", header=0, encoding='gbk'))
+    res = df.loc[df["turn"] < "1.0"]
+    print(res)
 
 
 if __name__ == '__main__':
-    run()
+    # run()
+    # get_all_stock_data_by_day("2020-01-22")
+    open()
