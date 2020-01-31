@@ -1,4 +1,5 @@
 import re
+import os
 
 total = {'': [[], 0]}
 
@@ -11,7 +12,8 @@ def something():
     # print(res.group(1))
     # print(res.group(2))
     # print(res.groupdict())
-    path = r'C:\Users\Administrator\Desktop\test2.log'
+    # path = r'C:\Users\Administrator\Desktop\test2.log'
+    path = os.path.realpath('../test2.log')
     with open(path, 'r', encoding='utf-8') as f:
         for line in f:
             res = pattern.search(line)
@@ -33,3 +35,14 @@ def something():
 if __name__ == '__main__':
     something()
     print(total)
+    path = os.path.realpath('../result.log')
+    if not os.path.exists(path):
+        pass
+    with open(path, 'w', encoding='utf-8') as f:
+        for uid in total.keys():
+            if not uid:
+                continue
+            val = total[uid]
+            ids = val[0]
+            cnt = val[1]
+            f.write("uid:" + uid + "ids:" + str(ids) + "cnt:" + str(cnt) + '\n')
