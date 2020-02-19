@@ -13,7 +13,7 @@ path = os.path.abspath('.') + "\movie.db"
 def show():
     con = sqlite3.connect(path)
     cur = con.cursor()
-    cur.execute("select name ,desc ,path from movie")
+    cur.execute("select * from movie")
     rows = cur.fetchall()
     con.close()
 
