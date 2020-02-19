@@ -9,7 +9,7 @@
 
     <!-- Bootstrap -->
     <!--    <link href="{{url_for('static',filename='css/bootstrap.css')}}" rel="stylesheet">-->
-    <link href="../static/css/bootstrap.css" rel="stylesheet" type="text/css">
+    <link href="/static/css/bootstrap.css" rel="stylesheet" type="text/css">
 
 
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
@@ -33,45 +33,56 @@
     <!--    <script src="{{url_for('static',filename='js/bootstrap.js')}}"></script>-->
     <!--    <script src="{{url_for('static',filename='js/bootstrap-table.js')}}"></script>-->
 
-    <script src="../static/js/jquery.min.js"></script>
-    <script src="../static/js/bootstrap.js"></script>
-    <script src="../static/js/bootstrap-table.js"></script>
+    <script src="/static/js/jquery.min.js"></script>
+    <script src="/static/js/bootstrap.js"></script>
+    <script src="/static/js/bootstrap-table.js"></script>
+    <style type="text/css">
+        #navi-id {
+            float: left;
+            _position: relative;
+        }
+
+        #span-id {
+            float: left;
+            _position: relative;
+        }
+
+        #lab1-id {
+            float: left;
+            _position: relative;
+        }
+    </style>
 </head>
+<div class="text-center">
+    <h2>你好，章怡！</h2>
+    <h3>2020年701电影清单</h3>
 
-<div class="navbar navbar-inverse" role="navigation">
-    <div>
-        <h2>你好，章怡！</h2>
-        <h3>2020年701电影清单</h3>
+</div>
+<div>
+    <div class="navbar navbar-inverse" role="navigation" id="div-title">
 
-    </div>
-    <div class="container">
-        <div class="navbar-header">
-            <button class="btn dropdown-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                <i class="glyphicon glyphicon-star"></i>
-            </button>
+        <div class="container">
+            <div class="navbar-header">
+                <a class="navbar-brand" href="https://takblog.ga">我的博客</a>
+                <button class="btn dropdown-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <i class="glyphicon glyphicon-star"></i>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse in">
+                <!--           <ul class="nav navbar-nav">
+                               <li><a href="/">关闭许愿条</a></li>
+                           </ul>-->
 
-            <!--            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                            <span class="sr-only">Toggle navigation</span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>-->
-            <a class="navbar-brand" href="https://takblog.ga">我的博客</a>
-        </div>
-        <div class="navbar-collapse collapse">
-            <ul class="nav navbar-nav">
-                <li><a href="/">电影首页</a></li>
-            </ul>
+                <div class="navbar-inverse has-success has-feedback" id="navi-id">
+                    <label class="control-label" for="inputSuccess4" id="lab1-id">输入愿望</label>
+                    <input type="text" class="form-control" id="inputSuccess4">
+                    <span class="glyphicon glyphicon-user form-control-feedback" id="span-id">点击提交</span>
+                </div>
 
-            <div class="navbar-inverse has-success has-feedback">
-                <label class="control-label" for="inputSuccess4">输入愿望</label>
-                <input type="text" class="form-control" id="inputSuccess4">
-                <span class="glyphicon glyphicon-user form-control-feedback">点击提交</span>
+
             </div>
 
-
         </div>
-
     </div>
 </div>
 {% endblock %}
