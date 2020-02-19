@@ -1,98 +1,21 @@
-<!DOCTYPE html>
-<html lang="zh-CN">
-<head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
-    <title>欢迎！</title>
+{% extends "base.html" %}
 
-    <!-- Bootstrap -->
-    <link href="{{url_for('static',filename='css/bootstrap.css')}}" rel="stylesheet">
+{% block title %}{% endblock %}
 
-    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
-    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-    <!--[if lt IE 9]>
-    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
-    <![endif]-->
-    <style>
-        #middle {
-            float: none;
-            display: inline-block;
-            vertical-align: middle;
-        }
-
-        div {
-            text-align: center
-        }
-    </style>
-</head>
-<div>
-    <h1>你好，世界！</h1>
-
-    <h2>2019年701电影清单</h2>
-
-</div>
-<table data-toggle="table" class="m-auto">
-
-
-    <thead>
+{% block page_content %}
+<table class="table table-bordered">
     <tr>
         <th>电影名称</th>
-        <th>介绍</th>
-        <th>存储路径</th>
+        <th>简介</th>
+        <th>豆瓣链接</th>
     </tr>
-    </thead>
-    <tbody>
+    {% for i in rows %}
     <tr>
-        <td>边境 Gräns (2018)</td>
-        <td><a href="https://movie.douban.com/subject/30194752/">链接</a></td>
-        <td>Toshiba2.0\边境-border</td>
+        <td>{{ i[0] }}</td>
+        <td>{{ i[1] }}</td>
+        <td><a href={{ i[2] }}>链接</a></td>
     </tr>
-    <tr>
-        <td>爱尔兰人 The Irishman</td>
-        <td><a href="https://movie.douban.com/subject/6981153/">链接</a></td>
-        <td>Seagate3.0</td>
-    </tr>
-    <tr>
-        <td>大象席地而坐</td>
-        <td><a href="https://movie.douban.com/subject/27172891/">链接</a></td>
-        <td>Toshiba2.0\大象席地而坐.An.Elephant.Sitting.Still.2018.BluRay.1080p.x265.10bit.MNHD-FRDS</td>
-    </tr>
-    <tr>
-        <td>冷战 Zimna wojna</td>
-        <td><a href="https://movie.douban.com/subject/26894602/">链接</a></td>
-        <td>Toshiba2.0\Cold.War.2018.Criterion.Collection.720p.BluRay.DD5.1.x264-BMDru</td>
-    </tr>
-    <tr>
-        <td>此房是我造 The House That Jack Built</td>
-        <td><a href="https://movie.douban.com/subject/26369884/">链接</a></td>
-        <td>Toshiba2.0\此房是我造.The.House.That.Jack.Built.2018.BluRay.1080p.x265.10bit.MNHD-FRDS</td>
-    </tr>
-    <tr>
-        <td>何以为家 كفرناحوم (2018)</td>
-        <td><a href="https://movie.douban.com/subject/30170448/">链接</a></td>
-        <td>Toshiba2.0\何以为家.Capharnaum.2018.BluRay.1080p.x265.10bit.MNHD-FRDS</td>
-    </tr>
-    <tr>
-        <td>小丑 Joker (2019)</td>
-        <td><a href="https://movie.douban.com/subject/27119724/">链接</a></td>
-        <td>Toshiba2.0\Joker.2019.BluRay.1080p.TrueHD7.1.x264-CHD</td>
-    </tr>
-
-    </tbody>
+    {% endfor %}
 </table>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="{{url_for('static',filename='js/jquery.min.js')}}"></script>
-<!-- Include all compiled plugins (below), or include individual files as needed -->
-<script src="{{url_for('static',filename='js/bootstrap.js')}}"></script>
-<script src="{{url_for('static',filename='js/bootstrap-table.js')}}"></script>
-<!-- Latest compiled and minified CSS -->
-<!--<link rel="stylesheet" href="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.css">-->
 
-<!--&lt;!&ndash; Latest compiled and minified JavaScript &ndash;&gt;-->
-<!--<script src="https://unpkg.com/bootstrap-table@1.15.5/dist/bootstrap-table.min.js"></script>-->
-<!--&lt;!&ndash; Latest compiled and minified Locales &ndash;&gt;-->
-<!--<script src="https://unpkg.com/bootstrap-table@1.15.5/dist/locale/bootstrap-table-zh-CN.min.js"></script>-->
-</html>
+{% endblock %}
