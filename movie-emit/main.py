@@ -5,11 +5,10 @@ from flask_bootstrap import Bootstrap
 from flask import Flask, render_template
 
 app = Flask(__name__)
-path = os.path.abspath('.') + "\movie.db"
+path = os.path.abspath('.') + os.sep + "movie.db"
 
 
-
-@app.route('/')
+@app.route('/movieDomain')
 def show():
     con = sqlite3.connect(path)
     cur = con.cursor()
