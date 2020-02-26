@@ -37,24 +37,50 @@
     <script src="/static/js/bootstrap.js"></script>
     <script src="/static/js/bootstrap-table.js"></script>
     <style type="text/css">
-        #navi-id {
+        #jbId {
             float: left;
             _position: relative;
+            /*left: 50%;*/
+            /*display:inline;border: 5px solid;*/
+            margin: 30px;
+            transform:translateY(120%)
+
         }
 
-        #span-id {
-            float: left;
+        #navi-id {
+            width: 100px;
+
+            /*float: left;*/
+            _position: relative;
+            float:left; display:inline;
+            margin: 30px;
+
+        }
+/*        .border{
+            padding: 8px;
+            line-height: 1.42857143;
+            vertical-align: top;
+            border-top: 2px solid #f7f7f7; !*边框颜色*!
+        }*/
+
+/*        #span-id {
+            !*float: left;*!
             _position: relative;
         }
 
         #lab1-id {
             float: left;
             _position: relative;
-        }
+        }*/
+        /*#inputSuccess4{*/
+        /*    width: 100px;*/
+
+        /*}*/
+
     </style>
 </head>
 <div class="text-center">
-    <h2>你好，章怡！</h2>
+    <h2>Hello World！</h2>
     <h3>2020年701电影清单</h3>
 
 </div>
@@ -72,11 +98,18 @@
                 <!--           <ul class="nav navbar-nav">
                                <li><a href="/">关闭许愿条</a></li>
                            </ul>-->
+                <div  id="jbId" >
+
+
+                    <a class="btn btn-outline-success btn-sm" href="https://zhile.io/custom/license">获取jetbrans注册码</a>
+                </div>
 
                 <div class="navbar-inverse has-success has-feedback" id="navi-id">
                     <label class="control-label" for="inputSuccess4" id="lab1-id">输入愿望</label>
+
                     <input type="text" class="form-control" id="inputSuccess4">
                     <span class="glyphicon glyphicon-user form-control-feedback" id="span-id">点击提交</span>
+
                 </div>
 
 
