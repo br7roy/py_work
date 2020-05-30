@@ -51,7 +51,7 @@ def go(cookies):
 
 
 if __name__ == '__main__':
-    path = 'https://detail.tmall.com/item.htm?id=597859359278'
+    path = 'http://www.ceair.com/booking/sha-kmg-200424_CNY.html'
 
     # desire_cap = DesiredCapabilities.CHROME
     # desire_cap["PageLoadStrategy"] = "none"
@@ -65,15 +65,15 @@ if __name__ == '__main__':
     print("等待网页响应...")
     wait = WebDriverWait(driver, 10)
     # 需要等一下，直到页面加载完成
-    wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, 'tm-clear J_TSaleProp')))
+    wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, 'summary')))
     print("等待网页响应...")
 
     # wait.until(EC.presence_of_element_located((By.CSS_SELECTOR, "aria-disabled")))
     # wait.until(EC.presence_of_element_located((By.CLASS_NAME, 'tb-prop')))
-    wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, 'tm-clear J_TSaleProp')))
+    wait.until(EC.presence_of_all_elements_located((By.CLASS_NAME, 'font-size12')))
     # b = wait.until(EC.element_to_be_clickable(
     #     (By.XPATH, "//*[@id='J_DetailMeta']/div[1]/div[1]/div/div[6]/div/div/dl[1]/dd/ul/li[11]/a"))).click()
     soup = BeautifulSoup(driver.page_source, "html5lib")
-    print('aria-disabled' in soup.text)
+    print('540' in soup.text)
     with open(r'c:/users/administrator/desktop/5.html', 'w', encoding='utf-8') as f:
         f.write(driver.page_source)
