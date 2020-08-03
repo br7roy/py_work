@@ -1,10 +1,7 @@
-import os
 import smtplib
 import time
 from email.mime.text import MIMEText
 from email.utils import formataddr
-
-import feedparser
 import requests
 
 flg = 0
@@ -29,17 +26,28 @@ def send_email(subj='家政夫三田园更新了', detail='家政夫三田园更
 def run(url):
     r = requests.get(url)
     r.raise_for_status()
-    feed = feedparser.parse(r.text)
-    if len(feed.entries) > 2:
-        send_email()
-        global flg
-        flg = 2
+    import json
+    jstr = json.loads(r.text)
+    jlist = jstr['data']['list'][0]['items']['APP']
+    if len(jlist) > 2:
+        for ele in jlist:
+            ep = [v for k, v in ele.items() if k == 'episode']
+            if ep and ep[0] > '2':
+                addrs = [v for k, v in ele.items() if k == 'files']
+                ra = None
+                for addr in addrs:
+                    ra = [adr['address'] for adr in addr if adr['way_cn'] == '微云']
+                if ra:
+                    send_email(detail=str('第 %s 集下载地址: %s' % (ep[0], ra)))
+                    global flg
+                    flg = 3
+
     else:
         print("no update")
 
 
 if __name__ == '__main__':
-    url = r'http://rss.rrys.tv/rss/feed/39886'
+    url = r'http://got002.com/api/v1/static/resource/detail?code=bOBkX4'
     while 1 and flg == 0:
         run(url)
         time.sleep(1 * 60)
