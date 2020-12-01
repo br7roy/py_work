@@ -36,9 +36,17 @@ def excel2json(file_path):
                 if title == 'percent' and type(value) == float:
                     value = str(Decimal.from_float(value).quantize(Decimal('0.0000')))
                 if title == 'hour' and value == 'null':
-                    value = ''
+                    value = None
                 if title == 'sub_label' and type(value) == float:
                     value = int(value)
+                if title == 'percent' and value == 'null':
+                    value = None
+                if title == 'person_time' and value == 'null':
+                    value = None
+                if title == 'count' and value == 'null':
+                    value = None
+                if title == 'day' and value is not None and type(value) == int :
+                    value = str(value)
                 tmp[title] = value
             json_data = json.dumps(tmp)
             saveFile(os.getcwd(), worksheets[int(inp)], json_data,cur_day)
@@ -62,6 +70,6 @@ def saveFile(file_path, file_name, data,day):
 
 
 if __name__ == '__main__':
-    file_path = r"C:\Users\Tak\Documents\youdu\14664168-104213-futx\file\ssxs1103-1116.xlsx"
+    file_path = r"C:\Users\Tak\Documents\1202-1208(1).xlsx"
     excel2json(file_path)
 
