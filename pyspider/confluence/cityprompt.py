@@ -14,8 +14,8 @@ class CityInfo(object):
     __repr__ = __str__
 
 
-cf_home_url = "http://c..com/"
-cf_page_url = cf_home_url + "pages/viewpage.action?pageId=47417959"
+cf_home_url = ""
+cf_page_url = cf_home_url + ""
 
 login_data = {
     "os_username": "",
@@ -27,7 +27,9 @@ login_data = {
 loginreqsession = None
 
 
-def login():
+def login(user, pwd):
+    login_data.update({"os_username": user})
+    login_data.update({"os_password": pwd})
     # 登录
     global loginreqsession
     loginreqsession = requests.session()
@@ -85,15 +87,18 @@ def attach_page():
         except:
             pass
 
+    print("===================>CITY_INFO:<===================\n\n\n")
     for k, v in data.items():
         print("k:%sv:%s" % (k, v))
+    print("\n\n\n")
+    print(f"any problem report to page: {cf_page_url}")
 
 
 if __name__ == '__main__':
     import sys
     arg = sys.argv
-    if len(arg) == 1:
-        sys.exit(1)
-
-    login()
+    if len(arg) != 3:
+        print("input account password")
+        sys.exit(-1)
+    login(arg[1], arg[2])
     attach_page()
